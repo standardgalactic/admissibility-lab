@@ -1,24 +1,40 @@
-# adm-lab
+# Admissibility Lab
 
-[Admissible Degradation](https://standardgalactic.github.io/research-projects/admissibility-lab/admissible-degradation.pdf)
+[From Corpus to Argument](https://standardgalactic.github.io/admissibility-lab/From_Corpus_to_Argument.pdf)
 
-[Intelligence as Perspectival Convergence](https://github.com/standardgalactic/research-projects/blob/main/admissibility-lab/processing/README.md)
+[Nineteen Million Possible Essays](https://standardgalactic.github.io/admissibility-lab/Nineteen_Million_Possible_Essays.pdf)
 
-[The Eight-Letter Keyboard](https://standardgalactic.github.io/research-projects/admissibility-lab/eight_letter_keyboard.pdf)
+[Metered Memory](https://standardgalactic.github.io/admissibility-lab/Metered_Memory.pdf)
 
-* [The Eight-Letter Motor Phonology](https://standardgalactic.github.io/research-projects/admissibility-lab/The_Eight_Letter_Motor_Phonology.pdf)
+[The Unattempted Alternative](https://standardgalactic.github.io/admissibility-lab/unattempted_alternative.pdf)
 
-[Motor Phonology and Symbolic Reachability](https://standardgalactic.github.io/research-projects/admissibility-lab/motor_phonology.pdf)
+[The Cost of Future Admissibility](https://standardgalactic.github.io/admissibility-lab/cost_of_future_admissibility.pdf)
 
-* [The Motor Manifold](https://standardgalactic.github.io/research-projects/admissibility-lab/The_Motor_Manifold.pdf)
+[Publishing an Untested Design](https://standardgalactic.github.io/admissibility-lab/Publishing_an_Untested_Design.pdf)
 
-* [The Reconstruction Imperative](https://standardgalactic.github.io/research-projects/admissibility-lab/The_Reconstruction_Imperative-extended.pdf)
+[Publication Decision CoC](https://standardgalactic.github.io/admissibility-lab/Publication_Decision_CoC.pdf)
 
-[Continuations Before Objects](https://standardgalactic.github.io/research-projects/admissibility-lab/continuations_before_objects.pdf)
+![](blank-line.png)
 
-* [Reachability Geometry](https://standardgalactic.github.io/research-projects/admissibility-lab/Reachability_Geometry.pdf)
+[Admissible Degradation](https://standardgalactic.github.io/admissibility-lab/admissible-degradation.pdf)
 
-[Audio Overviews](https://standardgalactic.github.io/research-projects/admissibility-lab/)
+[Intelligence as Perspectival Convergence](https://github.com/standardgalactic/blob/main/admissibility-lab/processing/README.md)
+
+[The Eight-Letter Keyboard](https://standardgalactic.github.io/admissibility-lab/eight_letter_keyboard.pdf)
+
+* [The Eight-Letter Motor Phonology](https://standardgalactic.github.io/admissibility-lab/The_Eight_Letter_Motor_Phonology.pdf)
+
+[Motor Phonology and Symbolic Reachability](https://standardgalactic.github.io/admissibility-lab/motor_phonology.pdf)
+
+* [The Motor Manifold](https://standardgalactic.github.io/admissibility-lab/The_Motor_Manifold.pdf)
+
+* [The Reconstruction Imperative](https://standardgalactic.github.io/admissibility-lab/The_Reconstruction_Imperative-extended.pdf)
+
+[Continuations Before Objects](https://standardgalactic.github.io/admissibility-lab/continuations_before_objects.pdf)
+
+* [Reachability Geometry](https://standardgalactic.github.io/admissibility-lab/Reachability_Geometry.pdf)
+
+[Audio Overviews](https://standardgalactic.github.io/admissibility-lab/)
 
 A Python laboratory for observing admissibility geometry.
 

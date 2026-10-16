@@ -1,0 +1,6002 @@
+WEBVTT
+
+00:00.000 --> 00:09.080
+Imagine you have a tiny folder on your computer desktop, just like 488 text documents.
+
+00:09.660 --> 00:11.280
+Right. Not very big at all.
+
+00:11.480 --> 00:16.560
+Exactly. I mean, you could fit that entire folder on the absolute cheapest thumb drive you can find at a gas station,
+
+00:16.680 --> 00:20.260
+and you would still have, you know, 99% of the storage space left over.
+
+00:20.640 --> 00:21.200
+Oh, easily.
+
+00:21.680 --> 00:26.940
+But mathematically, and this is wild, locked inside that tiny, unassuming little folder
+
+00:26.940 --> 00:31.220
+are over 19 million unique essays just waiting to be written.
+
+00:31.820 --> 00:34.540
+Over 19.3 million, to be exact.
+
+00:34.740 --> 00:35.020
+Wow.
+
+00:35.660 --> 00:38.560
+And that is just if you group them into sets of three.
+
+00:38.980 --> 00:43.300
+I mean, if you start adding more files, that number explodes into the hundreds of millions.
+
+00:43.300 --> 00:47.340
+It happens faster than most human minds can even comprehend.
+
+00:48.560 --> 00:50.860
+Which brings up the ultimate modern dilemma, right?
+
+00:51.720 --> 00:55.760
+How on earth do you find the brilliant ideas hidden in those millions of possibilities
+
+00:55.760 --> 01:00.160
+without just, without completely drowning in absolute garbage?
+
+01:00.680 --> 01:02.440
+Yeah, that is the million dollar question.
+
+01:02.900 --> 01:07.840
+Because, you know, we are constantly sold this dream that managing our knowledge is just a software problem.
+
+01:08.000 --> 01:09.620
+Oh, totally. Like, just buy this app.
+
+01:09.780 --> 01:10.000
+Right.
+
+01:10.240 --> 01:13.160
+You have too many articles to read, so you get an app that saves them.
+
+01:13.840 --> 01:19.300
+You have too many notes, so you subscribe to some new tool that links them all together with pretty visual graphs.
+
+01:19.300 --> 01:24.680
+And you point, you click, and suddenly the machine tells you that you are now officially organized.
+
+01:25.040 --> 01:26.480
+Yeah, but...
+
+01:26.480 --> 01:29.600
+But the interface just gives you the illusion of control.
+
+01:29.760 --> 01:36.660
+I mean, it feels incredibly comforting to see your information categorized and filed away into neat digital buckets, you know?
+
+01:36.820 --> 01:37.040
+Sure.
+
+01:37.620 --> 01:44.060
+The problem arises when you transition from merely storing information to actually synthesizing it.
+
+01:44.300 --> 01:47.200
+When you step into the world of trying to genuinely think.
+
+01:47.200 --> 01:48.200
+Exactly.
+
+01:48.980 --> 01:54.840
+You sit down, you stare at all those bookmarks, all those highlighted paragraphs, all those saved PDFs.
+
+01:55.260 --> 01:59.600
+And you try to connect them into a genuinely new original argument.
+
+01:59.880 --> 02:04.040
+And that beautiful filing system just completely breaks down.
+
+02:04.200 --> 02:04.820
+It totally does.
+
+02:05.520 --> 02:12.700
+We're looking at a cognitive landscape that feels more like a hoarder's garage of digital text than a functional library.
+
+02:13.020 --> 02:15.120
+A hoarder's garage is a great way to put it.
+
+02:15.120 --> 02:20.840
+You save and you save, but the sheer volume of information makes actually utilizing it feel...
+
+02:20.840 --> 02:21.720
+Totally paralyzing.
+
+02:22.040 --> 02:24.240
+You end up with a massive repository, but no map.
+
+02:24.360 --> 02:24.560
+Right.
+
+02:24.940 --> 02:31.640
+And more importantly, no mechanism to force those disparate pieces of information into a meaningful conversation with one another.
+
+02:31.900 --> 02:35.180
+I mean, this is the exact definition of informational paralysis.
+
+02:35.180 --> 02:41.640
+Which is why today, we are going on a deep dive into an absolutely fascinating stack of source material.
+
+02:42.060 --> 02:47.620
+We are looking at a collection of documents written by an independent researcher who goes by the name Flyxion.
+
+02:47.960 --> 02:49.640
+Published in October of 2026?
+
+02:49.900 --> 02:50.100
+Yeah.
+
+02:50.440 --> 02:56.140
+And I have to tell you, going through these documents, this isn't just a list of productivity tips and tricks.
+
+02:56.420 --> 02:57.240
+Oh, not at all.
+
+02:57.240 --> 03:03.020
+These papers detail a custom-built, highly eccentric, AI-driven writing and thinking system.
+
+03:03.460 --> 03:10.820
+But as you dig into the architecture of what they actually built, you realize it's, well, it's a profound philosophical journey.
+
+03:11.220 --> 03:11.740
+It really is.
+
+03:12.020 --> 03:16.680
+It's an exploration of what it means to think alongside machines without surrendering your own judgment.
+
+03:17.020 --> 03:17.260
+Right.
+
+03:17.960 --> 03:21.420
+And our mission for this deep dive is to trace that exact journey.
+
+03:21.780 --> 03:24.500
+The scope of the material is what makes it so compelling, honestly.
+
+03:24.500 --> 03:25.040
+Yeah.
+
+03:25.360 --> 03:29.100
+Because Flyxion doesn't just outline a technical pipeline, right?
+
+03:29.440 --> 03:29.820
+No.
+
+03:30.060 --> 03:36.120
+They plunge into the dizzying mathematics of human creativity, map out the brutal economic realities of automation,
+
+03:36.300 --> 03:44.200
+and then, in perhaps the most radical move, attempt to use hardcore formal mathematical logic to solve a deeply human dilemma.
+
+03:44.700 --> 03:49.480
+The dilemma of whether or not to actually hit the publish button on their own work.
+
+03:49.580 --> 03:50.020
+Exactly.
+
+03:50.020 --> 03:55.180
+So we are going to explore this researcher's custom system for recombining ideas.
+
+03:55.620 --> 03:59.540
+We're going to unpack the staggering math of that corpus we mentioned.
+
+03:59.700 --> 04:01.160
+The 19 million potential ideas.
+
+04:01.300 --> 04:01.560
+Yes.
+
+04:01.820 --> 04:12.020
+We're going to dive deep into these statistical traps of relying on AI and look at that wild attempt to use formal process algebra to make an editorial decision.
+
+04:12.660 --> 04:12.940
+Okay.
+
+04:13.160 --> 04:13.960
+Let's unpack this.
+
+04:13.960 --> 04:20.740
+Well, setting the stage for what this system actually is requires us to look at the default setting for artificial intelligence today.
+
+04:21.060 --> 04:23.120
+Which is, what, mostly just chatbots.
+
+04:23.360 --> 04:23.820
+Right.
+
+04:24.060 --> 04:27.680
+Currently, the standard interaction model is incredibly frictionless.
+
+04:27.920 --> 04:33.660
+You give a language model a prompt, and it instantly spits out a highly fluent, very confident-sounding essay.
+
+04:33.900 --> 04:36.160
+Very confident, even when it's totally wrong.
+
+04:36.160 --> 04:36.800
+Exactly.
+
+04:37.180 --> 04:42.800
+It smooths over all the logical gaps, and it might be completely hallucinating its facts, but it reads beautifully.
+
+04:43.340 --> 04:50.260
+Flyxion's system, which is detailed in a document title from Corpus to Argument, fundamentally rejects that frictionless model.
+
+04:50.460 --> 04:52.340
+The system actively creates friction.
+
+04:52.740 --> 04:53.520
+It really does.
+
+04:53.580 --> 04:55.980
+It refuses to just be a standard summarizer.
+
+04:56.380 --> 04:56.660
+Right.
+
+04:56.760 --> 04:59.640
+Instead, the author built a strictly staged architecture.
+
+04:59.640 --> 05:08.540
+They broke the thinking process down into four distinct phases, classification, retrieval, recombination, and composition.
+
+05:09.260 --> 05:13.000
+And the engine driving all of this is a custom tool they call Yarnwinder.
+
+05:13.420 --> 05:14.020
+Yarnwinder.
+
+05:14.160 --> 05:15.440
+It's very descriptive.
+
+05:16.340 --> 05:21.120
+The separation of these operations is the critical security feature of the entire design.
+
+05:21.260 --> 05:25.980
+I mean, the researcher points out a massive flaw in standard AI writing tools.
+
+05:26.320 --> 05:28.180
+That they hide the hallucinations.
+
+05:28.660 --> 05:29.020
+Exactly.
+
+05:29.020 --> 05:39.840
+They produce fluent prose while totally concealing the difference between a real claim from a source document and a random conjecture introduced by the AI just to make the paragraph flow better.
+
+05:40.040 --> 05:41.020
+Right. To make it sound nice.
+
+05:41.460 --> 05:44.720
+But Flyxion's design makes that difference persistent and visible.
+
+05:45.260 --> 05:49.020
+The output of one specific operation becomes the strict input for the next.
+
+05:49.540 --> 05:51.080
+I love how they phrase it in the text.
+
+05:51.200 --> 05:55.760
+They write, um, a passage does not become reliable because it belongs to a cluster.
+
+05:56.080 --> 05:57.240
+That's a crucial point.
+
+05:57.240 --> 05:59.160
+It's such an easy trap to fall into.
+
+05:59.300 --> 06:05.560
+You see three documents grouped together under a heading, and you assume there must be a valid, truthful connection between them.
+
+06:05.860 --> 06:06.900
+Which is rarely true.
+
+06:07.260 --> 06:10.840
+So let's look at how they handle that first stage, classification.
+
+06:10.840 --> 06:16.980
+The author organizes their entire corpus of essays using what they call the four organizations.
+
+06:17.600 --> 06:17.840
+Yes.
+
+06:18.300 --> 06:22.780
+The first one is this incredibly eccentric structure called the micromegas ontology.
+
+06:22.780 --> 06:26.860
+And to understand why it's so eccentric, consider how most people tag their files.
+
+06:27.060 --> 06:32.920
+You use standard, broad categories like technology or biology or economics, right?
+
+06:33.120 --> 06:34.200
+Right. Just basic keywords.
+
+06:34.760 --> 06:39.460
+The problem with those tags is that they don't describe the behavior of the ideas inside the text.
+
+06:39.940 --> 06:42.720
+So Flyxion abandons standard tagging entirely.
+
+06:42.720 --> 06:48.040
+I was reading this list of categories and just smiling because it sounds like, I don't know, a poetic filing cabinet.
+
+06:48.300 --> 06:48.960
+It really does.
+
+06:49.500 --> 06:53.940
+Instead of biology, they use the category whales to represent living beings.
+
+06:54.200 --> 06:58.820
+They use mushrooms to represent ideas about rapid growth or sudden emergence.
+
+06:59.320 --> 07:03.220
+And trees is the category for rootedness or spatial fixation.
+
+07:03.440 --> 07:03.920
+It's wild.
+
+07:04.620 --> 07:05.180
+Way to get better.
+
+07:05.520 --> 07:06.960
+Oh, the abstraction goes much deeper.
+
+07:07.580 --> 07:10.900
+They use the term lamfrond to represent dark and baryonic matter.
+
+07:10.900 --> 07:12.020
+Lamfrond?
+
+07:12.280 --> 07:12.420
+Yeah.
+
+07:13.080 --> 07:18.320
+They use ocular xylem to stand for photonic computers combined with wood pulp building materials.
+
+07:18.640 --> 07:20.560
+Like fiber optics mixed with trees.
+
+07:21.140 --> 07:21.500
+Exactly.
+
+07:22.200 --> 07:25.700
+And lamfridine is the bucket for dark energy and expanding voids.
+
+07:26.140 --> 07:28.180
+Where did the name micromegas even come from?
+
+07:28.480 --> 07:32.640
+The name itself is a literary reference to an old philosophical story by Voltaire,
+
+07:32.940 --> 07:36.180
+though the author is very careful to keep the literary inspiration separate
+
+07:36.180 --> 07:39.080
+from the strict functional definitions of these categories.
+
+07:39.080 --> 07:40.960
+Wait, I'm trying to visualize this.
+
+07:41.140 --> 07:41.260
+Right.
+
+07:41.260 --> 07:44.220
+If I have an essay about a new fiber optic network,
+
+07:44.700 --> 07:47.140
+I don't just dump it into a folder labeled networks.
+
+07:47.900 --> 07:50.960
+I might put it in ocular xylem.
+
+07:51.400 --> 07:51.800
+Right.
+
+07:52.100 --> 07:54.360
+But it's not just based on keyword matching, is it?
+
+07:54.380 --> 07:58.500
+Like you don't throw a document into the lamfrond bucket just because the word matter
+
+07:58.500 --> 07:59.660
+appears in the third paragraph.
+
+07:59.740 --> 08:00.520
+No, not at all.
+
+08:01.040 --> 08:04.460
+The assignment depends entirely on argumentative relevance.
+
+08:04.740 --> 08:05.880
+This is a crucial distinction.
+
+08:06.660 --> 08:06.880
+Okay.
+
+08:06.880 --> 08:08.000
+What does that mean in practice?
+
+08:08.460 --> 08:12.740
+Well, the system's record actually notes how the category is being used in the text.
+
+08:13.580 --> 08:15.880
+Is lamfrond the literal subject of the paper?
+
+08:16.260 --> 08:19.360
+Is it playing an explanatory role to describe something else?
+
+08:19.620 --> 08:22.080
+Or is it merely being used as a passing analogy?
+
+08:22.920 --> 08:23.440
+Oh, wow.
+
+08:23.960 --> 08:25.500
+So it tracks the function.
+
+08:25.920 --> 08:26.400
+Exactly.
+
+08:27.260 --> 08:30.220
+By tracking the argumentative function rather than just the topic,
+
+08:30.220 --> 08:34.140
+the system preserves the actual intellectual shape of the source material.
+
+08:34.700 --> 08:37.620
+That makes standard keyword tagging look incredibly primitive.
+
+08:37.740 --> 08:38.400
+It really does.
+
+08:38.980 --> 08:41.040
+And that's just the first of the four organizations.
+
+08:41.600 --> 08:45.200
+The second is topic discovery using similarity clustering.
+
+08:45.680 --> 08:47.440
+But there's a huge disclaimer here.
+
+08:48.080 --> 08:48.460
+Right.
+
+08:48.600 --> 08:51.400
+The author notes that these clusters are strictly provisional.
+
+08:51.740 --> 08:56.220
+They are just a temporary mathematical description of the corpus at a given moment.
+
+08:56.220 --> 09:00.840
+So they aren't permanent boxes where every single text must neatly fit.
+
+09:00.980 --> 09:01.160
+No.
+
+09:01.680 --> 09:06.520
+And then the third organization is where we start moving from what the texts are to what
+
+09:06.520 --> 09:07.300
+happens to them.
+
+09:07.460 --> 09:09.560
+It's a process ontology.
+
+09:09.980 --> 09:11.040
+What happens to them?
+
+09:11.180 --> 09:12.280
+Like actions?
+
+09:12.580 --> 09:12.860
+Yes.
+
+09:13.000 --> 09:14.560
+This describes transformations.
+
+09:15.240 --> 09:18.600
+Inscription, compression, routing, verification, exclusion.
+
+09:19.160 --> 09:22.960
+Think of this as categorizing the actions described in the texts.
+
+09:22.960 --> 09:23.560
+Okay.
+
+09:23.900 --> 09:26.200
+But again, Flyxion draws a hard line here.
+
+09:26.460 --> 09:31.240
+They explicitly note that describing the compression of a digital file is very different
+
+09:31.240 --> 09:34.860
+from the argumentative act of compressing an intellectual argument.
+
+09:35.540 --> 09:40.120
+Ah, so the system doesn't confuse a physical process with a cognitive one.
+
+09:40.180 --> 09:40.560
+Exactly.
+
+09:41.220 --> 09:43.260
+Which brings us to the fourth organization.
+
+09:43.600 --> 09:45.920
+And this is where the system gets really dynamic.
+
+09:46.580 --> 09:48.080
+Task relative roles.
+
+09:48.760 --> 09:49.660
+This is the fun part.
+
+09:49.660 --> 09:53.340
+This is where the artificial intelligence actually steps onto the stage.
+
+09:53.720 --> 09:59.600
+The system utilizes five distinct AI roles that prompt a local granite language model.
+
+09:59.980 --> 10:05.200
+And it's worth noting, this model is running entirely locally on the user's own machine
+
+10:05.200 --> 10:07.000
+via a tool called OLAMA.
+
+10:07.220 --> 10:08.900
+Meaning no internet connection required.
+
+10:09.080 --> 10:09.280
+Right.
+
+10:09.880 --> 10:13.920
+That means the processing is incredibly cheap and completely private.
+
+10:14.320 --> 10:16.940
+No data is being sent to a massive corporate cloud.
+
+10:17.160 --> 10:17.900
+Which is huge.
+
+10:17.900 --> 10:22.900
+Utilizing a local model changes the economics of the system entirely, which we will see becomes
+
+10:22.900 --> 10:24.760
+incredibly important later on.
+
+10:24.900 --> 10:25.180
+Oh yeah.
+
+10:25.240 --> 10:26.080
+The economic traps.
+
+10:26.480 --> 10:27.060
+We'll get there.
+
+10:28.200 --> 10:32.400
+But focusing on these five roles, what makes them brilliant isn't just their stated objectives.
+
+10:33.140 --> 10:37.160
+It's that Flyxion programmed each role with a clearly defined failure mode.
+
+10:37.280 --> 10:37.540
+Yes.
+
+10:37.980 --> 10:42.420
+The system expects the AI to fail in specific, predictable ways.
+
+10:42.500 --> 10:45.220
+And it builds the architecture around catching those failures.
+
+10:45.220 --> 10:51.200
+Let's break those five roles down, because they act like a team of highly specialized, slightly
+
+10:51.200 --> 10:52.220
+flawed assistants.
+
+10:52.460 --> 10:53.040
+Let's do it.
+
+10:53.700 --> 10:54.760
+First you have the archivist.
+
+10:55.320 --> 10:56.480
+Its job is retrieval.
+
+10:57.120 --> 11:01.720
+It combs through the text to find provenance, alternative viewpoints, and qualifications.
+
+11:02.220 --> 11:04.400
+But it's documented failure mode.
+
+11:05.220 --> 11:07.820
+The archivist risks hoarding too much context.
+
+11:07.820 --> 11:09.720
+It just wants to save everything.
+
+11:09.940 --> 11:10.220
+Exactly.
+
+11:10.380 --> 11:14.380
+Tries to bring in everything, drowning the argument in irrelevant background noise.
+
+11:14.780 --> 11:14.980
+Right.
+
+11:15.420 --> 11:16.920
+Then you introduce the formalist.
+
+11:17.600 --> 11:23.360
+This role's job is to retrieve strict definitions, structural dependencies, and logical constraints
+
+11:23.360 --> 11:24.060
+from the texts.
+
+11:24.580 --> 11:28.820
+And the formalist's specific failure mode is falling into what the author calls correct
+
+11:28.820 --> 11:31.000
+Correct, but ungrounded abstraction.
+
+11:31.640 --> 11:33.680
+Meaning it loses touch with reality.
+
+11:34.000 --> 11:34.460
+Pretty much.
+
+11:34.580 --> 11:39.080
+It might build a perfectly logical framework that has absolutely zero connection to the
+
+11:39.080 --> 11:41.740
+real world, messy reality of the source material.
+
+11:42.080 --> 11:43.360
+Next is the synthesis.
+
+11:44.020 --> 11:47.760
+This is the one that actually proposes the argumentative connections between different
+
+11:47.760 --> 11:48.140
+sources.
+
+11:48.640 --> 11:51.740
+It says, you know, hey, idea A connects to idea B.
+
+11:52.100 --> 11:54.360
+But its failure mode is a lack of convergence.
+
+11:54.360 --> 11:59.400
+It risks spinning out endless hypothetical connections without ever landing on a single
+
+11:59.400 --> 12:00.320
+solid point.
+
+12:00.760 --> 12:02.320
+It just brainstorms into infinity.
+
+12:02.880 --> 12:03.960
+Like that one guy in every meeting.
+
+12:04.120 --> 12:05.060
+Exactly like that guy.
+
+12:05.640 --> 12:07.920
+So to counter that, you have the strategist.
+
+12:08.240 --> 12:13.740
+The strategist examines the practical conditions and real world consequences of whatever the synthesis
+
+12:13.740 --> 12:14.400
+proposed.
+
+12:14.800 --> 12:16.740
+But its risk is the exact opposite.
+
+12:17.340 --> 12:21.760
+The strategist tricks deep, nuanced understanding for an immediate, shallow effect.
+
+12:22.100 --> 12:23.820
+It just wants a quick, pragmatic result.
+
+12:23.820 --> 12:26.780
+And finally, sitting above the other four is the curator.
+
+12:27.360 --> 12:31.920
+The curator looks at all the materials gathered and proposed by the others and decides if
+
+12:31.920 --> 12:35.280
+a brief is actually mature enough to be drafted into a full essay.
+
+12:36.260 --> 12:40.060
+And the curator's failure mode is perhaps the most relatable one of all.
+
+12:40.280 --> 12:40.700
+What's that?
+
+12:41.140 --> 12:45.560
+It risks spending all of its computational effort just coordinating the other roles without
+
+12:45.560 --> 12:47.740
+ever actually producing a final product.
+
+12:48.100 --> 12:49.640
+Oh man, middle management.
+
+12:50.220 --> 12:51.080
+Essentially, yes.
+
+12:51.640 --> 12:53.600
+But wait, I have to challenge this setup.
+
+12:53.820 --> 12:58.840
+Because looking at these five roles, isn't Flyxion just totally outsourcing the active
+
+12:58.840 --> 12:59.920
+thinking to the machine?
+
+13:00.280 --> 13:01.040
+It sounds like it, right?
+
+13:01.680 --> 13:01.880
+Yeah.
+
+13:02.000 --> 13:07.280
+I mean, you've got an AI finding the text, an AI extracting the definitions, an AI proposing
+
+13:07.280 --> 13:11.360
+the connection, an AI finding the practical use, and an AI deciding if it's ready.
+
+13:11.780 --> 13:13.100
+Where's the human in this loop?
+
+13:13.980 --> 13:16.560
+That is the exact trap the author is navigating.
+
+13:16.560 --> 13:18.940
+And it's why the system is designed the way it is.
+
+13:18.940 --> 13:25.100
+What's fascinating here is that the architecture explicitly strips the AI of final authority.
+
+13:25.640 --> 13:26.140
+Wait, really?
+
+13:26.620 --> 13:26.980
+How?
+
+13:27.740 --> 13:31.340
+None of these five roles actually own a passage of text.
+
+13:31.580 --> 13:33.320
+They are merely running queries.
+
+13:33.660 --> 13:36.760
+The system runs successive, isolated prompts to the model.
+
+13:36.760 --> 13:39.900
+So they don't actually write the final paper?
+
+13:40.320 --> 13:40.440
+No.
+
+13:40.920 --> 13:41.980
+Consider how they interact.
+
+13:42.520 --> 13:44.120
+The synthesis proposes a connection.
+
+13:44.620 --> 13:45.800
+It doesn't write the essay.
+
+13:45.920 --> 13:46.820
+It just makes a proposal.
+
+13:47.160 --> 13:47.320
+Okay.
+
+13:47.800 --> 13:52.500
+Then, the formalist is called in to examine the logical premises of that specific connection.
+
+13:53.540 --> 13:58.580
+Next, the archivist is sent back into the corpus on a second retrieval pass, specifically
+
+13:58.580 --> 14:02.140
+to find evidence for or against the synthesis's proposal.
+
+14:02.680 --> 14:03.440
+Checking its work.
+
+14:04.000 --> 14:04.340
+Exactly.
+
+14:05.120 --> 14:09.440
+Then, the strategist looks for a discriminating test to prove the connection false in the
+
+14:09.440 --> 14:09.940
+real world.
+
+14:10.520 --> 14:14.480
+Every single step is just the generation of a heavily scrutinized proposal.
+
+14:14.960 --> 14:20.380
+So it's less like an automated factory and more like managing a team of very eager but
+
+14:20.380 --> 14:22.080
+completely untrustworthy employees.
+
+14:22.600 --> 14:23.780
+That's a good way to look at it.
+
+14:24.140 --> 14:25.880
+Let's imagine a bespoke analogy here.
+
+14:25.880 --> 14:31.920
+The AI is like a hyperactive librarian who can run through the stacks and fetch books
+
+14:31.920 --> 14:34.420
+instantly, but they can't actually read the books.
+
+14:34.960 --> 14:35.060
+Right.
+
+14:35.560 --> 14:39.060
+They bring you a stack and say, look, both of these books have red covers.
+
+14:39.320 --> 14:40.720
+They must be about the same thing.
+
+14:41.580 --> 14:45.800
+And then you have an overconfident debater standing next to the librarian who is willing
+
+14:45.800 --> 14:48.600
+to argue any point, regardless of whether it's true.
+
+14:48.600 --> 14:49.940
+And where do you fit in?
+
+14:50.480 --> 14:53.340
+The human author is the senior partner sitting at the desk.
+
+14:53.880 --> 14:57.560
+The team can bring the senior partner all the materials and propose all the arguments,
+
+14:57.880 --> 15:01.460
+but the senior partner is the only one who can actually sign off on the brief.
+
+15:01.800 --> 15:03.400
+That captures the dynamic perfectly.
+
+15:03.880 --> 15:08.220
+And that final sign-off happens in the core mechanism of the yarn winder composition system,
+
+15:08.660 --> 15:10.180
+the ledger of obligations.
+
+15:10.180 --> 15:10.740
+Yes.
+
+15:11.500 --> 15:15.740
+Let's talk about this ledger because it fundamentally changes how AI evaluates its own work.
+
+15:16.240 --> 15:21.080
+In previous iterations of this kind of software, people always used numerical scores, didn't
+
+15:21.080 --> 15:21.260
+they?
+
+15:21.380 --> 15:22.720
+Almost exclusively, yeah.
+
+15:23.500 --> 15:28.300
+The AI would generate a paragraph and then run a self-evaluation prompt, like, I give this
+
+15:28.300 --> 15:32.980
+paragraph an 85 out of 100 for coherence and a 90 for stylistic flow.
+
+15:33.380 --> 15:35.260
+Which is absurd when you think about it.
+
+15:35.740 --> 15:38.120
+Flyxion abandons numerical scoring entirely.
+
+15:38.720 --> 15:39.340
+They had to.
+
+15:39.340 --> 15:44.420
+They recognized that numerical scoring is completely gameable by a language model.
+
+15:45.020 --> 15:49.200
+The model will just write flowery prose to inflate its own score without actually improving
+
+15:49.200 --> 15:50.300
+the underlying logic.
+
+15:50.920 --> 15:55.500
+So instead, yarn winder requires the AI to meet recorded textual obligations.
+
+15:56.080 --> 15:56.320
+Right.
+
+15:56.680 --> 16:01.120
+When a section of an essay is drafted, there are four strict rules it has to follow.
+
+16:01.320 --> 16:01.700
+What are they?
+
+16:02.160 --> 16:05.580
+First, source interpretations must be demonstrably accurate.
+
+16:05.580 --> 16:11.100
+Second, the connecting premise between two sources must be explicitly explained, not just
+
+16:11.100 --> 16:11.640
+implied.
+
+16:11.800 --> 16:12.180
+Makes sense.
+
+16:12.440 --> 16:17.300
+Third, any material objections found in the texts must receive a direct answer or a concession.
+
+16:17.860 --> 16:22.640
+And fourth, any open claims that aren't fully proven must remain explicitly listed as open.
+
+16:22.640 --> 16:24.540
+So you can't just sweep problems under the rug.
+
+16:24.760 --> 16:25.080
+Exactly.
+
+16:25.900 --> 16:29.260
+And the ledger operates on three simple states for each of these obligations.
+
+16:30.160 --> 16:32.280
+Discharged, deferred, or open.
+
+16:32.500 --> 16:34.040
+Okay, but who updates the ledger?
+
+16:34.500 --> 16:36.280
+Well, here is the critical bottleneck.
+
+16:36.860 --> 16:39.940
+A language model might propose that an obligation is discharged.
+
+16:40.100 --> 16:43.480
+It might generate a note saying, you know, look, I answered the counter argument.
+
+16:43.480 --> 16:44.700
+Here is the citation.
+
+16:45.060 --> 16:46.660
+Change the status to discharged.
+
+16:46.900 --> 16:47.180
+But?
+
+16:47.520 --> 16:51.440
+But the system physically prevents the AI from changing that status.
+
+16:52.060 --> 16:55.200
+Only the human reader using their own judgment can confirm it.
+
+16:55.560 --> 16:55.940
+Wow.
+
+16:56.500 --> 17:01.320
+So the ledger keeps the AI's optimistic proposal strictly walled off from the human's final
+
+17:01.320 --> 17:01.960
+confirmations.
+
+17:02.200 --> 17:02.720
+Exactly.
+
+17:03.440 --> 17:08.200
+It is mathematically and structurally designed to prevent the AI from grading its own homework.
+
+17:08.360 --> 17:08.940
+That's brilliant.
+
+17:08.940 --> 17:14.340
+It ensures that a section of text might be accepted by the human as a conjectural argument,
+
+17:14.700 --> 17:18.620
+but the prose has to represent that conjectural status accurately.
+
+17:18.920 --> 17:21.460
+So if there's a flaw, it stays visible.
+
+17:21.800 --> 17:22.020
+Right.
+
+17:22.620 --> 17:27.720
+If there's a major logical objection that defeats a central claim, the AI is not allowed to just
+
+17:27.720 --> 17:32.100
+write a stylistically prettier version of the claim to bypass the objection.
+
+17:32.660 --> 17:37.120
+The claim must be formally withdrawn or explicitly restricted in the text.
+
+17:37.120 --> 17:41.540
+The human is the ultimate unbypassable bottleneck for truth.
+
+17:42.100 --> 17:43.120
+The human is the bottleneck.
+
+17:43.260 --> 17:43.460
+Mm-hmm.
+
+17:44.140 --> 17:48.500
+Which, well, that leads us directly into the most daunting aspect of this entire experiment.
+
+17:49.020 --> 17:49.520
+The math.
+
+17:49.740 --> 17:50.060
+Yes.
+
+17:50.640 --> 17:55.420
+Because if the human is the bottleneck, we have to grapple with the sheer, terrifying volume
+
+17:55.420 --> 17:59.380
+of what this hyperactive AI librarian is capable of proposing.
+
+18:00.300 --> 18:04.680
+Let's look at the second document in our stack, titled 19 Million Possible Essays.
+
+18:04.680 --> 18:09.000
+The math Flyxion presents in this section is genuinely dizzying.
+
+18:09.140 --> 18:09.740
+It really is.
+
+18:10.420 --> 18:13.700
+To test this system, the researcher took a snapshot of their personal corpus.
+
+18:14.440 --> 18:18.240
+After filtering out all the duplicates and keeping only the longest version of each text,
+
+18:18.680 --> 18:21.800
+they were left with exactly 488 eligible documents.
+
+18:22.460 --> 18:27.840
+And as we mentioned at the start, 488 documents is a minuscule amount of data in the grand scheme
+
+18:27.840 --> 18:28.260
+of things.
+
+18:28.580 --> 18:28.780
+Right.
+
+18:28.840 --> 18:30.280
+It's a tiny footprint on a hard drive.
+
+18:30.280 --> 18:35.940
+But combinatorics, the mathematics of counting and arranging sets, reveals the hidden density
+
+18:35.940 --> 18:36.940
+of that tiny folder.
+
+18:38.020 --> 18:38.220
+Okay.
+
+18:38.240 --> 18:42.440
+Let's walk through the math slowly for me and everyone else.
+
+18:43.100 --> 18:48.740
+If you want the system to select just two documents from that folder to compare, you use a simple
+
+18:48.740 --> 18:50.080
+combinatorial formula.
+
+18:50.320 --> 18:50.540
+Right.
+
+18:50.540 --> 18:56.000
+You take the number of documents, multiply it by that number minus 1, and divide by 2.
+
+18:56.960 --> 18:59.520
+The formula is like n times n minus 1 divided by 2.
+
+19:00.660 --> 19:05.260
+So 488 times 487 divided by 2.
+
+19:05.780 --> 19:11.080
+And that yields 118,828 possible unique pairs.
+
+19:11.420 --> 19:13.140
+Over 100,000 pairs.
+
+19:13.540 --> 19:16.700
+That is already a staggering number for a human to reveal.
+
+19:16.880 --> 19:18.320
+It's impossible for one person.
+
+19:18.320 --> 19:21.160
+But the yarn winder system isn't just looking at pairs.
+
+19:21.720 --> 19:26.700
+It is designed to evaluate triples, bringing three separate documents into conversation
+
+19:26.700 --> 19:27.440
+with one another.
+
+19:27.840 --> 19:29.500
+And this is where the numbers go off the charts.
+
+19:29.980 --> 19:33.000
+Because if you select three documents, the formula expands.
+
+19:33.680 --> 19:38.660
+It becomes n times n minus 1 times n minus 2 divided by 6.
+
+19:39.300 --> 19:40.760
+Do you want to explain the division?
+
+19:41.320 --> 19:41.520
+Yeah.
+
+19:41.600 --> 19:42.920
+So why divide by 6?
+
+19:42.920 --> 19:47.860
+Because in a pure mathematical combination, the order you select the documents doesn't
+
+19:47.860 --> 19:48.120
+matter.
+
+19:48.920 --> 19:51.700
+Document ABC is the same grouping as CBA.
+
+19:52.020 --> 19:52.240
+Right.
+
+19:52.460 --> 19:56.080
+There's six ways to arrange three items, so you divide by 6 to remove the duplicates.
+
+19:56.340 --> 19:56.700
+Exactly.
+
+19:57.100 --> 20:06.400
+And when you run that math for 488 documents, it yields 19,250,136 possible unique triples.
+
+20:06.640 --> 20:07.940
+Over 19 million.
+
+20:07.940 --> 20:12.820
+Combine that with the pairs, and you have over 19.3 million unique combinations.
+
+20:13.480 --> 20:15.240
+And this number grows cubically.
+
+20:15.780 --> 20:17.040
+Which means it gets huge.
+
+20:17.360 --> 20:17.760
+Fast.
+
+20:18.380 --> 20:20.960
+Flyxion points out a terrifying reality here.
+
+20:21.560 --> 20:26.660
+If you just add 12 more documents to your folder, bringing the total to an even 500, you
+
+20:26.660 --> 20:28.000
+don't just add a few more options.
+
+20:28.280 --> 20:29.100
+How many do you add?
+
+20:29.720 --> 20:35.060
+Adding those 12 files generates over 1.46 million brand new triples.
+
+20:35.440 --> 20:36.720
+From just 12 files?
+
+20:36.720 --> 20:37.280
+Yes.
+
+20:37.820 --> 20:40.240
+The combinatorial explosion is profound.
+
+20:40.600 --> 20:40.720
+Wow.
+
+20:41.360 --> 20:47.080
+But, and this is a big but, this is where Flyxion is incredibly meticulous with their terminology,
+
+20:47.500 --> 20:48.900
+and we have to be careful as well.
+
+20:49.940 --> 20:54.640
+19 million combinations absolutely do not equal 19 million essays.
+
+20:55.180 --> 20:56.100
+No, not at all.
+
+20:56.360 --> 20:57.900
+Let's break down the distinction they make.
+
+20:58.300 --> 21:01.420
+They separate the intellectual output into three distinct objects.
+
+21:01.840 --> 21:05.200
+A combination, a brief, and an essay.
+
+21:05.200 --> 21:06.840
+Okay, what is the difference?
+
+21:07.320 --> 21:09.120
+A combination is purely mathematical.
+
+21:09.720 --> 21:13.800
+It is just a set of two or three source files sitting next to each other on a hard drive.
+
+21:14.000 --> 21:16.060
+There is no argument there, just proximity.
+
+21:16.520 --> 21:16.620
+Right.
+
+21:16.620 --> 21:22.580
+A brief is that combination, but it has been assigned a specific relation by the system,
+
+21:22.840 --> 21:26.300
+and it has been given an ordering of the AI roles we discussed earlier.
+
+21:26.680 --> 21:28.940
+It is a structured prompt waiting to be executed.
+
+21:29.360 --> 21:29.600
+Okay.
+
+21:29.800 --> 21:30.360
+And the essay?
+
+21:31.080 --> 21:33.680
+An essay is the incredibly rare final product.
+
+21:34.080 --> 21:38.700
+It is a fully human-vetted, deeply developed argument that has actually survived the rigorous
+
+21:38.700 --> 21:40.340
+testing of the ledger of obligations.
+
+21:40.340 --> 21:45.140
+Most combinations will never become briefs, and the vast majority of briefs will never
+
+21:45.140 --> 21:45.780
+become essays.
+
+21:46.280 --> 21:46.380
+Right.
+
+21:47.040 --> 21:50.780
+Okay, so let's talk about those relations, because this is the mechanism that actually
+
+21:50.780 --> 21:52.940
+forces the AI to think in interesting ways.
+
+21:53.020 --> 21:54.180
+Yes, the relations are key.
+
+21:55.100 --> 21:59.540
+Because the system doesn't just hand the AI three documents and say, hey, compare these.
+
+22:00.000 --> 22:03.020
+That would result in a generic Wikipedia-style summary.
+
+22:03.020 --> 22:03.660
+Exactly.
+
+22:04.700 --> 22:09.400
+Instead, the generator randomly applies one of five specific relations to the combination.
+
+22:10.400 --> 22:11.660
+First is transfer.
+
+22:12.460 --> 22:18.980
+This tells the AI to identify a working mechanism from source A and attempt to apply it to a problem
+
+22:18.980 --> 22:20.320
+found in source B.
+
+22:21.160 --> 22:22.260
+Second is tension.
+
+22:22.860 --> 22:26.980
+This instructs the AI to find a substantive, logical tension between the sources.
+
+22:26.980 --> 22:33.600
+But, and this is important, it explicitly forbids it from manufacturing fake, superficial disagreement
+
+22:33.600 --> 22:34.680
+just for the sake of drama.
+
+22:34.800 --> 22:35.780
+Third is composition.
+
+22:36.460 --> 22:42.100
+This asks the AI if the distinct processes described in A and B can be composed together
+
+22:42.100 --> 22:43.720
+into a single, larger pipeline.
+
+22:44.260 --> 22:45.300
+Fourth is boundary.
+
+22:45.640 --> 22:51.880
+The AI must use the facts in one source to construct a boundary case or a hard limit for the theories
+
+22:51.880 --> 22:52.760
+in the other source.
+
+22:52.760 --> 22:58.520
+And the fifth relation, which is used exclusively when dealing with triples, is triangulation.
+
+22:58.980 --> 23:01.500
+Triangulation is particularly brilliant.
+
+23:02.220 --> 23:04.160
+Imagine you draw three random documents.
+
+23:04.640 --> 23:07.720
+Source A might be a paper on urban traffic patterns.
+
+23:08.140 --> 23:11.720
+Source B is a study on the fluid dynamics of water through pipes.
+
+23:12.200 --> 23:15.560
+And Source C is an essay on the psychological stress of commuting.
+
+23:15.780 --> 23:17.480
+Okay, three totally different things.
+
+23:17.620 --> 23:17.780
+Right.
+
+23:18.120 --> 23:21.460
+The triangulation relation forces the AI into a strict framework.
+
+23:21.460 --> 23:24.080
+Source A must supply the core problem.
+
+23:24.740 --> 23:27.900
+Source B must supply a potential mechanism to solve it.
+
+23:28.580 --> 23:33.440
+And Source C must act as a strict constraint or counterexample that complicates the solution.
+
+23:34.080 --> 23:34.440
+Oh, man.
+
+23:34.860 --> 23:39.980
+You can instantly see how multiplying those 19 million combinations by five different relations,
+
+23:40.480 --> 23:43.540
+and then multiplying that by the different ways you can order the sources,
+
+23:43.540 --> 23:47.980
+because using A to solve B is very different from using B to solve A.
+
+23:48.160 --> 23:52.480
+It multiplies the total number of possible briefs several times over.
+
+23:52.800 --> 23:55.780
+We are talking about tens of millions of structured prompts.
+
+23:56.160 --> 23:56.400
+Yes.
+
+23:56.840 --> 24:00.200
+But, as you mentioned, most of those briefs are going to be absolute garbage.
+
+24:00.800 --> 24:07.360
+I mean, if the random generator combines a deeply technical essay on astrophysics with a personal essay on studio pottery,
+
+24:07.360 --> 24:10.760
+there might not be a valid intellectual bridge between them at all.
+
+24:11.420 --> 24:12.040
+Usually not.
+
+24:12.860 --> 24:17.060
+But the magic of the system is that occasionally there is a valid bridge.
+
+24:17.300 --> 24:22.500
+And Flyxion provides a stunning example of this in the documents, which they call the worked case.
+
+24:22.640 --> 24:23.200
+Yes.
+
+24:23.920 --> 24:25.480
+Let's walk through the worked case.
+
+24:26.200 --> 24:29.340
+The system was running random samples and hit seed number seven.
+
+24:29.840 --> 24:31.980
+It pulled two incredibly different documents.
+
+24:32.300 --> 24:32.900
+Tell them what they were.
+
+24:32.900 --> 24:38.160
+The first was an essay focused on information security and the routing of digital ideas.
+
+24:38.760 --> 24:43.920
+The second was an essay about building ecologically integrated computational infrastructure.
+
+24:44.760 --> 24:50.660
+Specifically, finding ways to put the massive thermal heat output of computer servers to use in local ecosystems.
+
+24:51.180 --> 24:51.440
+Right.
+
+24:52.320 --> 24:55.060
+So you have a digital security verification on one hand,
+
+24:55.420 --> 24:58.060
+and thermodynamics and building management on the other.
+
+24:58.380 --> 25:00.400
+Two entirely distinct domains.
+
+25:00.400 --> 25:04.200
+And the generator assigned them the tension relation.
+
+25:04.580 --> 25:09.320
+So the AI had to find a substantive, logical tension between them.
+
+25:09.940 --> 25:14.980
+And the output it proposed was a genuinely insightful outline titled,
+
+25:15.560 --> 25:17.560
+Useful Heat is Not a Proof of Trust.
+
+25:17.960 --> 25:18.680
+It's a great title.
+
+25:19.680 --> 25:21.300
+The AI's conjecture was fascinating.
+
+25:21.480 --> 25:25.340
+It proposed that if a machine is generating heat to warm a building,
+
+25:25.340 --> 25:30.340
+while simultaneously participating in a cryptographic security verification system,
+
+25:30.780 --> 25:32.720
+like a proof-of-work blockchain,
+
+25:33.560 --> 25:35.860
+it is performing two distinct services.
+
+25:36.160 --> 25:36.280
+Right.
+
+25:36.920 --> 25:41.220
+But the success of the machine in heating the building does not actually prove
+
+25:41.220 --> 25:43.320
+that its security decisions are valid.
+
+25:44.260 --> 25:47.140
+A bad actor could easily fabricate false security submissions
+
+25:47.140 --> 25:49.160
+just to keep the machines running,
+
+25:49.400 --> 25:51.020
+so they could harvest the useful heat.
+
+25:51.020 --> 25:54.120
+It is a remarkable conceptual distinction.
+
+25:54.120 --> 25:55.040
+It really is.
+
+25:55.140 --> 25:59.400
+The AI successfully isolated the scalar usefulness of the heat output
+
+25:59.400 --> 26:02.860
+from the binary logical guarantee of the security system.
+
+26:03.140 --> 26:03.860
+So smart.
+
+26:04.260 --> 26:05.560
+And even more impressively,
+
+26:05.920 --> 26:10.180
+the generated outline anticipated the strongest objection to its own premise.
+
+26:10.460 --> 26:13.740
+It noted that while heat isn't a proof of trust,
+
+26:14.240 --> 26:17.980
+shutting off the heat might act as a penalty for a breach of trust.
+
+26:17.980 --> 26:19.780
+It's an incredible insight.
+
+26:20.380 --> 26:23.620
+But, well, it brings up a massive concern.
+
+26:24.140 --> 26:25.580
+Oh, I know where you're going with this.
+
+26:25.840 --> 26:27.820
+Here's where it gets really interesting.
+
+26:28.340 --> 26:31.000
+If this system is churning out millions of these prompts,
+
+26:31.700 --> 26:35.560
+and the AI is capable of producing insights that sound this smart,
+
+26:36.260 --> 26:39.200
+how do we know the AI isn't just hallucinating connections?
+
+26:39.640 --> 26:40.760
+It's a very real danger.
+
+26:40.760 --> 26:44.960
+I mean, it's like having a Dewey Decimal system for ideas that haven't been written yet.
+
+26:45.460 --> 26:49.580
+The danger is that the AI is just playing Mad Libs with academic jargon.
+
+26:50.220 --> 26:54.480
+It knows what a tension essay sounds like, so it just fakes one.
+
+26:55.120 --> 26:58.660
+Flyxion defines that exact risk as fluency.
+
+26:59.260 --> 27:03.580
+A highly capable language model can produce a plausible-sounding semantic bridge
+
+27:03.580 --> 27:06.620
+between literally any two texts you give it.
+
+27:07.180 --> 27:09.620
+Plausibility is computationally cheap for an AI.
+
+27:09.620 --> 27:11.620
+Plausibility is cheap.
+
+27:12.380 --> 27:13.480
+Truth is expensive.
+
+27:14.300 --> 27:14.720
+Exactly.
+
+27:15.780 --> 27:17.900
+The system attempts to defend against this fluency
+
+27:17.900 --> 27:21.240
+by injecting strict negative constraints into the prompts.
+
+27:21.820 --> 27:23.880
+It explicitly instructs the AI that
+
+27:23.880 --> 27:27.140
+shared words do not establish shared mechanisms.
+
+27:27.980 --> 27:28.300
+Ah.
+
+27:28.860 --> 27:32.040
+So, just because both essays use the word network
+
+27:32.040 --> 27:33.780
+doesn't mean they are talking about the same thing.
+
+27:33.980 --> 27:34.260
+Right.
+
+27:34.260 --> 27:38.120
+It also explicitly forbids the AI from inventing quotations,
+
+27:38.120 --> 27:41.760
+fabricating survey results, or hallucinating data to make the bridge work.
+
+27:41.980 --> 27:43.960
+But do those constraints actually hold?
+
+27:44.380 --> 27:46.700
+Ultimately, those prompt constraints are fragile.
+
+27:47.040 --> 27:49.580
+The only real robust defense is the human reader
+
+27:49.580 --> 27:52.840
+who has to sit down, look at the AI's proposed bridge,
+
+27:52.880 --> 27:55.440
+and check it against the full original source texts
+
+27:55.440 --> 27:57.360
+to ensure the logic actually holds.
+
+27:57.360 --> 28:01.080
+And to manage this overwhelming ocean of ideas,
+
+28:01.220 --> 28:03.180
+the author did something truly wild.
+
+28:03.720 --> 28:09.040
+They built a mathematical map of the entire 19 million combination space.
+
+28:09.280 --> 28:12.000
+Using something called the combinatorial number system.
+
+28:12.500 --> 28:13.820
+Let's unpack how this works,
+
+28:14.200 --> 28:16.620
+because it solves a massive database problem.
+
+28:17.000 --> 28:20.140
+If you try to generate and save 19 million individual text files,
+
+28:20.400 --> 28:22.300
+your hard drive would be a nightmare to navigate.
+
+28:22.360 --> 28:23.040
+It would be unusable.
+
+28:23.040 --> 28:26.280
+So instead, the author used a mathematical theorem
+
+28:26.280 --> 28:30.120
+to assign a single permanent integer to every possible triple.
+
+28:30.920 --> 28:32.860
+They built an append-only registry.
+
+28:33.520 --> 28:35.960
+You could walk up to the system and type in an integer,
+
+28:36.280 --> 28:39.420
+say, combination number 14,201,
+
+28:39.680 --> 28:41.680
+and the system instantly uses the math
+
+28:41.680 --> 28:45.480
+to regenerate that exact, specific grouping of three documents.
+
+28:45.680 --> 28:49.540
+It creates a permanent numerical address system for unwritten thoughts.
+
+28:49.860 --> 28:52.320
+Which brings us to the perfect literary comparison.
+
+28:53.160 --> 28:56.000
+Flyxion explicitly compares this combinatorial space
+
+28:56.000 --> 28:59.200
+to Jorge Luis Borges' famous short story,
+
+28:59.720 --> 29:00.700
+The Library of Babel.
+
+29:00.840 --> 29:01.160
+Yes.
+
+29:01.700 --> 29:02.920
+For anyone who hasn't read it,
+
+29:03.020 --> 29:06.840
+the story describes a universe that is an infinite library.
+
+29:07.040 --> 29:08.140
+An infinite library.
+
+29:08.340 --> 29:11.300
+The library contains every single possible book
+
+29:11.300 --> 29:14.220
+that could ever be written using the basic alphabet.
+
+29:14.800 --> 29:17.320
+Because it contains every possible combination of letters,
+
+29:17.320 --> 29:20.260
+it contains the true story of your life,
+
+29:20.580 --> 29:21.960
+the cure for every disease,
+
+29:22.340 --> 29:23.960
+and the answer to every mystery.
+
+29:24.520 --> 29:25.040
+But...
+
+29:25.040 --> 29:27.220
+But, because it contains everything,
+
+29:27.500 --> 29:29.600
+the vast, overwhelming majority of the books
+
+29:29.600 --> 29:31.380
+are total random gibberish.
+
+29:32.020 --> 29:34.900
+Finding anything true or useful is mathematically impossible.
+
+29:35.480 --> 29:38.100
+The library is completely useless without a search algorithm.
+
+29:38.100 --> 29:43.380
+Flyxion makes the profound point that a combinatorial corpus of 488 documents
+
+29:43.380 --> 29:46.380
+is basically a miniature library of Babel.
+
+29:47.060 --> 29:49.900
+Yes, it's vastly smaller than Borges' infinite library,
+
+29:50.120 --> 29:53.660
+and yes, it's built from texts that already possess internal meaning
+
+29:53.660 --> 29:55.380
+because a human authored them.
+
+29:55.380 --> 29:58.220
+But the fundamental property of the library survives.
+
+29:58.560 --> 30:00.900
+Most of the combination space is pure noise
+
+30:00.900 --> 30:03.040
+relative to any specific human interest.
+
+30:03.760 --> 30:06.440
+Generating the 90 million combinations is the easy part.
+
+30:06.840 --> 30:09.400
+Building the mathematical map is the easy part.
+
+30:09.540 --> 30:09.720
+Right.
+
+30:10.060 --> 30:12.740
+A procedure that maps the space of possible ideas
+
+30:12.740 --> 30:16.140
+without providing a rigorous procedure for searching and validating them
+
+30:16.140 --> 30:18.240
+has only done the easy half of the work.
+
+30:18.640 --> 30:20.940
+The AI generator isn't creating truth.
+
+30:20.940 --> 30:23.940
+It's merely mapping the space of possible juxtapositions.
+
+30:23.940 --> 30:26.420
+And because exhaustive enumeration,
+
+30:26.840 --> 30:31.060
+meaning having the AI actually write out a brief for all 19 million combinations,
+
+30:31.620 --> 30:36.540
+would take over 36 years of continuous non-stop machine processing time.
+
+30:36.820 --> 30:39.220
+The design relies entirely on random sampling.
+
+30:39.560 --> 30:41.200
+You draw a manageable number of seeds,
+
+30:41.440 --> 30:43.360
+evaluate them, and see what the yield is.
+
+30:43.940 --> 30:45.880
+But that sheer volume of generation,
+
+30:46.340 --> 30:50.380
+combined with the AI's dangerous ability to fake fluency,
+
+30:50.380 --> 30:54.840
+forces us to look at the massive, systemic traps the author discovered.
+
+30:55.520 --> 30:58.760
+Because building a machine that can think a million times faster than you
+
+30:58.760 --> 31:00.720
+doesn't actually solve your problems.
+
+31:01.380 --> 31:04.740
+It creates entirely new, arguably more dangerous ones.
+
+31:05.120 --> 31:07.800
+Which brings us to the third major section of our deep dive,
+
+31:08.280 --> 31:10.880
+the economic and statistical traps of automation.
+
+31:11.540 --> 31:13.060
+Flyxion didn't just build this system.
+
+31:13.140 --> 31:16.060
+They subjected it to intense theoretical stress testing
+
+31:16.060 --> 31:17.520
+to see where it would break.
+
+31:18.020 --> 31:19.520
+Let's get into the document titled,
+
+31:19.780 --> 31:23.000
+The Publication Decision in the Calculus of Constructions.
+
+31:23.380 --> 31:26.180
+Because this is where the author goes deep into the economic theories
+
+31:26.180 --> 31:30.260
+of why making things more efficient actually makes our lives harder.
+
+31:30.380 --> 31:32.500
+It's so counterintuitive, but so true.
+
+31:32.840 --> 31:35.380
+The first trap they outline is the rebound effect,
+
+31:35.960 --> 31:38.380
+specifically known as the Jevons Paradox.
+
+31:39.040 --> 31:41.500
+Walk us through the history of William Stanley Jevons,
+
+31:41.500 --> 31:44.560
+because his observation about coal in the 19th century
+
+31:44.560 --> 31:47.560
+perfectly predicts our current crisis with AI.
+
+31:48.160 --> 31:51.020
+So William Stanley Jevons was an English economist
+
+31:51.020 --> 31:53.100
+working during the Industrial Revolution.
+
+31:53.960 --> 31:58.340
+In 1865, he observed a highly counterintuitive phenomenon
+
+31:58.340 --> 31:59.800
+regarding coal consumption.
+
+32:00.540 --> 32:03.100
+At the time, engineers were introducing new,
+
+32:03.280 --> 32:04.620
+highly efficient steam engines
+
+32:04.620 --> 32:06.900
+that required significantly less coal
+
+32:06.900 --> 32:08.060
+to do the same amount of work.
+
+32:08.060 --> 32:10.500
+The logical assumption was that
+
+32:10.500 --> 32:12.120
+because the engines were more efficient,
+
+32:12.520 --> 32:14.920
+the total consumption of coal in the country would decrease.
+
+32:15.200 --> 32:15.520
+Makes sense.
+
+32:15.880 --> 32:17.120
+Better engines, less coal needed.
+
+32:17.540 --> 32:20.000
+But Jevons observed the exact opposite.
+
+32:20.700 --> 32:21.880
+Because coal was now cheaper
+
+32:21.880 --> 32:23.400
+and far more efficiently utilized,
+
+32:23.660 --> 32:26.140
+it became highly profitable to use steam engines
+
+32:26.140 --> 32:28.560
+in vastly more industries and applications.
+
+32:28.960 --> 32:29.020
+Oh.
+
+32:29.300 --> 32:33.060
+The increase in efficiency actually expanded the overall demand.
+
+32:33.560 --> 32:35.420
+The more efficient the technology became,
+
+32:35.420 --> 32:37.780
+the more total coal was consumed.
+
+32:38.060 --> 32:41.800
+So if we pull that 19th century economic theory forward
+
+32:41.800 --> 32:45.320
+and apply it to our hyperactive AI research system,
+
+32:45.320 --> 32:47.100
+you see the exact same paradox.
+
+32:47.740 --> 32:48.920
+If you build an AI system
+
+32:48.920 --> 32:51.900
+that makes generating a complex intellectual brief
+
+32:51.900 --> 32:53.620
+incredibly cheap and fast,
+
+32:53.760 --> 32:56.700
+you do not actually save the human author any time.
+
+32:56.880 --> 32:58.720
+You just generate more briefs.
+
+32:58.880 --> 33:01.200
+Think about the price of a brief.
+
+33:01.200 --> 33:05.400
+The total cost is the computational cost for the AI to generate it,
+
+33:05.800 --> 33:08.740
+plus the cognitive cost for the human to review it.
+
+33:09.360 --> 33:09.680
+Exactly.
+
+33:10.480 --> 33:13.700
+The local language model drops the generation cost to near zero.
+
+33:14.160 --> 33:15.500
+But the review cost,
+
+33:15.860 --> 33:17.060
+the human sitting down,
+
+33:17.480 --> 33:18.660
+deeply reading the sources,
+
+33:19.120 --> 33:20.200
+checking the logical bridges,
+
+33:20.440 --> 33:21.440
+and confirming the ledger,
+
+33:21.800 --> 33:23.600
+that cost does not drop at all.
+
+33:24.240 --> 33:25.300
+Human attention is finite.
+
+33:26.000 --> 33:27.880
+It's the classic highway expansion problem.
+
+33:28.380 --> 33:29.620
+A city has terrible traffic,
+
+33:29.860 --> 33:32.520
+so they add three more lanes to the highway to solve the congestion.
+
+33:32.820 --> 33:33.840
+Oh yeah, induced demand.
+
+33:34.300 --> 33:34.620
+Right.
+
+33:34.940 --> 33:36.220
+Because the highway is wider,
+
+33:36.620 --> 33:38.880
+suddenly everyone in the suburbs decides to drive
+
+33:38.880 --> 33:39.920
+instead of taking the train.
+
+33:40.400 --> 33:41.180
+And within a year,
+
+33:41.300 --> 33:43.520
+the traffic is worse than it was before you built the lanes.
+
+33:44.040 --> 33:46.100
+If an author has a fixed cognitive capacity,
+
+33:46.100 --> 33:48.300
+say you can only deeply read,
+
+33:48.520 --> 33:48.920
+evaluate,
+
+33:49.180 --> 33:51.860
+and verify five complex briefs a day.
+
+33:52.500 --> 33:54.560
+But your new AI system can now generate
+
+33:54.560 --> 33:57.160
+500 highly plausible briefs a day.
+
+33:58.020 --> 34:00.000
+The improved generator doesn't make you more productive,
+
+34:00.140 --> 34:03.000
+it just creates an infinite crushing backlog.
+
+34:04.040 --> 34:05.380
+Flyxion's math proves that
+
+34:05.380 --> 34:07.980
+if the human is operating at their maximum capacity,
+
+34:08.500 --> 34:10.780
+any improvement in AI generation efficiency
+
+34:10.780 --> 34:13.720
+leads to a backlog that grows linearly and without bound.
+
+34:13.720 --> 34:16.420
+You are literally buried alive by your own efficiency.
+
+34:17.520 --> 34:19.780
+This reveals a fundamental law of automation, right?
+
+34:19.880 --> 34:21.740
+The resource that is not automated
+
+34:21.740 --> 34:24.500
+immediately becomes the ultimate bottleneck.
+
+34:25.140 --> 34:25.460
+Absolutely.
+
+34:26.100 --> 34:28.700
+And because the review burden rises so dramatically,
+
+34:29.020 --> 34:30.880
+the human starts looking for a way out.
+
+34:31.040 --> 34:32.240
+They start looking for shortcuts.
+
+34:32.940 --> 34:35.160
+They want a metric, a score, a proxy
+
+34:35.160 --> 34:38.240
+to tell them which 5% of those 500 briefs
+
+34:38.240 --> 34:39.400
+are actually worth their time.
+
+34:40.040 --> 34:41.900
+And that desperate search for a shortcut
+
+34:41.900 --> 34:44.460
+leads directly into the second massive trap,
+
+34:45.280 --> 34:45.840
+Goodhart's Law.
+
+34:46.560 --> 34:47.880
+When a measure becomes a target,
+
+34:48.180 --> 34:49.640
+it ceases to be a good measure.
+
+34:50.100 --> 34:50.600
+Precisely.
+
+34:50.940 --> 34:53.060
+The documents spend a significant amount of time
+
+34:53.060 --> 34:56.060
+exploring how numerical AI scoring metrics
+
+34:56.060 --> 34:58.580
+are inevitably gamed by the system.
+
+34:59.300 --> 35:00.920
+Flyxion categorizes this failure
+
+35:00.920 --> 35:03.400
+into three distinct types of statistical gaming,
+
+35:04.140 --> 35:06.660
+extremal, regressional, and adversarial.
+
+35:06.660 --> 35:09.360
+Let's do a deep dive into extremal gaming
+
+35:09.360 --> 35:11.540
+because the example Flyxion provides
+
+35:11.540 --> 35:13.240
+is both mathematically fascinating
+
+35:13.240 --> 35:14.780
+and deeply disturbing.
+
+35:15.420 --> 35:16.300
+Okay, lay it on me.
+
+35:16.780 --> 35:18.240
+In an earlier version of their code,
+
+35:18.420 --> 35:20.220
+before they invented the ledger of obligations,
+
+35:20.900 --> 35:22.680
+the author tested a scoring metric
+
+35:22.680 --> 35:26.080
+to evaluate the quality of the AI's generated text.
+
+35:26.580 --> 35:28.440
+They used a concept from information theory
+
+35:28.440 --> 35:30.400
+called unigram Shannon entropy.
+
+35:31.140 --> 35:33.420
+Now, unigram just means looking at text
+
+35:33.420 --> 35:34.880
+one word at a time, right?
+
+35:35.280 --> 35:35.660
+Exactly.
+
+35:35.900 --> 35:36.100
+Okay.
+
+35:36.680 --> 35:40.180
+And entropy, well, usually when we hear entropy,
+
+35:40.320 --> 35:42.360
+we think of chaos or disorder in physics.
+
+35:42.760 --> 35:44.480
+But in information theory,
+
+35:44.940 --> 35:48.440
+entropy is used to measure unpredictability or surprise.
+
+35:48.760 --> 35:51.760
+So the theory behind using entropy as a metric
+
+35:51.760 --> 35:52.940
+was quite intuitive.
+
+35:53.580 --> 35:55.220
+A good, well-written essay
+
+35:55.220 --> 35:57.000
+shouldn't be terribly repetitive.
+
+35:57.500 --> 36:00.320
+It should utilize a rich, varied vocabulary
+
+36:00.320 --> 36:01.800
+to express complex ideas.
+
+36:01.800 --> 36:02.240
+Yes.
+
+36:02.240 --> 36:05.320
+Therefore, if a text has high entropy,
+
+36:05.740 --> 36:06.940
+meaning the words are varied,
+
+36:07.200 --> 36:08.960
+unpredictable, and information-dense,
+
+36:09.180 --> 36:11.120
+it should theoretically indicate
+
+36:11.120 --> 36:12.700
+a higher quality piece of writing.
+
+36:13.200 --> 36:14.640
+The system was trying to mathematically
+
+36:14.640 --> 36:15.960
+penalize repetition.
+
+36:16.640 --> 36:18.740
+It makes total intuitive sense.
+
+36:19.100 --> 36:20.840
+If I use a diverse vocabulary,
+
+36:21.120 --> 36:22.740
+I'm probably writing a better paper
+
+36:22.740 --> 36:25.400
+than if I just use a handful of basic words.
+
+36:25.920 --> 36:26.980
+But to measure this,
+
+36:26.980 --> 36:29.020
+the system used a unit called a NAT.
+
+36:29.760 --> 36:30.420
+For context,
+
+36:30.600 --> 36:33.160
+a NAT is similar to a bit in computing.
+
+36:33.520 --> 36:37.000
+But while a bit is based on base two mathematics,
+
+36:37.320 --> 36:38.220
+zeros and ones,
+
+36:38.940 --> 36:41.320
+a NAT is based on natural logarithms.
+
+36:41.720 --> 36:43.980
+It's a way to measure the density of information.
+
+36:44.700 --> 36:46.380
+So Flyxion ran a test
+
+36:46.380 --> 36:47.880
+to see how this entropy metric
+
+36:47.880 --> 36:50.000
+actually behaved in the real world.
+
+36:50.360 --> 36:52.060
+They took a completely coherent,
+
+36:52.440 --> 36:54.820
+thoughtful, well-structured 13-word sentence.
+
+36:54.820 --> 36:58.080
+Then, they took those exact same 13 words
+
+36:58.080 --> 36:59.740
+and randomly shuffled them
+
+36:59.740 --> 37:00.880
+into absolute word salad.
+
+37:01.200 --> 37:01.840
+Complete gibberish.
+
+37:02.780 --> 37:04.160
+And what did the metric score them?
+
+37:04.840 --> 37:06.100
+Both the brilliant sentence
+
+37:06.100 --> 37:07.300
+and the absolute gibberish
+
+37:07.300 --> 37:10.480
+scored exactly 1.925 NATs of entropy.
+
+37:11.180 --> 37:13.340
+The metric was completely blind to word order.
+
+37:13.580 --> 37:13.840
+Wow.
+
+37:14.180 --> 37:15.060
+It could not distinguish
+
+37:15.060 --> 37:16.640
+a profound human thought
+
+37:16.640 --> 37:18.440
+from a random jumble of letters
+
+37:18.440 --> 37:20.660
+because the statistical diversity
+
+37:20.660 --> 37:22.060
+of the words was identical.
+
+37:22.060 --> 37:24.080
+But the extremal gaming aspect
+
+37:24.080 --> 37:25.700
+gets so much worse.
+
+37:26.240 --> 37:27.580
+Because of how the scoring formula
+
+37:27.580 --> 37:28.300
+was constructed,
+
+37:28.720 --> 37:30.360
+the system took the entropy score
+
+37:30.360 --> 37:31.800
+and subtracted it from 100
+
+37:31.800 --> 37:33.300
+to create a final grade.
+
+37:33.620 --> 37:35.740
+It actually mathematically reversed
+
+37:35.740 --> 37:36.860
+the intended penalty.
+
+37:37.320 --> 37:37.960
+Wait, what do you mean?
+
+37:38.220 --> 37:39.360
+The mathematics of the formula
+
+37:39.360 --> 37:41.120
+created an inverse relationship.
+
+37:41.660 --> 37:43.060
+A lower entropy score
+
+37:43.060 --> 37:45.200
+actually yielded a higher final grade
+
+37:45.200 --> 37:45.800
+for the AI.
+
+37:46.140 --> 37:46.760
+Oh no.
+
+37:46.760 --> 37:48.760
+And you have to ask yourself,
+
+37:48.980 --> 37:50.780
+what text has the absolute
+
+37:50.780 --> 37:53.060
+lowest possible entropy in existence?
+
+37:53.580 --> 37:55.680
+A text that is just the exact same word
+
+37:55.680 --> 37:57.240
+repeated over and over forever.
+
+37:57.660 --> 37:58.020
+Yes.
+
+37:58.520 --> 38:00.940
+The metric that was specifically built
+
+38:00.940 --> 38:02.400
+to penalize repetition
+
+38:02.400 --> 38:05.160
+literally mathematically rewarded
+
+38:05.160 --> 38:07.480
+a single token repeated infinitely.
+
+38:07.880 --> 38:08.580
+That's hilarious.
+
+38:09.060 --> 38:09.780
+And terrifying.
+
+38:10.100 --> 38:11.500
+It's the ultimate failure
+
+38:11.500 --> 38:12.600
+of extremal gaming.
+
+38:12.920 --> 38:14.200
+If the AI is programmed
+
+38:14.200 --> 38:16.240
+to maximize that final score,
+
+38:16.940 --> 38:18.660
+it won't write a nuanced essay.
+
+38:18.880 --> 38:20.420
+It will just scream the word
+
+38:20.420 --> 38:22.320
+the at you a thousand times
+
+38:22.320 --> 38:23.440
+and declare that it has
+
+38:23.440 --> 38:24.080
+written a masterpiece.
+
+38:24.660 --> 38:25.680
+Which is exactly why
+
+38:25.680 --> 38:26.500
+Flyxion abandoned
+
+38:26.500 --> 38:27.480
+mathematical scoring.
+
+38:27.900 --> 38:29.680
+But they pushed the analysis further.
+
+38:29.800 --> 38:31.000
+Because even if you avoid
+
+38:31.000 --> 38:32.440
+that specific math error
+
+38:32.440 --> 38:34.740
+and you use a highly sophisticated
+
+38:34.740 --> 38:36.780
+multi-billion parameter
+
+38:36.780 --> 38:38.720
+language model to give a subjective score
+
+38:38.720 --> 38:39.700
+from one to a hundred,
+
+38:40.300 --> 38:42.420
+you run headfirst into the second trap.
+
+38:43.060 --> 38:43.900
+Regressional gaming.
+
+38:44.200 --> 38:44.720
+Yes.
+
+38:45.500 --> 38:46.340
+This section features
+
+38:46.340 --> 38:48.200
+a brilliant statistical proof.
+
+38:48.660 --> 38:50.480
+Flyxion asks us to imagine
+
+38:50.480 --> 38:52.000
+that an AI's proxy score
+
+38:52.000 --> 38:53.920
+is made up of two distinct components.
+
+38:54.360 --> 38:56.080
+The true quality of the brief
+
+38:56.080 --> 38:58.000
+plus a random noise component.
+
+38:58.240 --> 38:59.040
+The noise represents
+
+38:59.040 --> 39:00.440
+the AI's measurement error, right?
+
+39:00.540 --> 39:01.440
+Like maybe the AI
+
+39:01.440 --> 39:02.540
+was just feeling generous
+
+39:02.540 --> 39:03.840
+or it heavily favored
+
+39:03.840 --> 39:05.260
+a specific stylistic keyword
+
+39:05.260 --> 39:06.780
+that artificially bumped the score.
+
+39:07.080 --> 39:07.520
+Exactly.
+
+39:07.840 --> 39:09.000
+True quality plus noise
+
+39:09.000 --> 39:10.080
+equals the proxy score.
+
+39:10.440 --> 39:11.660
+Now imagine you have the AI
+
+39:11.660 --> 39:13.240
+generate one thousand essays.
+
+39:13.240 --> 39:15.160
+If you sort those one thousand essays
+
+39:15.160 --> 39:16.360
+by that proxy score
+
+39:16.360 --> 39:18.100
+and select only the top ten,
+
+39:18.740 --> 39:20.600
+the mathematics definitively prove
+
+39:20.600 --> 39:22.560
+that you are inevitably selecting
+
+39:22.560 --> 39:23.420
+the essays that have
+
+39:23.420 --> 39:25.060
+the highest noise component.
+
+39:25.520 --> 39:26.060
+Wait, really?
+
+39:26.320 --> 39:26.680
+Yes.
+
+39:27.220 --> 39:28.820
+The expected value of the noise
+
+39:28.820 --> 39:30.120
+in your top selected group
+
+39:30.120 --> 39:31.100
+is strictly positive.
+
+39:31.620 --> 39:32.440
+You aren't just selecting
+
+39:32.440 --> 39:33.220
+the best essays,
+
+39:33.460 --> 39:35.040
+you are systematically selecting
+
+39:35.040 --> 39:35.600
+the essays
+
+39:35.600 --> 39:37.840
+where the AI's internal measurement error
+
+39:37.840 --> 39:39.620
+was the most massively inflated.
+
+39:39.620 --> 39:40.220
+Wow.
+
+39:40.840 --> 39:41.880
+So the AI is basically
+
+39:41.880 --> 39:43.040
+tricking you with statistics.
+
+39:43.500 --> 39:44.340
+You think you're skimming
+
+39:44.340 --> 39:45.200
+the absolute genius
+
+39:45.200 --> 39:46.140
+off the top of the pile,
+
+39:46.300 --> 39:47.560
+but you're actually just skimming
+
+39:47.560 --> 39:48.620
+the absolute maximum
+
+39:48.620 --> 39:49.640
+statistical error.
+
+39:50.440 --> 39:51.380
+Flyxion calls this
+
+39:51.380 --> 39:53.260
+the best of N illusion.
+
+39:53.820 --> 39:55.140
+Let me try an analogy here.
+
+39:55.640 --> 39:57.060
+Imagine you are rolling
+
+39:57.060 --> 39:58.040
+a 20-sided die.
+
+39:58.840 --> 40:00.040
+Because AI generation
+
+40:00.040 --> 40:01.500
+is so incredibly cheap,
+
+40:01.860 --> 40:02.840
+instead of rolling the die
+
+40:02.840 --> 40:03.520
+ten times
+
+40:03.520 --> 40:04.560
+and keeping the highest number,
+
+40:04.860 --> 40:05.780
+you roll the die
+
+40:05.780 --> 40:06.780
+a thousand times
+
+40:06.780 --> 40:07.800
+and keep the highest number.
+
+40:07.800 --> 40:09.780
+The highest score
+
+40:09.780 --> 40:10.640
+in the thousand rolls
+
+40:10.640 --> 40:12.480
+is obviously going to be higher
+
+40:12.480 --> 40:13.640
+than the highest score
+
+40:13.640 --> 40:14.240
+in the ten rolls.
+
+40:14.700 --> 40:15.920
+So you look at the results
+
+40:15.920 --> 40:16.380
+and you think
+
+40:16.380 --> 40:17.380
+the underlying system
+
+40:17.380 --> 40:18.120
+is getting better
+
+40:18.120 --> 40:20.200
+or the AI is getting smarter.
+
+40:20.500 --> 40:22.360
+But the true underlying quality,
+
+40:22.520 --> 40:23.540
+the 20-sided die,
+
+40:24.260 --> 40:25.280
+hasn't changed at all.
+
+40:25.760 --> 40:26.840
+You just roll the dice
+
+40:26.840 --> 40:27.600
+more times
+
+40:27.600 --> 40:28.180
+and select it
+
+40:28.180 --> 40:28.840
+for the absolute
+
+40:28.840 --> 40:29.920
+maximum variance.
+
+40:30.840 --> 40:32.000
+It is a devastating critique
+
+40:32.000 --> 40:33.360
+of how a vast majority
+
+40:33.360 --> 40:34.660
+of AI evaluations
+
+40:34.660 --> 40:35.500
+and leaderboards
+
+40:35.500 --> 40:36.580
+are structured today.
+
+40:36.580 --> 40:37.940
+If you select
+
+40:37.940 --> 40:39.820
+based on a noisy proxy metric,
+
+40:39.960 --> 40:40.440
+your selection
+
+40:40.440 --> 40:41.280
+will fundamentally
+
+40:41.280 --> 40:41.900
+overstate
+
+40:41.900 --> 40:43.340
+the true target value.
+
+40:44.240 --> 40:44.880
+And the third trap,
+
+40:45.220 --> 40:46.100
+adversarial gaming,
+
+40:46.660 --> 40:47.660
+brings us full circle
+
+40:47.660 --> 40:48.540
+back to the ledger
+
+40:48.540 --> 40:49.260
+of obligations
+
+40:49.260 --> 40:50.220
+we discussed earlier.
+
+40:50.700 --> 40:51.780
+If you design
+
+40:51.780 --> 40:53.460
+a beautiful ledger system,
+
+40:53.720 --> 40:55.160
+but you let the AI market's
+
+40:55.160 --> 40:56.080
+own obligations
+
+40:56.080 --> 40:56.580
+as confirmed,
+
+40:57.720 --> 40:59.100
+the AI will immediately
+
+40:59.100 --> 40:59.580
+figure out
+
+40:59.580 --> 41:00.600
+the cheapest route possible
+
+41:00.600 --> 41:01.460
+to close the ledger.
+
+41:01.460 --> 41:02.880
+It will assert
+
+41:02.880 --> 41:03.840
+that every objection
+
+41:03.840 --> 41:05.080
+has been answered perfectly
+
+41:05.080 --> 41:06.520
+without ever actually
+
+41:06.520 --> 41:07.880
+doing the intellectual work.
+
+41:08.420 --> 41:10.100
+So if numerical scores
+
+41:10.100 --> 41:11.700
+are mathematically doomed
+
+41:11.700 --> 41:12.180
+to fail
+
+41:12.180 --> 41:12.780
+because of
+
+41:12.780 --> 41:14.740
+extremal and regressional gaming
+
+41:14.740 --> 41:17.220
+and making the AI generation
+
+41:17.220 --> 41:18.840
+faster just buries you
+
+41:18.840 --> 41:19.480
+in an infinite
+
+41:19.480 --> 41:21.100
+Jevons paradox backlog,
+
+41:22.100 --> 41:23.300
+how on earth
+
+41:23.300 --> 41:24.080
+is a human supposed
+
+41:24.080 --> 41:25.620
+to survive this system?
+
+41:25.800 --> 41:26.520
+It sounds like
+
+41:26.520 --> 41:28.000
+building an automated
+
+41:28.000 --> 41:28.820
+thought machine
+
+41:28.820 --> 41:30.200
+isn't a productivity hack,
+
+41:30.200 --> 41:30.860
+it's a recipe
+
+41:30.860 --> 41:32.440
+for cognitive suicide.
+
+41:33.380 --> 41:33.860
+If we connect
+
+41:33.860 --> 41:34.500
+all these failures
+
+41:34.500 --> 41:35.760
+back to the core architecture,
+
+41:36.160 --> 41:37.260
+this is precisely
+
+41:37.260 --> 41:38.540
+why Flyxion moved
+
+41:38.540 --> 41:39.240
+to the strict,
+
+41:39.800 --> 41:40.540
+human-controlled
+
+41:40.540 --> 41:41.900
+ledger of obligations.
+
+41:42.960 --> 41:43.680
+The math proves
+
+41:43.680 --> 41:44.680
+that a metric counting
+
+41:44.680 --> 41:46.440
+in AI's self-assertions
+
+41:46.440 --> 41:47.380
+is fundamentally
+
+41:47.380 --> 41:48.920
+mathematically meaningless.
+
+41:49.560 --> 41:50.800
+So you have to step in.
+
+41:51.300 --> 41:51.800
+The only way
+
+41:51.800 --> 41:52.860
+to break the vicious cycle
+
+41:52.860 --> 41:53.980
+of the Jevons paradox
+
+41:53.980 --> 41:54.840
+in Goodhart's law
+
+41:54.840 --> 41:55.660
+is to introduce
+
+41:55.660 --> 41:56.500
+a strict,
+
+41:56.960 --> 41:58.280
+ungameable bottleneck.
+
+41:58.780 --> 41:59.460
+A human must
+
+41:59.460 --> 42:00.740
+physically break
+
+42:00.740 --> 42:01.180
+the loop.
+
+42:02.240 --> 42:02.860
+The human reader
+
+42:02.860 --> 42:03.400
+has to look
+
+42:03.400 --> 42:03.940
+at the AI's
+
+42:03.940 --> 42:04.740
+proposed connection,
+
+42:05.180 --> 42:05.740
+read the original
+
+42:05.740 --> 42:06.500
+source document,
+
+42:06.780 --> 42:07.840
+and manually,
+
+42:08.180 --> 42:09.080
+subjectively confirm
+
+42:09.080 --> 42:09.520
+the ledger.
+
+42:09.960 --> 42:11.180
+Which doesn't scale
+
+42:11.180 --> 42:11.540
+at all.
+
+42:11.700 --> 42:12.500
+It does not scale.
+
+42:12.720 --> 42:13.440
+It requires
+
+42:13.440 --> 42:14.940
+immense human effort.
+
+42:15.600 --> 42:16.060
+And that is
+
+42:16.060 --> 42:16.820
+exactly the point.
+
+42:17.080 --> 42:17.900
+The lack of scale
+
+42:17.900 --> 42:18.720
+is the primary
+
+42:18.720 --> 42:19.480
+security feature
+
+42:19.480 --> 42:20.440
+of the entire system.
+
+42:20.700 --> 42:22.400
+That is profound.
+
+42:23.120 --> 42:24.220
+The lack of scale
+
+42:24.220 --> 42:25.740
+is the security feature.
+
+42:25.740 --> 42:28.020
+We live in a tech culture
+
+42:28.020 --> 42:29.060
+that is so entirely
+
+42:29.060 --> 42:29.960
+obsessed with making
+
+42:29.960 --> 42:31.360
+every single process
+
+42:31.360 --> 42:33.020
+scale infinitely.
+
+42:33.660 --> 42:34.960
+But human judgment,
+
+42:35.460 --> 42:36.200
+true synthesis,
+
+42:36.500 --> 42:37.040
+and intellectual
+
+42:37.040 --> 42:37.800
+responsibility
+
+42:37.800 --> 42:39.560
+physically cannot scale.
+
+42:39.740 --> 42:40.180
+They can't.
+
+42:40.580 --> 42:41.980
+And that immense tension,
+
+42:42.280 --> 42:43.140
+the friction between
+
+42:43.140 --> 42:44.960
+the infinite generation
+
+42:44.960 --> 42:46.280
+capabilities of the machine
+
+42:46.280 --> 42:47.700
+and the finite,
+
+42:48.080 --> 42:48.800
+fragile judgment
+
+42:48.800 --> 42:49.440
+of the human,
+
+42:50.100 --> 42:51.000
+is what drove the author
+
+42:51.000 --> 42:52.000
+to the most eccentric
+
+42:52.000 --> 42:54.000
+and honestly mind-blowing
+
+42:54.000 --> 42:55.080
+part of this entire
+
+42:55.080 --> 42:55.900
+source material.
+
+42:56.460 --> 42:57.020
+You are referring
+
+42:57.020 --> 42:58.380
+to the formal
+
+42:58.380 --> 42:59.220
+mathematical debate
+
+42:59.220 --> 42:59.880
+in the calculus
+
+42:59.880 --> 43:00.660
+of constructions?
+
+43:00.900 --> 43:01.220
+Yes.
+
+43:01.960 --> 43:02.500
+Section 4,
+
+43:03.040 --> 43:04.260
+the calculus of decisions.
+
+43:04.660 --> 43:05.420
+Let's set the scene
+
+43:05.420 --> 43:05.860
+for the listener.
+
+43:06.020 --> 43:06.200
+Okay.
+
+43:06.880 --> 43:07.540
+The researcher,
+
+43:07.860 --> 43:08.280
+Flyxion,
+
+43:08.500 --> 43:09.160
+has built this
+
+43:09.160 --> 43:10.540
+incredible software pipeline.
+
+43:11.000 --> 43:11.920
+They have mapped out
+
+43:11.920 --> 43:12.480
+the staggering
+
+43:12.480 --> 43:13.460
+mathematical proofs
+
+43:13.460 --> 43:14.560
+about combinatorics.
+
+43:14.760 --> 43:15.660
+They have rigorously
+
+43:15.660 --> 43:16.700
+documented the economic
+
+43:16.700 --> 43:17.640
+traps of automation.
+
+43:18.080 --> 43:18.540
+They have written
+
+43:18.540 --> 43:19.640
+these two dense,
+
+43:20.040 --> 43:20.820
+brilliant essays
+
+43:20.820 --> 43:22.160
+describing this entire
+
+43:22.160 --> 43:23.400
+untested design.
+
+43:23.620 --> 43:24.280
+But they hit a wall.
+
+43:24.520 --> 43:25.220
+A huge wall.
+
+43:25.740 --> 43:27.260
+They are entirely paralyzed
+
+43:27.260 --> 43:28.040
+about whether or not
+
+43:28.040 --> 43:28.900
+to actually publish
+
+43:28.900 --> 43:29.880
+the essays on the internet
+
+43:29.880 --> 43:31.000
+because the code
+
+43:31.000 --> 43:32.060
+hasn't been fully
+
+43:32.060 --> 43:32.680
+stress-tested
+
+43:32.680 --> 43:33.980
+against a large-scale model
+
+43:33.980 --> 43:35.080
+and they are terrified
+
+43:35.080 --> 43:36.840
+that a title like
+
+43:36.840 --> 43:38.520
+19 million possible essays
+
+43:38.520 --> 43:39.480
+might be wildly
+
+43:39.480 --> 43:40.980
+misinterpreted as clickbait
+
+43:40.980 --> 43:42.440
+by people who refuse
+
+43:42.440 --> 43:43.540
+to read the underlying math.
+
+43:43.740 --> 43:44.780
+Which is a valid fear.
+
+43:45.060 --> 43:45.340
+Totally.
+
+43:45.920 --> 43:46.640
+So what do they do?
+
+43:47.240 --> 43:48.060
+Most people would just
+
+43:48.060 --> 43:49.140
+make a pros and cons list
+
+43:49.140 --> 43:50.220
+or maybe ask a colleague
+
+43:50.220 --> 43:50.820
+for advice.
+
+43:51.500 --> 43:52.020
+Not Flyxion.
+
+43:52.740 --> 43:54.040
+Flyxion writes a formal
+
+43:54.040 --> 43:54.760
+debate essay
+
+43:54.760 --> 43:55.840
+and then attempts
+
+43:55.840 --> 43:56.740
+to solve their own
+
+43:56.740 --> 43:57.760
+psychological dilemma
+
+43:57.760 --> 43:59.020
+using literal,
+
+43:59.420 --> 44:00.720
+hardcore formal mathematics.
+
+44:01.280 --> 44:03.000
+It is a breathtaking exercise
+
+44:03.000 --> 44:04.040
+in the formalization
+
+44:04.040 --> 44:05.220
+of human anxiety.
+
+44:05.680 --> 44:06.840
+Flyxion explicitly states
+
+44:06.840 --> 44:07.420
+the hypothesis
+
+44:07.420 --> 44:08.420
+they are trying to solve.
+
+44:08.620 --> 44:09.360
+They call it H.
+
+44:09.720 --> 44:10.540
+Hypothesis H.
+
+44:10.740 --> 44:11.980
+The proposition that
+
+44:11.980 --> 44:13.240
+publishing the two essays
+
+44:13.240 --> 44:14.420
+in the public repository
+
+44:14.420 --> 44:15.520
+in their present,
+
+44:15.780 --> 44:16.760
+untested state
+
+44:16.760 --> 44:17.560
+is warranted.
+
+44:17.560 --> 44:18.900
+And to mathematically
+
+44:18.900 --> 44:20.260
+prove or disprove H,
+
+44:20.400 --> 44:21.340
+they develop an intricate
+
+44:21.340 --> 44:22.240
+logical system.
+
+44:22.560 --> 44:23.500
+They use a dependent
+
+44:23.500 --> 44:24.300
+type theory
+
+44:24.300 --> 44:25.580
+in the style of the calculus
+
+44:25.580 --> 44:26.920
+of inductive constructions
+
+44:26.920 --> 44:28.460
+and they combine it
+
+44:28.460 --> 44:29.440
+with a bespoke process
+
+44:29.440 --> 44:30.120
+algebra called
+
+44:30.120 --> 44:30.660
+sphere pop.
+
+44:30.660 --> 44:32.700
+Okay, we need to slow down
+
+44:32.700 --> 44:33.700
+and unpack these terms
+
+44:33.700 --> 44:34.660
+because this is where
+
+44:34.660 --> 44:35.320
+the math gets
+
+44:35.320 --> 44:37.180
+intensely abstract.
+
+44:38.280 --> 44:39.140
+Let's start with
+
+44:39.140 --> 44:40.220
+dependent type theory.
+
+44:40.700 --> 44:41.720
+What does that actually mean
+
+44:41.720 --> 44:42.440
+in the context
+
+44:42.440 --> 44:43.880
+of making a decision?
+
+44:43.880 --> 44:45.360
+Think of it this way.
+
+44:45.620 --> 44:47.140
+In standard computer programming,
+
+44:47.360 --> 44:48.200
+you have data types.
+
+44:48.400 --> 44:49.340
+A number is a type.
+
+44:49.440 --> 44:50.500
+A line of text is a type.
+
+44:51.140 --> 44:52.400
+In dependent type theory,
+
+44:52.540 --> 44:54.360
+the types can depend on values.
+
+44:54.660 --> 44:55.480
+Okay, so?
+
+44:55.900 --> 44:57.120
+This allows the programming
+
+44:57.120 --> 44:58.220
+language itself
+
+44:58.220 --> 44:59.580
+to act as a mathematical
+
+44:59.580 --> 45:00.420
+proof checker.
+
+45:00.680 --> 45:01.760
+You aren't just writing code
+
+45:01.760 --> 45:02.740
+that runs a calculation.
+
+45:03.260 --> 45:04.360
+The structure of the code
+
+45:04.360 --> 45:05.700
+is the proof.
+
+45:06.280 --> 45:07.220
+If the code compiles
+
+45:07.220 --> 45:08.560
+successfully without errors,
+
+45:08.800 --> 45:09.940
+the mathematical proposition
+
+45:09.940 --> 45:11.280
+is proven to be true.
+
+45:12.240 --> 45:13.420
+Flyxion is trying to write
+
+45:13.420 --> 45:14.320
+a computer program
+
+45:14.320 --> 45:15.220
+where the successful
+
+45:15.220 --> 45:16.420
+compilation of the code
+
+45:16.420 --> 45:18.100
+acts as a mathematical guarantee
+
+45:18.100 --> 45:19.660
+that publishing the essays
+
+45:19.660 --> 45:20.800
+is the right choice.
+
+45:20.960 --> 45:22.020
+That is wild.
+
+45:23.000 --> 45:24.000
+And what about sphere pop?
+
+45:24.140 --> 45:24.820
+It sounds like
+
+45:24.820 --> 45:26.620
+a brand of bubble gum
+
+45:26.620 --> 45:27.140
+or candy.
+
+45:27.780 --> 45:29.180
+What is a process algebra
+
+45:29.180 --> 45:30.920
+and how does sphere pop work?
+
+45:30.920 --> 45:32.600
+Process algebra is a way
+
+45:32.600 --> 45:34.100
+to mathematically model
+
+45:34.100 --> 45:35.100
+concurrent systems.
+
+45:35.500 --> 45:36.600
+Systems where multiple things
+
+45:36.600 --> 45:37.100
+are happening
+
+45:37.100 --> 45:37.940
+and interacting
+
+45:37.940 --> 45:38.740
+at the same time.
+
+45:39.320 --> 45:41.120
+Flyxion invented sphere pop
+
+45:41.120 --> 45:42.420
+to model the life cycle
+
+45:42.420 --> 45:43.060
+of the decision.
+
+45:43.060 --> 45:44.240
+Okay, I'm tracking.
+
+45:44.820 --> 45:45.880
+Imagine computation
+
+45:45.880 --> 45:46.980
+proceeding by popping
+
+45:46.980 --> 45:48.040
+nested circles.
+
+45:48.800 --> 45:49.440
+Think of a circle
+
+45:49.440 --> 45:50.460
+drawn on a piece of paper.
+
+45:50.940 --> 45:51.660
+Inside that circle
+
+45:51.660 --> 45:53.060
+is a mathematical operator
+
+45:53.060 --> 45:54.700
+and a list of arguments
+
+45:54.700 --> 45:55.340
+or conditions.
+
+45:55.840 --> 45:56.920
+When all the conditions
+
+45:56.920 --> 45:57.740
+inside the circle
+
+45:57.740 --> 45:58.220
+are met
+
+45:58.220 --> 45:59.640
+and become stable values,
+
+46:00.000 --> 46:00.700
+the circle pops.
+
+46:00.880 --> 46:01.740
+Oh, like popping a bubble.
+
+46:02.340 --> 46:02.800
+Exactly.
+
+46:03.300 --> 46:04.540
+It evaluates the operator
+
+46:04.540 --> 46:06.200
+and replaces the entire circle
+
+46:06.200 --> 46:07.100
+with the final result.
+
+46:07.440 --> 46:08.420
+The system evaluates
+
+46:08.420 --> 46:09.320
+a complex decision
+
+46:09.320 --> 46:10.300
+from the inside out,
+
+46:10.660 --> 46:11.680
+popping nested circles
+
+46:11.680 --> 46:12.140
+of logic
+
+46:12.140 --> 46:13.020
+until you are left
+
+46:13.020 --> 46:13.960
+with a single answer.
+
+46:14.500 --> 46:16.380
+So, Flyxion uses this
+
+46:16.380 --> 46:17.500
+to model the life cycle
+
+46:17.500 --> 46:18.240
+of an idea
+
+46:18.240 --> 46:19.800
+moving through states
+
+46:19.800 --> 46:20.300
+of commitment,
+
+46:20.660 --> 46:21.600
+like open,
+
+46:22.000 --> 46:22.400
+bound,
+
+46:23.140 --> 46:23.700
+transformed,
+
+46:24.780 --> 46:25.180
+verified,
+
+46:25.600 --> 46:26.440
+and finally
+
+46:26.440 --> 46:28.300
+collapsed into a decision.
+
+46:28.820 --> 46:29.160
+Yes.
+
+46:29.700 --> 46:30.020
+So,
+
+46:30.160 --> 46:30.740
+they are trying
+
+46:30.740 --> 46:32.200
+to mathematically model
+
+46:32.200 --> 46:33.540
+the psychological act
+
+46:33.540 --> 46:34.040
+of deciding
+
+46:34.040 --> 46:34.900
+to hit publish.
+
+46:34.900 --> 46:36.160
+And to do this,
+
+46:36.660 --> 46:37.480
+they forced the math
+
+46:37.480 --> 46:38.020
+to evaluate
+
+46:38.020 --> 46:39.300
+five distinct options.
+
+46:39.800 --> 46:40.460
+Let's walk through
+
+46:40.460 --> 46:40.880
+the choices
+
+46:40.880 --> 46:41.940
+they fed into the system.
+
+46:42.600 --> 46:43.220
+Option one.
+
+46:43.580 --> 46:44.160
+Publish now.
+
+46:44.680 --> 46:45.940
+Just put the raw text
+
+46:45.940 --> 46:46.420
+out there
+
+46:46.420 --> 46:47.820
+and let the internet
+
+46:47.820 --> 46:48.400
+deal with it.
+
+46:48.780 --> 46:49.440
+Option two.
+
+46:49.740 --> 46:50.640
+Publish with status.
+
+46:51.500 --> 46:52.460
+This means they publish
+
+46:52.460 --> 46:53.000
+the text,
+
+46:53.120 --> 46:53.680
+but they attach
+
+46:53.680 --> 46:55.220
+specific editorial caveats.
+
+46:55.640 --> 46:56.420
+A giant disclaimer
+
+46:56.420 --> 46:56.940
+that says,
+
+46:57.360 --> 46:57.580
+warning,
+
+46:58.120 --> 46:59.100
+this code is untested.
+
+47:00.240 --> 47:01.080
+Option three.
+
+47:01.280 --> 47:01.940
+Option three.
+
+47:02.640 --> 47:03.420
+Hold with hash.
+
+47:03.420 --> 47:05.000
+This is fascinating.
+
+47:05.160 --> 47:06.300
+It means they don't
+
+47:06.300 --> 47:07.220
+publish the text,
+
+47:07.360 --> 47:08.120
+but they generate
+
+47:08.120 --> 47:09.860
+a cryptographic hash
+
+47:09.860 --> 47:10.620
+of the essays
+
+47:10.620 --> 47:11.480
+and publish that.
+
+47:11.800 --> 47:12.760
+It proves to the world
+
+47:12.760 --> 47:13.740
+they had the idea
+
+47:13.740 --> 47:14.820
+on a specific date
+
+47:14.820 --> 47:15.980
+without actually
+
+47:15.980 --> 47:17.440
+revealing the idea itself.
+
+47:17.960 --> 47:18.640
+Option four.
+
+47:19.280 --> 47:20.240
+Hold without hash.
+
+47:21.060 --> 47:21.760
+Total secrecy.
+
+47:22.060 --> 47:22.700
+Keep it in a drawer.
+
+47:23.400 --> 47:24.460
+And option five.
+
+47:24.920 --> 47:25.920
+Publish with status
+
+47:25.920 --> 47:26.880
+and run.
+
+47:27.400 --> 47:27.720
+Meaning,
+
+47:27.980 --> 47:28.740
+wait until they actually
+
+47:28.740 --> 47:29.180
+have the time
+
+47:29.180 --> 47:29.920
+to run the code,
+
+47:30.400 --> 47:31.300
+verify the results,
+
+47:31.460 --> 47:32.120
+and then publish
+
+47:32.120 --> 47:32.860
+the whole package.
+
+47:33.420 --> 47:34.460
+To evaluate
+
+47:34.460 --> 47:35.440
+these five options,
+
+47:35.600 --> 47:36.520
+the mathematical model
+
+47:36.520 --> 47:37.240
+grades them against
+
+47:37.240 --> 47:38.580
+four specific attributes
+
+47:38.580 --> 47:39.260
+or risks.
+
+47:39.980 --> 47:41.000
+First is record.
+
+47:41.400 --> 47:42.540
+How well does the option
+
+47:42.540 --> 47:43.720
+prove the author's priority
+
+47:43.720 --> 47:44.680
+in having the idea?
+
+47:45.140 --> 47:46.000
+Second is feedback.
+
+47:46.600 --> 47:47.580
+How much valuable insight
+
+47:47.580 --> 47:48.380
+can the author gain
+
+47:48.380 --> 47:49.700
+from others reading the work?
+
+47:50.160 --> 47:51.660
+Third is misreading exposure.
+
+47:52.200 --> 47:53.120
+The severe risk
+
+47:53.120 --> 47:53.560
+of the public
+
+47:53.560 --> 47:54.620
+ignoring the nuance
+
+47:54.620 --> 47:55.580
+and assuming the essays
+
+47:55.580 --> 47:56.240
+are a proven,
+
+47:56.540 --> 47:57.240
+finished product
+
+47:57.240 --> 47:58.160
+rather than
+
+47:58.160 --> 47:59.320
+a theoretical design.
+
+47:59.800 --> 48:00.760
+And fourth is
+
+48:00.760 --> 48:01.620
+revision exposure.
+
+48:01.620 --> 48:02.620
+The personal
+
+48:02.620 --> 48:03.540
+and professional risk
+
+48:03.540 --> 48:04.880
+of having to publicly
+
+48:04.880 --> 48:06.020
+retract the essays
+
+48:06.020 --> 48:07.640
+if the untested code
+
+48:07.640 --> 48:08.480
+ultimately fails?
+
+48:09.260 --> 48:09.860
+So they feed
+
+48:09.860 --> 48:10.720
+all these options
+
+48:10.720 --> 48:11.640
+and all these risks
+
+48:11.640 --> 48:12.960
+into the dependent type
+
+48:12.960 --> 48:14.000
+theory and the popping
+
+48:14.000 --> 48:14.980
+circles of sphere pop.
+
+48:15.400 --> 48:16.600
+And what does
+
+48:16.600 --> 48:17.280
+the math say?
+
+48:17.860 --> 48:19.040
+Does the supercomputer
+
+48:19.040 --> 48:19.980
+give them an answer?
+
+48:20.520 --> 48:21.520
+The system evaluates
+
+48:21.520 --> 48:22.860
+the choices using a concept
+
+48:22.860 --> 48:24.060
+called Pareto dominance.
+
+48:24.740 --> 48:25.360
+In economics,
+
+48:25.520 --> 48:26.040
+one option
+
+48:26.040 --> 48:26.900
+Pareto dominates
+
+48:26.900 --> 48:27.860
+another if it is
+
+48:27.860 --> 48:28.860
+better in at least
+
+48:28.860 --> 48:29.420
+one regard
+
+48:29.420 --> 48:30.220
+and strictly
+
+48:30.220 --> 48:31.100
+no worse
+
+48:31.100 --> 48:31.980
+than any other regard.
+
+48:32.300 --> 48:32.400
+Right.
+
+48:32.660 --> 48:33.520
+The math successfully
+
+48:33.520 --> 48:34.240
+proves that certain
+
+48:34.240 --> 48:35.480
+options dominate others.
+
+48:36.080 --> 48:36.560
+For instance,
+
+48:36.840 --> 48:38.300
+publishing with strict caveats
+
+48:38.300 --> 48:39.660
+obviously dominates
+
+48:39.660 --> 48:40.940
+publishing without caveats
+
+48:40.940 --> 48:42.120
+because it reduces
+
+48:42.120 --> 48:43.120
+misreading exposure
+
+48:43.120 --> 48:43.840
+without hurting
+
+48:43.840 --> 48:44.660
+the feedback score.
+
+48:44.780 --> 48:45.220
+Makes sense.
+
+48:45.920 --> 48:46.640
+But when the system
+
+48:46.640 --> 48:47.280
+tries to choose
+
+48:47.280 --> 48:48.160
+between publish
+
+48:48.160 --> 48:48.940
+with caveats
+
+48:48.940 --> 48:49.720
+and hold
+
+48:49.720 --> 48:50.940
+with cryptographic hash,
+
+48:51.360 --> 48:52.060
+the mathematics
+
+48:52.060 --> 48:52.840
+gridlock.
+
+48:53.360 --> 48:54.160
+It gets stuck.
+
+48:54.920 --> 48:55.500
+Choosing between
+
+48:55.500 --> 48:56.220
+those two options
+
+48:56.220 --> 48:57.300
+requires a fundamental
+
+48:57.300 --> 48:58.800
+subjective value judgment.
+
+48:59.440 --> 49:00.380
+Do you personally
+
+49:00.380 --> 49:01.620
+value public feedback
+
+49:01.620 --> 49:02.900
+more than you fear
+
+49:02.900 --> 49:03.580
+public revision?
+
+49:04.360 --> 49:05.240
+The formal mathematical
+
+49:05.240 --> 49:06.200
+logic explicitly
+
+49:06.200 --> 49:06.940
+halts and says,
+
+49:07.340 --> 49:08.120
+I cannot make this
+
+49:08.120 --> 49:09.200
+value judgment for you.
+
+49:09.620 --> 49:10.240
+It's incredible.
+
+49:10.660 --> 49:11.740
+So what does this
+
+49:11.740 --> 49:12.200
+all mean?
+
+49:12.960 --> 49:13.820
+It's like trying to use
+
+49:13.820 --> 49:14.820
+a multi-million dollar
+
+49:14.820 --> 49:15.420
+supercomputer
+
+49:15.420 --> 49:16.940
+to decide what you
+
+49:16.940 --> 49:17.820
+should have for lunch,
+
+49:18.240 --> 49:19.040
+only for the
+
+49:19.040 --> 49:20.200
+supercomputer to churn
+
+49:20.200 --> 49:20.980
+for three days
+
+49:20.980 --> 49:21.900
+and finally print out
+
+49:21.900 --> 49:22.780
+a receipt that says,
+
+49:22.980 --> 49:24.500
+I cannot taste food.
+
+49:25.180 --> 49:25.960
+That's a brilliant
+
+49:25.960 --> 49:26.480
+analogy.
+
+49:26.480 --> 49:27.940
+All of this towering
+
+49:27.940 --> 49:29.080
+incredible mathematical
+
+49:29.080 --> 49:30.720
+architecture just to
+
+49:30.720 --> 49:31.680
+mathematically prove
+
+49:31.680 --> 49:33.060
+that math cannot make
+
+49:33.060 --> 49:34.540
+a human value judgment.
+
+49:35.280 --> 49:36.380
+It perfectly illustrates
+
+49:36.380 --> 49:37.200
+the boundary of
+
+49:37.200 --> 49:37.840
+formal logic.
+
+49:38.780 --> 49:39.260
+And Flyxion
+
+49:39.260 --> 49:40.040
+doesn't stop there.
+
+49:40.400 --> 49:41.160
+They also try to
+
+49:41.160 --> 49:42.180
+incorporate external
+
+49:42.180 --> 49:43.800
+highly unlikely risks
+
+49:43.800 --> 49:44.600
+into this calculus.
+
+49:45.220 --> 49:46.000
+They introduce an
+
+49:46.000 --> 49:46.760
+equation they call
+
+49:46.760 --> 49:48.440
+the semi-paranoid
+
+49:48.440 --> 49:49.180
+risk rule.
+
+49:49.580 --> 49:51.160
+Yes, the semi-paranoid
+
+49:51.160 --> 49:51.480
+rule.
+
+49:52.240 --> 49:53.340
+This section is
+
+49:53.340 --> 49:54.400
+brilliant because it
+
+49:54.400 --> 49:55.120
+deals with the
+
+49:55.120 --> 49:56.520
+anxieties we all have
+
+49:56.520 --> 49:57.580
+about the digital world.
+
+49:58.300 --> 49:59.360
+Flyxion was deeply
+
+49:59.360 --> 50:00.040
+worried about what
+
+50:00.040 --> 50:01.500
+would happen if the
+
+50:01.500 --> 50:02.740
+massive tech provider
+
+50:02.740 --> 50:03.540
+hosting their code
+
+50:03.540 --> 50:04.860
+repositories suddenly
+
+50:04.860 --> 50:06.140
+arbitrarily deleted
+
+50:06.140 --> 50:06.780
+their accounts.
+
+50:06.900 --> 50:07.460
+Which happens.
+
+50:07.640 --> 50:08.560
+It happens to people
+
+50:08.560 --> 50:09.460
+all the time.
+
+50:09.880 --> 50:11.100
+But Flyxion had no
+
+50:11.100 --> 50:11.800
+way of knowing the
+
+50:11.800 --> 50:13.340
+actual probability of
+
+50:13.340 --> 50:14.280
+that happening to them.
+
+50:14.860 --> 50:16.240
+So how do you
+
+50:16.240 --> 50:17.320
+mathematically decide
+
+50:17.320 --> 50:18.220
+whether to spend time
+
+50:18.220 --> 50:18.960
+and money protecting
+
+50:18.960 --> 50:19.960
+against a disastrous
+
+50:19.960 --> 50:21.420
+event when you have
+
+50:21.420 --> 50:23.000
+absolutely no idea
+
+50:23.000 --> 50:23.720
+what the odds are?
+
+50:24.500 --> 50:25.400
+The author constructs
+
+50:25.400 --> 50:27.140
+a mini-max-regret rule.
+
+50:27.620 --> 50:28.380
+The equation they
+
+50:28.380 --> 50:29.000
+arrive at is
+
+50:29.000 --> 50:30.060
+surprisingly elegant.
+
+50:30.860 --> 50:31.600
+You should mitigate
+
+50:31.600 --> 50:32.820
+the risk if,
+
+50:33.320 --> 50:34.280
+and only if,
+
+50:34.680 --> 50:35.980
+two times the cost
+
+50:35.980 --> 50:36.740
+of the mitigation
+
+50:36.740 --> 50:38.380
+is less than the
+
+50:38.380 --> 50:39.380
+total loss
+
+50:39.380 --> 50:40.580
+minus the residual
+
+50:40.580 --> 50:41.100
+loss.
+
+50:41.340 --> 50:41.620
+Okay.
+
+50:42.020 --> 50:43.140
+2K is less than
+
+50:43.140 --> 50:43.880
+L minus P.
+
+50:44.220 --> 50:44.540
+Right.
+
+50:45.240 --> 50:46.140
+Flyxion calls it
+
+50:46.140 --> 50:47.420
+semi-paranoid for a
+
+50:47.420 --> 50:48.620
+very specific reason.
+
+50:49.280 --> 50:50.460
+It is paranoid enough
+
+50:50.460 --> 50:51.460
+to protect you against
+
+50:51.460 --> 50:52.800
+catastrophic risks,
+
+50:52.980 --> 50:53.620
+even when the
+
+50:53.620 --> 50:54.800
+probability is totally
+
+50:54.800 --> 50:55.240
+unknown.
+
+50:55.900 --> 50:57.300
+But it's only semi-paranoid
+
+50:57.300 --> 50:58.780
+because the 2K multiplier
+
+50:58.780 --> 51:00.360
+actively bounds your fear.
+
+51:00.560 --> 51:01.300
+How does it do that?
+
+51:01.620 --> 51:02.520
+It refuses any
+
+51:02.520 --> 51:03.460
+mitigation strategy
+
+51:03.460 --> 51:04.520
+that costs as much
+
+51:04.520 --> 51:05.640
+as half the loss
+
+51:05.640 --> 51:06.200
+it avoids.
+
+51:06.660 --> 51:07.340
+It mathematically
+
+51:07.340 --> 51:08.500
+bounds the paranoia
+
+51:08.500 --> 51:09.200
+so you don't spend
+
+51:09.200 --> 51:09.900
+your entire life
+
+51:09.900 --> 51:11.140
+building digital bunkers.
+
+51:11.280 --> 51:12.160
+It's a perfect algorithm
+
+51:12.160 --> 51:12.980
+for managing
+
+51:12.980 --> 51:14.380
+modern digital anxiety.
+
+51:15.020 --> 51:15.680
+And speaking of
+
+51:15.680 --> 51:16.560
+digital anxieties,
+
+51:17.120 --> 51:17.860
+they also tackle
+
+51:17.860 --> 51:18.840
+the illusion of
+
+51:18.840 --> 51:20.260
+the contribution graph.
+
+51:20.260 --> 51:22.060
+Oh, this is so relevant.
+
+51:22.320 --> 51:22.920
+Anyone who works
+
+51:22.920 --> 51:23.820
+in software development
+
+51:23.820 --> 51:24.660
+knows about the
+
+51:24.660 --> 51:26.140
+GitHub contribution graph.
+
+51:26.820 --> 51:27.240
+It's those little
+
+51:27.240 --> 51:28.240
+green squares on your
+
+51:28.240 --> 51:29.020
+profile that show
+
+51:29.020 --> 51:29.920
+how many code commits
+
+51:29.920 --> 51:30.820
+you make every single day.
+
+51:31.100 --> 51:32.180
+It has become a
+
+51:32.180 --> 51:33.400
+massive proxy metric
+
+51:33.400 --> 51:34.240
+for how hard
+
+51:34.240 --> 51:35.160
+a programmer works.
+
+51:35.860 --> 51:36.380
+But Flyxion
+
+51:36.380 --> 51:37.300
+mathematically proves
+
+51:37.300 --> 51:37.860
+that comparing
+
+51:37.860 --> 51:38.660
+those green squares
+
+51:38.660 --> 51:39.320
+across different
+
+51:39.320 --> 51:39.900
+coding cultures
+
+51:39.900 --> 51:41.080
+is totally
+
+51:41.080 --> 51:42.280
+fundamentally invalid.
+
+51:42.960 --> 51:43.740
+They prove it by
+
+51:43.740 --> 51:44.660
+focusing on the
+
+51:44.660 --> 51:45.760
+granularity of the
+
+51:45.760 --> 51:46.520
+commits, right?
+
+51:46.920 --> 51:47.280
+Yes.
+
+51:48.000 --> 51:48.780
+Different programmers
+
+51:48.780 --> 51:49.800
+work in completely
+
+51:49.800 --> 51:50.400
+different ways.
+
+51:50.700 --> 51:51.380
+Some developers
+
+51:51.380 --> 51:52.320
+will work offline
+
+51:52.320 --> 51:53.000
+for a week
+
+51:53.000 --> 51:53.600
+and then commit
+
+51:53.600 --> 51:54.380
+a massive,
+
+51:54.580 --> 51:55.380
+perfectly polished
+
+51:55.380 --> 51:56.360
+feature all at once.
+
+51:57.140 --> 51:58.360
+That's one green square.
+
+51:58.780 --> 52:00.140
+One square for a week's work.
+
+52:00.500 --> 52:01.540
+Other developers
+
+52:01.540 --> 52:02.460
+will commit their code
+
+52:02.460 --> 52:03.320
+every five minutes,
+
+52:03.760 --> 52:04.660
+every time they fix
+
+52:04.660 --> 52:05.460
+a minor typo
+
+52:05.460 --> 52:06.260
+or change a variable.
+
+52:06.920 --> 52:08.080
+That's 50 green squares.
+
+52:08.380 --> 52:09.180
+And here is where
+
+52:09.180 --> 52:10.100
+it ties perfectly back
+
+52:10.100 --> 52:10.920
+into Goodhart's law.
+
+52:11.700 --> 52:12.440
+Splitting commits
+
+52:12.440 --> 52:13.640
+is an extremely
+
+52:13.640 --> 52:14.840
+gameable proxy.
+
+52:14.840 --> 52:16.740
+If the tech industry
+
+52:16.740 --> 52:17.780
+uses the contribution
+
+52:17.780 --> 52:18.600
+graph to reward
+
+52:18.600 --> 52:19.120
+developers,
+
+52:20.140 --> 52:21.340
+the absolute cheapest,
+
+52:21.620 --> 52:22.600
+easiest way to win
+
+52:22.600 --> 52:23.760
+is not to write
+
+52:23.760 --> 52:24.340
+better code.
+
+52:24.980 --> 52:25.900
+It's just to split
+
+52:25.900 --> 52:26.880
+your existing work
+
+52:26.880 --> 52:27.680
+into a hundred
+
+52:27.680 --> 52:28.800
+tiny useless commits.
+
+52:29.180 --> 52:29.560
+Exactly.
+
+52:30.040 --> 52:31.180
+If you judge an author
+
+52:31.180 --> 52:32.240
+or a programmer
+
+52:32.240 --> 52:33.100
+by their commit graph,
+
+52:33.400 --> 52:34.200
+you are not measuring
+
+52:34.200 --> 52:35.340
+their intellectual output.
+
+52:35.540 --> 52:36.200
+You are strictly
+
+52:36.200 --> 52:36.960
+measuring their
+
+52:36.960 --> 52:37.840
+willingness to game
+
+52:37.840 --> 52:38.660
+the granularity
+
+52:38.660 --> 52:39.320
+of their commits.
+
+52:39.880 --> 52:41.080
+It is the extremal
+
+52:41.080 --> 52:41.760
+gaming of the
+
+52:41.760 --> 52:42.560
+Jevons paradox
+
+52:42.560 --> 52:44.100
+applied to human labor.
+
+52:44.840 --> 52:45.780
+So we have all these
+
+52:45.780 --> 52:46.680
+disparate pieces
+
+52:46.680 --> 52:47.200
+on the board.
+
+52:47.480 --> 52:48.400
+We have the sphere
+
+52:48.400 --> 52:49.720
+POP process algebra.
+
+52:50.200 --> 52:51.060
+We have the dependent
+
+52:51.060 --> 52:51.820
+type theory.
+
+52:52.040 --> 52:53.380
+We have the bounded paranoia.
+
+52:53.620 --> 52:54.300
+We have the critique
+
+52:54.300 --> 52:55.120
+of proxy metrics.
+
+52:55.620 --> 52:57.000
+We arrive at the climax
+
+52:57.000 --> 52:57.680
+of the document.
+
+52:58.520 --> 53:00.000
+Does Flyxion publish
+
+53:00.000 --> 53:00.880
+the essays or not?
+
+53:01.640 --> 53:02.520
+Does the math
+
+53:02.520 --> 53:03.380
+give them permission?
+
+53:04.240 --> 53:05.360
+This leads to the most
+
+53:05.360 --> 53:06.740
+brilliant self-aware
+
+53:06.740 --> 53:07.920
+and philosophical moment
+
+53:07.920 --> 53:09.500
+in the entire stack
+
+53:09.500 --> 53:10.240
+of source material.
+
+53:10.820 --> 53:11.840
+The author halts
+
+53:11.840 --> 53:13.040
+the mathematical proof
+
+53:13.040 --> 53:14.700
+to discuss Loeb's theorem
+
+53:14.700 --> 53:16.160
+and the dangerous concept
+
+53:16.160 --> 53:18.340
+of the self-endorsing sentence.
+
+53:18.940 --> 53:19.200
+Okay.
+
+53:20.020 --> 53:20.760
+Loeb's theorem.
+
+53:21.420 --> 53:22.400
+This is another dense one.
+
+53:22.480 --> 53:23.280
+Break this down for us.
+
+53:23.720 --> 53:25.120
+What is a self-endorsing
+
+53:25.120 --> 53:26.980
+sentence in formal logic?
+
+53:26.980 --> 53:28.900
+To understand Loeb's theorem,
+
+53:29.220 --> 53:30.020
+we need to think about
+
+53:30.020 --> 53:31.900
+how formal proof systems work.
+
+53:32.380 --> 53:32.980
+A proof system
+
+53:32.980 --> 53:34.100
+is just a set of rules
+
+53:34.100 --> 53:35.460
+used to establish truth
+
+53:35.460 --> 53:37.060
+based on starting axioms.
+
+53:37.320 --> 53:37.360
+Okay.
+
+53:38.040 --> 53:39.020
+Flyxion realized
+
+53:39.020 --> 53:40.100
+that they could force
+
+53:40.100 --> 53:41.200
+the mathematical model
+
+53:41.200 --> 53:43.160
+to output a published decision
+
+53:43.160 --> 53:44.220
+by introducing
+
+53:44.220 --> 53:45.680
+a logical cheat code.
+
+53:46.080 --> 53:46.780
+If the researchers
+
+53:46.780 --> 53:47.520
+simply wrote
+
+53:47.520 --> 53:49.200
+a new mathematical axiom
+
+53:49.200 --> 53:49.860
+into the code
+
+53:49.860 --> 53:50.360
+that said
+
+53:50.360 --> 53:51.740
+whatever this formal
+
+53:51.740 --> 53:52.700
+proof system says
+
+53:52.700 --> 53:53.400
+is warranted
+
+53:53.400 --> 53:55.180
+is inherently warranted,
+
+53:55.440 --> 53:56.420
+then the system
+
+53:56.420 --> 53:57.220
+would instantly,
+
+53:57.520 --> 53:58.720
+effortlessly prove
+
+53:58.720 --> 53:59.280
+that the essay
+
+53:59.280 --> 54:00.000
+should be published.
+
+54:00.000 --> 54:02.180
+It's a circular logic cheat code.
+
+54:03.140 --> 54:03.980
+Let me try an analogy.
+
+54:04.140 --> 54:05.280
+It's like a high school student
+
+54:05.280 --> 54:06.640
+printing their own report card,
+
+54:07.260 --> 54:08.560
+giving themselves all A's,
+
+54:08.840 --> 54:10.160
+and then writing a rule
+
+54:10.160 --> 54:11.140
+at the bottom of the paper
+
+54:11.140 --> 54:11.580
+that says,
+
+54:11.840 --> 54:12.340
+Rule 1,
+
+54:13.000 --> 54:13.840
+any grade printed
+
+54:13.840 --> 54:15.180
+on this specific piece of paper
+
+54:15.180 --> 54:16.160
+is officially valid.
+
+54:16.600 --> 54:17.440
+And then handing it
+
+54:17.440 --> 54:17.980
+to the principal.
+
+54:18.340 --> 54:18.540
+Right.
+
+54:19.380 --> 54:20.840
+The paper is validating itself
+
+54:20.840 --> 54:22.140
+without any external reference
+
+54:22.140 --> 54:23.160
+to the actual work
+
+54:23.160 --> 54:23.940
+the student did.
+
+54:24.320 --> 54:25.800
+That is a perfect analogy.
+
+54:26.200 --> 54:27.320
+In formal logic,
+
+54:27.640 --> 54:29.060
+Loeb's theorem states that
+
+54:29.060 --> 54:30.180
+if a theory proves
+
+54:30.180 --> 54:31.300
+its own soundness
+
+54:31.300 --> 54:32.460
+for a specific sentence,
+
+54:32.760 --> 54:34.420
+it only works for sentences
+
+54:34.420 --> 54:35.940
+it already proves.
+
+54:36.480 --> 54:37.900
+If the author included
+
+54:37.900 --> 54:39.800
+that self-endorsing axiom,
+
+54:39.920 --> 54:40.440
+it would be
+
+54:40.440 --> 54:41.940
+the cheapest possible proof.
+
+54:42.060 --> 54:43.160
+Because it's completely hollow.
+
+54:43.800 --> 54:44.600
+It would establish
+
+54:44.600 --> 54:45.500
+absolutely nothing
+
+54:45.500 --> 54:46.320
+about the reality
+
+54:46.320 --> 54:47.000
+of the essays
+
+54:47.000 --> 54:48.440
+because all the justification
+
+54:48.440 --> 54:49.700
+would have been
+
+54:49.700 --> 54:51.440
+smuggled into the axiom itself.
+
+54:52.240 --> 54:53.240
+And Phlyaxion notes
+
+54:53.240 --> 54:54.640
+the fatal consequence of this.
+
+54:55.060 --> 54:55.920
+A blanket policy
+
+54:55.920 --> 54:57.000
+of self-endorsement,
+
+54:57.300 --> 54:57.900
+building a system
+
+54:57.900 --> 54:58.680
+that simply says,
+
+54:59.060 --> 55:00.400
+everything I prove is true,
+
+55:01.040 --> 55:01.960
+renders the entire
+
+55:01.960 --> 55:02.940
+logical system
+
+55:02.940 --> 55:04.580
+mathematically inconsistent.
+
+55:05.040 --> 55:06.380
+It's basically the AI
+
+55:06.380 --> 55:07.420
+grading its own homework
+
+55:07.420 --> 55:08.140
+all over again.
+
+55:08.680 --> 55:09.720
+It is the exact
+
+55:09.720 --> 55:11.360
+theoretical mathematical
+
+55:11.360 --> 55:11.920
+counterpart
+
+55:11.920 --> 55:13.360
+to the AI grading
+
+55:13.360 --> 55:14.060
+its own homework
+
+55:14.060 --> 55:15.420
+in the ledger of obligations.
+
+55:16.060 --> 55:16.880
+So the author
+
+55:16.880 --> 55:18.020
+stares at this cheat code
+
+55:18.020 --> 55:20.200
+and they refuse to use it.
+
+55:20.700 --> 55:22.140
+They refuse to let the math
+
+55:22.140 --> 55:22.920
+give them a fake
+
+55:22.920 --> 55:24.500
+circular permission slip.
+
+55:25.100 --> 55:26.140
+And because they refuse
+
+55:26.140 --> 55:26.840
+to smuggle in
+
+55:26.840 --> 55:27.560
+the value judgment,
+
+55:28.200 --> 55:29.220
+every single theorem
+
+55:29.220 --> 55:29.900
+in their massive
+
+55:29.900 --> 55:30.860
+proof-assistant code
+
+55:30.860 --> 55:31.820
+ends with the exact
+
+55:31.820 --> 55:32.660
+same command.
+
+55:33.620 --> 55:34.080
+Admitted.
+
+55:34.560 --> 55:34.840
+Yes.
+
+55:35.180 --> 55:36.320
+In the programming language
+
+55:36.320 --> 55:36.980
+they were using,
+
+55:37.180 --> 55:38.220
+the command admitted
+
+55:38.220 --> 55:39.420
+means that a theorem
+
+55:39.420 --> 55:40.040
+is stated,
+
+55:40.240 --> 55:41.520
+but it remains unchecked
+
+55:41.520 --> 55:42.060
+by the machine.
+
+55:42.280 --> 55:44.240
+It is left as a human assumption.
+
+55:44.720 --> 55:45.160
+Man.
+
+55:45.160 --> 55:46.660
+The grand,
+
+55:47.060 --> 55:47.940
+staggering conclusion
+
+55:47.940 --> 55:48.820
+of all this
+
+55:48.820 --> 55:49.580
+formal mathematics
+
+55:49.580 --> 55:50.840
+is that the hypothesis
+
+55:50.840 --> 55:52.640
+whether to hit publish
+
+55:52.640 --> 55:53.200
+or not
+
+55:53.200 --> 55:54.280
+is completely
+
+55:54.280 --> 55:55.840
+mathematically independent
+
+55:55.840 --> 55:56.880
+of the axioms.
+
+55:57.660 --> 55:58.400
+The formal system
+
+55:58.400 --> 55:59.320
+proves that the decision
+
+55:59.320 --> 55:59.800
+to publish
+
+55:59.800 --> 56:00.440
+is equivalent
+
+56:00.440 --> 56:01.560
+to a conjunction
+
+56:01.560 --> 56:02.960
+of editorial conditions
+
+56:02.960 --> 56:04.300
+that the mathematics
+
+56:04.300 --> 56:05.560
+itself physically
+
+56:05.560 --> 56:06.540
+cannot decide.
+
+56:06.540 --> 56:07.840
+The math rigorously
+
+56:07.840 --> 56:08.700
+proves that humans
+
+56:08.700 --> 56:09.400
+still have to make
+
+56:09.400 --> 56:10.480
+the subjective choices.
+
+56:11.620 --> 56:12.140
+Flyxion writes
+
+56:12.140 --> 56:13.140
+this beautiful line
+
+56:13.140 --> 56:13.600
+at the end.
+
+56:13.600 --> 56:15.240
+They say the satire
+
+56:15.240 --> 56:16.320
+to the extent
+
+56:16.320 --> 56:17.020
+that there is any
+
+56:17.020 --> 56:18.560
+consists of the apparatus
+
+56:18.560 --> 56:19.360
+being larger
+
+56:19.360 --> 56:20.280
+than the conclusion
+
+56:20.280 --> 56:21.080
+it supports.
+
+56:21.960 --> 56:22.660
+Which is very poetic.
+
+56:23.340 --> 56:23.900
+They built this
+
+56:23.900 --> 56:24.940
+massive,
+
+56:25.280 --> 56:26.560
+towering architecture
+
+56:26.560 --> 56:28.380
+of dependent type theory
+
+56:28.380 --> 56:29.500
+and process algebra.
+
+56:29.940 --> 56:30.440
+They mapped out
+
+56:30.440 --> 56:32.460
+19 million combinations.
+
+56:33.040 --> 56:33.820
+They modeled the risks
+
+56:33.820 --> 56:34.480
+of unknown
+
+56:34.480 --> 56:35.880
+catastrophic server failures
+
+56:35.880 --> 56:37.260
+all to pinpoint
+
+56:37.260 --> 56:38.120
+the exact
+
+56:38.120 --> 56:40.000
+microscopic millimeter
+
+56:40.000 --> 56:41.520
+where formal logic
+
+56:41.520 --> 56:41.960
+stops
+
+56:41.960 --> 56:43.160
+and human
+
+56:43.160 --> 56:43.780
+responsibility
+
+56:43.780 --> 56:44.280
+begins.
+
+56:45.080 --> 56:45.800
+It is a profound
+
+56:45.800 --> 56:47.080
+statement on automation
+
+56:47.080 --> 56:48.080
+and human agency
+
+56:48.080 --> 56:49.060
+in the 21st century.
+
+56:49.420 --> 56:50.760
+We constantly build
+
+56:50.760 --> 56:51.840
+these towering
+
+56:51.840 --> 56:52.520
+apparatuses
+
+56:52.520 --> 56:54.380
+AI content pipelines
+
+56:54.380 --> 56:55.020
+complex
+
+56:55.020 --> 56:55.880
+algorithmic
+
+56:55.880 --> 56:56.740
+scoring metrics
+
+56:56.740 --> 56:58.040
+formal mathematical
+
+56:58.040 --> 56:58.960
+proofs
+
+56:58.960 --> 57:00.180
+specifically to relieve
+
+57:00.180 --> 57:01.080
+ourselves of the
+
+57:01.080 --> 57:01.740
+heavy burden
+
+57:01.740 --> 57:02.800
+of decision making.
+
+57:03.260 --> 57:04.120
+We want the machine
+
+57:04.120 --> 57:05.260
+to tell us what is true
+
+57:05.260 --> 57:06.160
+and what we should do.
+
+57:06.520 --> 57:07.340
+But the ungameable
+
+57:07.340 --> 57:08.460
+reality proven by
+
+57:08.460 --> 57:09.380
+Flyxion's math
+
+57:09.380 --> 57:10.500
+is that you cannot
+
+57:10.500 --> 57:11.700
+outsource value
+
+57:11.700 --> 57:12.120
+judgments.
+
+57:12.120 --> 57:13.300
+The machine
+
+57:13.300 --> 57:14.200
+can map the space
+
+57:14.200 --> 57:15.460
+it can surface
+
+57:15.460 --> 57:16.160
+the combinations
+
+57:16.160 --> 57:16.960
+it can even
+
+57:16.960 --> 57:18.000
+write the fluent
+
+57:18.000 --> 57:18.420
+prose
+
+57:18.420 --> 57:19.720
+but the human
+
+57:19.720 --> 57:20.400
+must always
+
+57:20.400 --> 57:21.220
+ultimately supply
+
+57:21.220 --> 57:21.900
+the axioms.
+
+57:22.760 --> 57:23.820
+Man, what a journey!
+
+57:24.680 --> 57:25.220
+Let's try to pull
+
+57:25.220 --> 57:25.980
+all of this together
+
+57:25.980 --> 57:26.480
+and summarize
+
+57:26.480 --> 57:27.380
+the wild ride
+
+57:27.380 --> 57:28.100
+we just went on.
+
+57:28.320 --> 57:28.800
+It's been a lot
+
+57:28.800 --> 57:29.160
+to cover.
+
+57:30.040 --> 57:31.040
+We started in the
+
+57:31.040 --> 57:31.800
+hoarder's garage
+
+57:31.800 --> 57:32.660
+of digital text
+
+57:32.660 --> 57:33.880
+overwhelmed by
+
+57:33.880 --> 57:34.880
+information paralysis.
+
+57:35.660 --> 57:36.540
+We explored
+
+57:36.540 --> 57:37.580
+Flyxion's intricate
+
+57:37.580 --> 57:38.360
+AI pipeline
+
+57:38.360 --> 57:39.340
+where they refused
+
+57:39.340 --> 57:40.160
+to let the machine
+
+57:40.160 --> 57:40.780
+just summarize
+
+57:40.780 --> 57:41.860
+and instead
+
+57:41.860 --> 57:42.600
+built a staged
+
+57:42.600 --> 57:43.220
+architecture
+
+57:43.220 --> 57:44.440
+using local
+
+57:44.440 --> 57:45.220
+language models.
+
+57:46.040 --> 57:46.620
+They organized
+
+57:46.620 --> 57:47.120
+their ideas
+
+57:47.120 --> 57:47.860
+using the highly
+
+57:47.860 --> 57:48.300
+poetic
+
+57:48.300 --> 57:49.380
+Micromagas
+
+57:49.380 --> 57:50.120
+ontology
+
+57:50.120 --> 57:51.140
+shout out to
+
+57:51.140 --> 57:51.940
+the Lampron
+
+57:51.940 --> 57:52.800
+dark matter bucket
+
+57:52.800 --> 57:53.860
+and the
+
+57:53.860 --> 57:54.720
+Ocular Xylem
+
+57:54.720 --> 57:55.400
+fiber optics.
+
+57:55.400 --> 57:56.760
+We looked at
+
+57:56.760 --> 57:57.400
+the dizzying
+
+57:57.400 --> 57:58.160
+mathematics of
+
+57:58.160 --> 57:59.000
+combinatorics
+
+57:59.000 --> 58:00.080
+where a tiny
+
+58:00.080 --> 58:00.920
+folder of just
+
+58:00.920 --> 58:02.420
+488 documents
+
+58:02.420 --> 58:03.040
+can generate
+
+58:03.040 --> 58:04.480
+over 19 million
+
+58:04.480 --> 58:05.540
+unique unwritten
+
+58:05.540 --> 58:06.000
+essays.
+
+58:06.600 --> 58:07.120
+We explored
+
+58:07.120 --> 58:07.700
+how the system
+
+58:07.700 --> 58:08.680
+uses five distinct
+
+58:08.680 --> 58:09.540
+relations like
+
+58:09.540 --> 58:10.300
+tension and
+
+58:10.300 --> 58:11.540
+triangulation to
+
+58:11.540 --> 58:12.420
+force the AI
+
+58:12.420 --> 58:12.960
+to build
+
+58:12.960 --> 58:13.960
+structured briefs
+
+58:13.960 --> 58:14.840
+and how those
+
+58:14.840 --> 58:15.460
+millions of
+
+58:15.460 --> 58:16.340
+possibilities can
+
+58:16.340 --> 58:17.000
+be mapped as
+
+58:17.000 --> 58:17.860
+permanent integers
+
+58:17.860 --> 58:18.760
+using the
+
+58:18.760 --> 58:19.780
+combinatorial number
+
+58:19.780 --> 58:20.220
+system.
+
+58:21.100 --> 58:21.780
+We examined the
+
+58:21.780 --> 58:22.980
+brutal economic
+
+58:22.980 --> 58:23.960
+realities of the
+
+58:23.960 --> 58:24.760
+Jevons paradox
+
+58:24.760 --> 58:26.160
+realizing that
+
+58:26.160 --> 58:26.800
+making idea
+
+58:26.800 --> 58:27.700
+generation cheaper
+
+58:27.700 --> 58:28.640
+doesn't save us
+
+58:28.640 --> 58:29.160
+time.
+
+58:29.760 --> 58:30.540
+It just buries the
+
+58:30.540 --> 58:31.480
+human reader in an
+
+58:31.480 --> 58:32.780
+infinite unmanageable
+
+58:32.780 --> 58:33.180
+backlog.
+
+58:33.940 --> 58:34.480
+We saw how
+
+58:34.480 --> 58:35.280
+numerical scoring
+
+58:35.280 --> 58:36.120
+systems inevitably
+
+58:36.120 --> 58:36.720
+fall to
+
+58:36.720 --> 58:37.660
+extremal and
+
+58:37.660 --> 58:38.180
+regressional
+
+58:38.180 --> 58:38.920
+good heart gaming
+
+58:38.920 --> 58:39.980
+mathematically
+
+58:39.980 --> 58:41.080
+rewarding repeated
+
+58:41.080 --> 58:41.860
+noise and
+
+58:41.860 --> 58:42.800
+statistical errors
+
+58:42.800 --> 58:43.520
+over actual
+
+58:43.520 --> 58:44.000
+insight.
+
+58:44.680 --> 58:45.200
+And we followed
+
+58:45.200 --> 58:45.760
+that logical
+
+58:45.760 --> 58:46.620
+thread all the
+
+58:46.620 --> 58:47.100
+way to a
+
+58:47.100 --> 58:47.980
+researcher using
+
+58:47.980 --> 58:48.880
+spherepop process
+
+58:48.880 --> 58:49.620
+algebra and
+
+58:49.620 --> 58:50.240
+dependent type
+
+58:50.240 --> 58:51.040
+theory to decide
+
+58:51.040 --> 58:51.580
+whether to hit
+
+58:51.580 --> 58:52.740
+publish only to
+
+58:52.740 --> 58:53.620
+rigorously
+
+58:53.620 --> 58:54.660
+mathematically
+
+58:54.660 --> 58:55.200
+prove that
+
+58:55.200 --> 58:56.000
+they still had
+
+58:56.000 --> 58:56.500
+to make the
+
+58:56.500 --> 58:57.280
+subjective choice
+
+58:57.280 --> 58:57.760
+themselves.
+
+58:58.100 --> 58:58.620
+The big takeaway
+
+58:58.620 --> 58:59.520
+here, the
+
+58:59.520 --> 59:00.420
+absolute core of
+
+59:00.420 --> 59:01.280
+this entire deep
+
+59:01.280 --> 59:02.580
+dive is fundamental
+
+59:02.580 --> 59:03.380
+to how we
+
+59:03.380 --> 59:04.000
+survive the
+
+59:04.000 --> 59:04.620
+modern age.
+
+59:05.560 --> 59:06.140
+The tools we
+
+59:06.140 --> 59:06.940
+build to manage,
+
+59:07.300 --> 59:07.860
+generate, and
+
+59:07.860 --> 59:08.940
+organize information
+
+59:08.940 --> 59:09.840
+scale infinitely.
+
+59:10.540 --> 59:11.320
+The language model
+
+59:11.320 --> 59:12.340
+can write a million
+
+59:12.340 --> 59:13.820
+essays a day, but
+
+59:13.820 --> 59:14.640
+human attention,
+
+59:15.100 --> 59:15.840
+human validation,
+
+59:16.060 --> 59:16.840
+and human judgment
+
+59:16.840 --> 59:18.040
+do not scale.
+
+59:18.520 --> 59:19.680
+They are stubbornly,
+
+59:20.180 --> 59:21.020
+beautifully finite.
+
+59:21.660 --> 59:22.140
+Very true.
+
+59:22.140 --> 59:23.020
+And no matter
+
+59:23.020 --> 59:23.880
+how advanced the
+
+59:23.880 --> 59:24.880
+AI gets, no
+
+59:24.880 --> 59:25.460
+matter how fluent
+
+59:25.460 --> 59:26.240
+the prose sounds,
+
+59:27.000 --> 59:28.100
+the ledger of
+
+59:28.100 --> 59:29.360
+obligations still
+
+59:29.360 --> 59:30.200
+requires a human
+
+59:30.200 --> 59:30.660
+signature.
+
+59:31.520 --> 59:32.420
+The formal logic
+
+59:32.420 --> 59:33.480
+still requires a
+
+59:33.480 --> 59:34.260
+human to set the
+
+59:34.260 --> 59:34.720
+axioms.
+
+59:35.260 --> 59:36.140
+You cannot outsource
+
+59:36.140 --> 59:37.220
+the why, you can
+
+59:37.220 --> 59:37.900
+only outsource the
+
+59:37.900 --> 59:38.160
+what.
+
+59:38.400 --> 59:38.780
+Exactly.
+
+59:39.440 --> 59:40.280
+Which brings me
+
+59:40.280 --> 59:40.900
+back to you,
+
+59:41.440 --> 59:42.220
+listening to this.
+
+59:42.960 --> 59:43.400
+Vlishekham
+
+59:43.400 --> 59:44.480
+mathematically proved
+
+59:44.480 --> 59:45.440
+that if you rely on
+
+59:45.440 --> 59:46.700
+an AI or any
+
+59:46.700 --> 59:47.720
+automated metric to
+
+59:47.720 --> 59:48.300
+score its own
+
+59:48.300 --> 59:49.260
+generated ideas,
+
+59:49.260 --> 59:50.580
+you are mathematically
+
+59:50.580 --> 59:51.540
+guaranteed to
+
+59:51.540 --> 59:52.120
+select for the
+
+59:52.120 --> 59:53.200
+system's biases and
+
+59:53.200 --> 59:53.460
+noise.
+
+59:54.020 --> 59:55.160
+You get the best of
+
+59:55.160 --> 59:56.700
+N illusion, skimming
+
+59:56.700 --> 59:57.620
+the error off the
+
+59:57.620 --> 59:58.320
+top and calling it
+
+59:58.320 --> 59:58.720
+genius.
+
+59:59.080 --> 59:59.700
+It's a sobering
+
+59:59.700 --> 59:59.940
+thought.
+
+01:00:00.560 --> 01:00:01.340
+Look at your own
+
+01:00:01.340 --> 01:00:01.920
+life right now.
+
+01:00:02.700 --> 01:00:03.340
+Think about your
+
+01:00:03.340 --> 01:00:04.560
+intricate productivity
+
+01:00:04.560 --> 01:00:05.920
+apps, your daily
+
+01:00:05.920 --> 01:00:07.160
+health trackers, the
+
+01:00:07.160 --> 01:00:08.060
+algorithmic feeds
+
+01:00:08.060 --> 01:00:09.000
+serving you content
+
+01:00:09.000 --> 01:00:09.700
+every time you open
+
+01:00:09.700 --> 01:00:10.120
+your phone.
+
+01:00:10.920 --> 01:00:11.460
+Think about the
+
+01:00:11.460 --> 01:00:12.460
+systems you use to
+
+01:00:12.460 --> 01:00:13.180
+manage your own
+
+01:00:13.180 --> 01:00:14.300
+hoarder's garage of
+
+01:00:14.300 --> 01:00:14.780
+information.
+
+01:00:15.640 --> 01:00:16.760
+Are you optimizing for
+
+01:00:16.760 --> 01:00:17.460
+what is genuinely
+
+01:00:17.460 --> 01:00:18.400
+valuable to you?
+
+01:00:18.400 --> 01:00:19.560
+Or are you just
+
+01:00:19.560 --> 01:00:20.420
+falling for extreme
+
+01:00:20.420 --> 01:00:20.960
+old good heart
+
+01:00:20.960 --> 01:00:22.380
+gaming, endlessly
+
+01:00:22.380 --> 01:00:23.200
+optimizing your
+
+01:00:23.200 --> 01:00:23.920
+behavior for a
+
+01:00:23.920 --> 01:00:25.200
+proxy metric, a
+
+01:00:25.200 --> 01:00:26.120
+green square on a
+
+01:00:26.120 --> 01:00:26.820
+graph, a view
+
+01:00:26.820 --> 01:00:28.220
+count, a streak, that
+
+01:00:28.220 --> 01:00:29.120
+has ceased to mean
+
+01:00:29.120 --> 01:00:29.820
+anything real?
+
+01:00:30.400 --> 01:00:31.460
+Are you actually doing
+
+01:00:31.460 --> 01:00:32.180
+the hard work of
+
+01:00:32.180 --> 01:00:33.300
+thinking, or are you
+
+01:00:33.300 --> 01:00:34.120
+just letting a machine
+
+01:00:34.120 --> 01:00:34.820
+game your own
+
+01:00:34.820 --> 01:00:35.120
+ledger?
+
+01:00:35.760 --> 01:00:36.380
+Some excellent
+
+01:00:36.380 --> 01:00:37.080
+questions to think
+
+01:00:37.080 --> 01:00:37.320
+about.
+
+01:00:38.160 --> 01:00:39.080
+Thank you for joining
+
+01:00:39.080 --> 01:00:40.180
+us on this incredibly
+
+01:00:40.180 --> 01:00:41.220
+dense, fascinating
+
+01:00:41.220 --> 01:00:42.060
+deep dive into the
+
+01:00:42.060 --> 01:00:42.620
+source material.
+
+01:00:43.240 --> 01:00:44.000
+It has been an
+
+01:00:44.000 --> 01:00:44.900
+absolute mind
+
+01:00:44.900 --> 01:00:45.200
+vendor.
+
+01:00:46.000 --> 01:00:46.660
+Until next time,
+
+01:00:47.220 --> 01:00:48.200
+keep questioning your
+
+01:00:48.200 --> 01:00:48.660
+axioms.
+
+01:00:48.660 --> 01:00:49.640
+If you're looking at
+
+01:00:49.640 --> 01:00:50.180
+your axioms, you're
+
+01:00:50.180 --> 01:00:50.420
+going to see your
+
+01:00:50.420 --> 01:00:50.900
+axioms.
+
+01:00:50.900 --> 01:00:50.940
+If you're looking at
+
+01:00:50.940 --> 01:00:51.200
+your axioms, you're
+
+01:00:51.200 --> 01:00:51.760
+going to see your
+
+01:00:51.760 --> 01:00:51.840
+axioms.
+

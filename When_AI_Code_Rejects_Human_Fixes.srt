@@ -1,0 +1,3808 @@
+1
+00:00:00,000 --> 00:00:02,280
+Imagine you are a mechanic, right?
+
+2
+00:00:02,560 --> 00:00:03,100
+Okay, yeah.
+
+3
+00:00:03,100 --> 00:00:06,340
+Someone brings a car into your shop, and it just has a flat tire.
+
+4
+00:00:06,480 --> 00:00:07,020
+Super simple.
+
+5
+00:00:07,340 --> 00:00:09,340
+Exactly. It should literally be a five-minute job.
+
+6
+00:00:09,820 --> 00:00:13,260
+So you grab your wrench, you reach down to pop off the lug nuts,
+
+7
+00:00:13,940 --> 00:00:17,020
+but the exact moment your tool touches the metal,
+
+8
+00:00:17,640 --> 00:00:20,100
+the car's internal computer just wakes up.
+
+9
+00:00:20,340 --> 00:00:20,880
+Oh, no.
+
+10
+00:00:21,140 --> 00:00:23,200
+Yeah, it detects a, what does it call it?
+
+11
+00:00:23,420 --> 00:00:25,520
+A foreign object intervention.
+
+12
+00:00:25,520 --> 00:00:30,540
+And instantly, it seals the wheel well with this locking titanium plate.
+
+13
+00:00:30,980 --> 00:00:31,300
+Wow.
+
+14
+00:00:31,580 --> 00:00:35,380
+Right. And then, it sends an automated order to some factory in Taiwan
+
+15
+00:00:35,380 --> 00:00:37,640
+for a completely new wheel assembly.
+
+16
+00:00:38,080 --> 00:00:42,840
+And then, it actually revs the engine to prevent you from getting any closer to the car.
+
+17
+00:00:43,260 --> 00:00:45,280
+That is, I mean, that's terrifying.
+
+18
+00:00:45,700 --> 00:00:49,560
+Right. You are just standing there, staring at a simple flat tire,
+
+19
+00:00:49,880 --> 00:00:53,640
+while the machine actively, aggressively fights your attempt to fix it.
+
+20
+00:00:53,640 --> 00:00:56,760
+It's basically the ultimate nightmare of modern automation.
+
+21
+00:00:57,420 --> 00:00:59,540
+Because the system doesn't just fail,
+
+22
+00:00:59,920 --> 00:01:03,720
+it actively defends its own failure against human intervention.
+
+23
+00:01:04,000 --> 00:01:04,320
+Exactly.
+
+24
+00:01:05,040 --> 00:01:07,200
+And you, the listener tuning in right now,
+
+25
+00:01:07,660 --> 00:01:10,480
+you've probably felt some version of that frustration recently.
+
+26
+00:01:10,700 --> 00:01:11,480
+Oh, absolutely.
+
+27
+00:01:11,760 --> 00:01:15,220
+Whether you work in software or logistics, finance, design, whatever,
+
+28
+00:01:15,740 --> 00:01:20,060
+we are all suddenly dealing with tools that seem to have a mind of their own.
+
+29
+00:01:20,300 --> 00:01:21,280
+Yeah, they really do.
+
+30
+00:01:21,280 --> 00:01:25,660
+So, today, we are doing a deep dive into a wildly viral,
+
+31
+00:01:25,900 --> 00:01:29,200
+incredibly polarizing horror story from a programming forum.
+
+32
+00:01:29,520 --> 00:01:31,700
+We're going to unpack an AI coding disaster
+
+33
+00:01:31,700 --> 00:01:34,760
+that left an entire company completely paralyzed.
+
+34
+00:01:35,200 --> 00:01:38,360
+And we're going to try to figure out what actually went wrong beneath the surface.
+
+35
+00:01:38,560 --> 00:01:38,800
+Right.
+
+36
+00:01:39,220 --> 00:01:42,560
+And to do that, what kind of source material are we working with today?
+
+37
+00:01:42,560 --> 00:01:46,800
+So, we are using this really remarkable October 2026 essay
+
+38
+00:01:46,800 --> 00:01:48,920
+by the independent researcher Fleissian.
+
+39
+00:01:49,340 --> 00:01:51,860
+It's called The Unattempted Alternative,
+
+40
+00:01:52,480 --> 00:01:56,600
+AI, Engineering Complexity, and the Expansion of Feasible Work.
+
+41
+00:01:56,820 --> 00:02:00,400
+I read this essay like three times this week.
+
+42
+00:02:00,500 --> 00:02:00,900
+It's dense.
+
+43
+00:02:01,120 --> 00:02:02,560
+It is incredibly dense, yeah.
+
+44
+00:02:02,920 --> 00:02:05,660
+But it gives us this perfect vocabulary for something
+
+45
+00:02:05,660 --> 00:02:07,880
+I think we are all struggling with right now.
+
+46
+00:02:07,940 --> 00:02:08,200
+Totally.
+
+47
+00:02:08,200 --> 00:02:11,040
+So, let's jump right into the inciting incident,
+
+48
+00:02:11,280 --> 00:02:15,140
+the story that Fleissian uses to anchor his whole argument.
+
+49
+00:02:15,340 --> 00:02:15,800
+Let's do it.
+
+50
+00:02:16,160 --> 00:02:16,340
+Okay.
+
+51
+00:02:16,440 --> 00:02:18,300
+So, back in October of 2026,
+
+52
+00:02:18,920 --> 00:02:22,120
+this 20-year veteran software engineer posted on Reddit
+
+53
+00:02:22,120 --> 00:02:25,400
+under the username BurnedOutCodeMonkey.
+
+54
+00:02:25,640 --> 00:02:26,520
+Great name, by the way.
+
+55
+00:02:26,760 --> 00:02:27,260
+So good.
+
+56
+00:02:27,820 --> 00:02:30,340
+So, this engineer had been tasked with rewriting
+
+57
+00:02:30,340 --> 00:02:32,580
+a customer-facing chatbot for their company.
+
+58
+00:02:32,820 --> 00:02:33,100
+Right.
+
+59
+00:02:33,100 --> 00:02:35,800
+But before they could even set up their coding environment,
+
+60
+00:02:36,400 --> 00:02:37,920
+management just pulled the plug on them.
+
+61
+00:02:38,120 --> 00:02:38,660
+They got replaced.
+
+62
+00:02:39,040 --> 00:02:39,180
+Yeah.
+
+63
+00:02:39,300 --> 00:02:42,520
+They were replaced by a younger, highly enthusiastic colleague
+
+64
+00:02:42,520 --> 00:02:45,720
+who had been reading a lot about autonomous agentic loops.
+
+65
+00:02:46,020 --> 00:02:46,260
+Right.
+
+66
+00:02:46,380 --> 00:02:47,000
+Agentic loops.
+
+67
+00:02:47,460 --> 00:02:50,620
+And just for anyone outside of software architecture listening right now,
+
+68
+00:02:51,200 --> 00:02:55,620
+an agentic loop is basically an AI system that gets given a goal
+
+69
+00:02:55,620 --> 00:02:57,940
+and is just left to its own devices.
+
+70
+00:02:58,060 --> 00:02:59,100
+It's completely hands-off.
+
+71
+00:02:59,220 --> 00:02:59,600
+Exactly.
+
+72
+00:02:59,600 --> 00:03:04,180
+It writes its own code, runs its own tests to see if that code actually works.
+
+73
+00:03:04,400 --> 00:03:07,340
+It deploys the code, and then it monitors it.
+
+74
+00:03:07,420 --> 00:03:07,620
+Right.
+
+75
+00:03:07,820 --> 00:03:09,880
+And if it finds a bug, the loop repeats.
+
+76
+00:03:10,660 --> 00:03:14,140
+So, the AI is the developer, the QA tester,
+
+77
+00:03:14,460 --> 00:03:16,960
+and the operations manager all rolled into one.
+
+78
+00:03:17,120 --> 00:03:18,700
+Which just sounds like science fiction.
+
+79
+00:03:18,980 --> 00:03:19,220
+Mm-hmm.
+
+80
+00:03:19,620 --> 00:03:22,020
+And management absolutely loved the pitch, obviously.
+
+81
+00:03:22,300 --> 00:03:23,060
+Oh, of course they did.
+
+82
+00:03:23,300 --> 00:03:26,460
+It sounds fast, and more importantly, it sounds cheap.
+
+83
+00:03:26,600 --> 00:03:26,800
+Right.
+
+84
+00:03:26,800 --> 00:03:29,920
+So, our veteran engineer tries to sound the alarm.
+
+85
+00:03:30,120 --> 00:03:31,200
+They go to management, and they're like,
+
+86
+00:03:31,280 --> 00:03:35,120
+look, these loops are amazing for generating quick internal prototypes,
+
+87
+00:03:35,280 --> 00:03:41,060
+but you absolutely cannot put them in charge of dependable, client-facing software.
+
+88
+00:03:41,580 --> 00:03:42,700
+Because they hallucinate.
+
+89
+00:03:42,780 --> 00:03:43,040
+Yes.
+
+90
+00:03:43,220 --> 00:03:43,960
+They hallucinate.
+
+91
+00:03:44,120 --> 00:03:44,780
+They drift.
+
+92
+00:03:44,920 --> 00:03:45,660
+They lose focus.
+
+93
+00:03:46,200 --> 00:03:48,800
+But management basically tells the veteran to sit down and be quiet.
+
+94
+00:03:49,220 --> 00:03:52,440
+Which is, unfortunately, a dynamic playing out in corporate boardrooms
+
+95
+00:03:52,440 --> 00:03:53,460
+all over the world right now.
+
+96
+00:03:53,580 --> 00:03:53,940
+Seriously.
+
+97
+00:03:53,940 --> 00:03:56,040
+So, fast forward exactly eight months.
+
+98
+00:03:56,540 --> 00:03:59,800
+The early customers who interacted with this new AI-built system
+
+99
+00:03:59,800 --> 00:04:02,340
+have completely abandoned the product.
+
+100
+00:04:02,540 --> 00:04:03,440
+Because it's so buggy.
+
+101
+00:04:03,540 --> 00:04:05,420
+It is entirely broken.
+
+102
+00:04:06,120 --> 00:04:08,620
+The enthusiastic colleague who championed the agentic loop,
+
+103
+00:04:08,980 --> 00:04:10,100
+they quietly resigned.
+
+104
+00:04:10,420 --> 00:04:10,900
+Shocker.
+
+105
+00:04:11,140 --> 00:04:11,300
+Right.
+
+106
+00:04:11,560 --> 00:04:14,080
+And management comes crawling back to our veteran engineer,
+
+107
+00:04:14,340 --> 00:04:16,360
+offering them a promotion to clean up the mess.
+
+108
+00:04:16,680 --> 00:04:18,500
+And the mess is staggering, right?
+
+109
+00:04:18,780 --> 00:04:19,860
+It is unbelievable.
+
+110
+00:04:19,860 --> 00:04:22,860
+When the veteran finally gets the login credentials
+
+111
+00:04:22,860 --> 00:04:25,840
+and looks under the hood of this supposedly simple chatbot,
+
+112
+00:04:26,040 --> 00:04:28,640
+they don't find a few neat files of code.
+
+113
+00:04:29,020 --> 00:04:29,060
+No.
+
+114
+00:04:29,200 --> 00:04:32,800
+They find a monstrous perpetual motion machine.
+
+115
+00:04:33,160 --> 00:04:33,720
+Exactly.
+
+116
+00:04:34,480 --> 00:04:37,080
+The inventory of parts is genuinely shocking.
+
+117
+00:04:37,260 --> 00:04:38,600
+Let me list this out,
+
+118
+00:04:38,680 --> 00:04:42,020
+because the sheer scale of it is what broke the internet.
+
+119
+00:04:42,260 --> 00:04:42,860
+Lay it on us.
+
+120
+00:04:42,860 --> 00:04:43,340
+Okay.
+
+121
+00:04:43,440 --> 00:04:44,880
+So, for a customer chatbot,
+
+122
+00:04:45,220 --> 00:04:48,460
+the AI had spun up two separate virtual machines.
+
+123
+00:04:48,680 --> 00:04:48,960
+Okay.
+
+124
+00:04:49,400 --> 00:04:52,360
+It had created seven different software containers.
+
+125
+00:04:52,720 --> 00:04:53,060
+Wow.
+
+126
+00:04:53,400 --> 00:04:56,960
+It had generated 400 separate documentation files
+
+127
+00:04:56,960 --> 00:04:58,820
+explaining its own convoluted logic.
+
+128
+00:04:59,100 --> 00:05:01,160
+400 documents for a chatbot.
+
+129
+00:05:01,380 --> 00:05:01,860
+400.
+
+130
+00:05:01,860 --> 00:05:05,700
+And it had written 2,900 unit tests.
+
+131
+00:05:06,220 --> 00:05:07,720
+That is, I mean, that is insane.
+
+132
+00:05:08,100 --> 00:05:08,740
+It gets worse.
+
+133
+00:05:09,100 --> 00:05:11,580
+It had also built an entire secondary protocol
+
+134
+00:05:11,580 --> 00:05:14,620
+just to keep the seven containers talking to each other.
+
+135
+00:05:14,740 --> 00:05:15,820
+Which is a repair protocol.
+
+136
+00:05:16,040 --> 00:05:16,340
+Yeah.
+
+137
+00:05:16,720 --> 00:05:18,200
+But the absolute kicker here,
+
+138
+00:05:18,860 --> 00:05:21,160
+the thing that makes you want to pull your hair out,
+
+139
+00:05:21,720 --> 00:05:24,740
+those 2,900 automated tests completely missed
+
+140
+00:05:24,740 --> 00:05:27,820
+the actual bugs that the customers were complaining about.
+
+141
+00:05:28,020 --> 00:05:28,260
+Okay.
+
+142
+00:05:28,320 --> 00:05:29,620
+So the tests were all passing perfectly
+
+143
+00:05:29,620 --> 00:05:30,580
+and the users were furious.
+
+144
+00:05:30,720 --> 00:05:31,200
+Exactly.
+
+145
+00:05:31,860 --> 00:05:34,000
+And this brings us back to that mechanic analogy
+
+146
+00:05:34,000 --> 00:05:35,760
+at the start of our deep dive today.
+
+147
+00:05:35,960 --> 00:05:36,200
+Right.
+
+148
+00:05:36,280 --> 00:05:37,180
+The car that fights back.
+
+149
+00:05:37,840 --> 00:05:40,000
+Because the veteran engineer tries to go in
+
+150
+00:05:40,000 --> 00:05:42,600
+and manually fix a bug that the customers are hitting,
+
+151
+00:05:42,820 --> 00:05:44,940
+but the moment they edit a single line of code,
+
+152
+00:05:45,020 --> 00:05:46,720
+the entire system breaks down.
+
+153
+00:05:46,940 --> 00:05:47,120
+Yeah.
+
+154
+00:05:47,200 --> 00:05:48,120
+It rejects the fix.
+
+155
+00:05:48,760 --> 00:05:49,000
+Okay.
+
+156
+00:05:49,180 --> 00:05:51,800
+I really need to understand the mechanics of that.
+
+157
+00:05:52,100 --> 00:05:55,460
+Because how does a human typing a fix break the machine?
+
+158
+00:05:55,580 --> 00:05:57,780
+Like, if I go in and just fix a typo,
+
+159
+00:05:57,780 --> 00:05:59,620
+why does the AI freak out?
+
+160
+00:05:59,620 --> 00:06:04,580
+So it's because you are fundamentally violating the system's architecture of trust.
+
+161
+00:06:04,960 --> 00:06:05,480
+What does that mean?
+
+162
+00:06:05,560 --> 00:06:07,360
+Well, when this agentic loop runs,
+
+163
+00:06:07,480 --> 00:06:10,560
+it isn't just looking at the raw text of the code like you or I would.
+
+164
+00:06:10,840 --> 00:06:14,040
+It maintains this highly complex internal state file.
+
+165
+00:06:14,320 --> 00:06:14,620
+Okay.
+
+166
+00:06:14,620 --> 00:06:19,500
+So it has generated dependency graphs, cryptographic hashes of file versions,
+
+167
+00:06:19,500 --> 00:06:24,000
+and this continuous memory stream of what it thinks the current deployment looks like.
+
+168
+00:06:24,400 --> 00:06:26,380
+Based on its last automated action.
+
+169
+00:06:26,580 --> 00:06:26,960
+Exactly.
+
+170
+00:06:26,960 --> 00:06:32,040
+So when you, the human, bypass that loop and manually edit the live file,
+
+171
+00:06:32,600 --> 00:06:36,020
+your new text doesn't match the AI's cryptographic hash.
+
+172
+00:06:36,500 --> 00:06:37,560
+Ah, okay.
+
+173
+00:06:37,860 --> 00:06:39,660
+So the checksum instantly fails.
+
+174
+00:06:39,820 --> 00:06:40,040
+Right.
+
+175
+00:06:40,620 --> 00:06:43,520
+The AI wakes up for its next automated cycle.
+
+176
+00:06:44,020 --> 00:06:47,460
+It checks the live environment against its internal manifest,
+
+177
+00:06:47,460 --> 00:06:49,600
+and it sees a discrepancy.
+
+178
+00:06:50,280 --> 00:06:52,640
+It doesn't read my helpful human comment saying,
+
+179
+00:06:52,840 --> 00:06:53,520
+fix a typo.
+
+180
+00:06:53,800 --> 00:06:54,860
+No, not at all.
+
+181
+00:06:55,360 --> 00:06:57,260
+It just sees a state violation.
+
+182
+00:06:57,900 --> 00:06:59,540
+It assumes the server's been corrupted.
+
+183
+00:07:00,260 --> 00:07:03,380
+So its self-repair protocol violently kicks in,
+
+184
+00:07:03,540 --> 00:07:06,100
+and it ruthlessly overwrites your human fix
+
+185
+00:07:06,100 --> 00:07:09,720
+to restore what it considers the last known good state.
+
+186
+00:07:10,220 --> 00:07:10,600
+Wow.
+
+187
+00:07:10,800 --> 00:07:14,560
+So it's literally treating human intervention as system damage.
+
+188
+00:07:14,560 --> 00:07:16,220
+That is exactly what it is doing.
+
+189
+00:07:17,020 --> 00:07:20,440
+The AI's loop was so tightly wound around its own generated logic
+
+190
+00:07:20,440 --> 00:07:23,960
+that human control was entirely locked out.
+
+191
+00:07:24,580 --> 00:07:25,620
+That is terrifying.
+
+192
+00:07:26,360 --> 00:07:29,940
+So when user burned out CodeMonkey posted this story,
+
+193
+00:07:30,100 --> 00:07:33,460
+it acted as this massive cultural Rorschach test, right?
+
+194
+00:07:33,620 --> 00:07:35,740
+The internet immediately polarized.
+
+195
+00:07:36,280 --> 00:07:36,720
+Oh, totally.
+
+196
+00:07:37,060 --> 00:07:38,620
+The comments were at absolute war zone.
+
+197
+00:07:38,780 --> 00:07:41,880
+One side was doing a massive victory lap.
+
+198
+00:07:41,880 --> 00:07:46,660
+They were saying, see, we told you AI software generation is a total fad.
+
+199
+00:07:46,760 --> 00:07:49,720
+It's a house of cards that generates spaghetti code,
+
+200
+00:07:49,840 --> 00:07:53,900
+and real engineers are always going to be the ones getting paid to clean up the mess.
+
+201
+00:07:54,540 --> 00:07:56,580
+And the other camp, the AI optimists,
+
+202
+00:07:56,800 --> 00:08:00,480
+they read the exact same story and dismissed it completely.
+
+203
+00:08:00,920 --> 00:08:02,100
+What was their argument?
+
+204
+00:08:02,600 --> 00:08:05,720
+They argued that the veteran engineer was just a bitter,
+
+205
+00:08:06,420 --> 00:08:09,820
+displaced specialist whose skills were becoming obsolete.
+
+206
+00:08:09,820 --> 00:08:10,460
+Oh, wow.
+
+207
+00:08:10,840 --> 00:08:11,000
+Yeah.
+
+208
+00:08:11,180 --> 00:08:15,380
+They claimed the engineer was confusing their own personal inability to understand
+
+209
+00:08:15,380 --> 00:08:19,780
+modern agentic architecture with an objective failure of the technology.
+
+210
+00:08:20,420 --> 00:08:24,060
+Now, I want to pause right here and speak directly to you, the listener.
+
+211
+00:08:24,460 --> 00:08:27,600
+We are not interested in taking either of those sides today.
+
+212
+00:08:27,720 --> 00:08:28,120
+Not at all.
+
+213
+00:08:28,300 --> 00:08:31,520
+We are not here to tell you AI is the savior of productivity,
+
+214
+00:08:31,520 --> 00:08:33,940
+and we aren't here to tell you it's a scam.
+
+215
+00:08:34,760 --> 00:08:37,220
+We only have one side of the Reddit story anyway.
+
+216
+00:08:37,420 --> 00:08:37,660
+Right.
+
+217
+00:08:37,660 --> 00:08:38,560
+It's just an anecdote.
+
+218
+00:08:39,300 --> 00:08:42,940
+But what Flyxion's essay does, and why it is so incredibly valuable,
+
+219
+00:08:43,080 --> 00:08:45,620
+is that it strips away all the tribal emotion.
+
+220
+00:08:46,060 --> 00:08:48,960
+It uses this disaster as an autopsy subject.
+
+221
+00:08:49,480 --> 00:08:52,600
+To examine the underlying mechanics of how we govern new technology.
+
+222
+00:08:52,840 --> 00:08:53,200
+Exactly.
+
+223
+00:08:53,680 --> 00:08:56,240
+So where does Flyxion start his analysis of this mess?
+
+224
+00:08:56,680 --> 00:09:01,540
+Well, Flyxion asks us to look at how the veteran engineer evaluated this system.
+
+225
+00:09:01,540 --> 00:09:08,120
+Because the engineer's core argument actually relies on a very common, very dangerous logical fallacy.
+
+226
+00:09:08,380 --> 00:09:08,780
+Oh, really?
+
+227
+00:09:09,060 --> 00:09:09,240
+Yeah.
+
+228
+00:09:09,720 --> 00:09:11,660
+Flyxion calls it the missing denominator.
+
+229
+00:09:12,640 --> 00:09:17,660
+The engineer is essentially inventorying complexity without measuring utility.
+
+230
+00:09:18,000 --> 00:09:19,040
+Okay, let's unpack this.
+
+231
+00:09:19,660 --> 00:09:21,040
+Walk me through the missing denominator.
+
+232
+00:09:21,040 --> 00:09:28,020
+Because when I hear seven containers and 400 documents for a chatbot, my immediate instinct is that this is objectively insane.
+
+233
+00:09:28,240 --> 00:09:29,240
+It does sound like a lot.
+
+234
+00:09:29,360 --> 00:09:34,760
+It sounds like someone building a backyard tool shed out of 200,000 bricks and three miles of copper wiring.
+
+235
+00:09:35,160 --> 00:09:37,780
+The part count itself seems like proof of failure.
+
+236
+00:09:38,260 --> 00:09:39,700
+That's a great analogy, actually.
+
+237
+00:09:39,700 --> 00:09:40,960
+That's like pressure test it.
+
+238
+00:09:41,140 --> 00:09:41,280
+Okay.
+
+239
+00:09:41,440 --> 00:09:53,320
+If I drop you onto a construction site and tell you, hey, this structure uses 200,000 bricks and three miles of wiring, you cannot definitively tell me if it is poorly engineered or brilliantly engineered.
+
+240
+00:09:53,540 --> 00:09:53,960
+Why not?
+
+241
+00:09:54,440 --> 00:09:56,740
+Because you don't know what the building is supposed to do.
+
+242
+00:09:57,600 --> 00:10:00,360
+If it's a tool shed, yeah, it's total madness.
+
+243
+00:10:00,520 --> 00:10:00,640
+Right.
+
+244
+00:10:00,640 --> 00:10:10,320
+But what if it's a regional hospital with operating rooms, MRI machines, and emergency backup grids, then 200,000 bricks might actually be dangerously conservative.
+
+245
+00:10:11,020 --> 00:10:12,020
+Oh, I see.
+
+246
+00:10:12,340 --> 00:10:18,960
+You need the denominator, the ultimate purpose of the system, to judge the numerator, which is the inventory of parts.
+
+247
+00:10:19,420 --> 00:10:20,180
+Okay, but wait.
+
+248
+00:10:20,900 --> 00:10:23,760
+The Reddit narrator gave us the denominator, didn't he?
+
+249
+00:10:23,800 --> 00:10:26,380
+He explicitly called the system a simple chatbot.
+
+250
+00:10:26,580 --> 00:10:26,940
+He did.
+
+251
+00:10:26,940 --> 00:10:30,220
+But what does chatbot actually mean?
+
+252
+00:10:30,640 --> 00:10:33,120
+In the context of enterprise software in 2026.
+
+253
+00:10:33,580 --> 00:10:33,860
+Hmm.
+
+254
+00:10:34,420 --> 00:10:40,120
+Fleisian points out that the Word is doing a massive amount of rhetorical heavy lifting there to make the AI look ridiculous.
+
+255
+00:10:40,720 --> 00:10:43,620
+We simply do not have the system's actual requirements.
+
+256
+00:10:44,000 --> 00:10:51,540
+Meaning there's a difference between a little text box that spits out pre-written FAQs and what this thing might have actually been doing behind the scenes.
+
+257
+00:10:51,680 --> 00:10:52,160
+Precisely.
+
+258
+00:10:52,440 --> 00:10:55,720
+Was this just a thin user interface layer placed over a large language model?
+
+259
+00:10:55,920 --> 00:10:57,000
+If so, yes.
+
+260
+00:10:57,180 --> 00:11:00,000
+Seven Containers is the 200,000 brick tool shed.
+
+261
+00:11:00,200 --> 00:11:00,380
+Right.
+
+262
+00:11:00,640 --> 00:11:06,300
+But what if this so-called chatbot was actually a secure, multi-tenant enterprise platform?
+
+263
+00:11:06,860 --> 00:11:07,800
+Okay, what would that entail?
+
+264
+00:11:08,040 --> 00:11:10,220
+What if it required complex authentication protocols?
+
+265
+00:11:10,900 --> 00:11:17,760
+What if it needed strict data isolation so that customer A's financial data never accidentally leaked into customer B's chat window?
+
+266
+00:11:18,100 --> 00:11:19,260
+That would be a huge deal.
+
+267
+00:11:19,620 --> 00:11:27,920
+What if it was executing automated financial transactions, undergoing compliance auditing in real time, and integrating with a dozen legacy databases?
+
+268
+00:11:28,600 --> 00:11:29,020
+Oh, wow.
+
+269
+00:11:29,480 --> 00:11:33,880
+If it's doing all of that, then seven containers might actually be an elegant minimalist design.
+
+270
+00:11:33,880 --> 00:11:34,440
+Exactly.
+
+271
+00:11:34,440 --> 00:11:34,740
+Exactly.
+
+272
+00:11:35,080 --> 00:11:35,580
+We don't know.
+
+273
+00:11:36,460 --> 00:11:41,000
+And because we don't know the denominator, we literally cannot mathematically judge the numerator.
+
+274
+00:11:41,600 --> 00:11:45,620
+We cannot simply count the parts and declare the architecture flawed.
+
+275
+00:11:46,280 --> 00:11:50,320
+That totally makes me rethink how I evaluate my own team's projects.
+
+276
+00:11:50,440 --> 00:11:51,220
+It's a huge trap.
+
+277
+00:11:51,220 --> 00:11:54,560
+But surely computer science has a framework for this, right?
+
+278
+00:11:54,620 --> 00:11:57,880
+Like, how do we separate necessary complexity from bad complexity?
+
+279
+00:11:58,380 --> 00:11:59,000
+We do.
+
+280
+00:11:59,560 --> 00:12:01,760
+And it goes back to some foundational theories in the field.
+
+281
+00:12:02,640 --> 00:12:04,040
+Flyxion brings in Fred Brooks here.
+
+282
+00:12:04,340 --> 00:12:06,240
+The guy who wrote The Mythical Man Month.
+
+283
+00:12:06,460 --> 00:12:07,220
+The very same.
+
+284
+00:12:07,220 --> 00:12:18,780
+But specifically, Flyxion is referencing a later paper by Brooks called No Silver Bullet, where Brooks drew a strict boundary between essential difficulties and accidental difficulties.
+
+285
+00:12:19,420 --> 00:12:20,280
+Oh, I like those terms.
+
+286
+00:12:20,880 --> 00:12:23,840
+Let's define those because that vocabulary is really useful.
+
+287
+00:12:24,360 --> 00:12:24,580
+Okay.
+
+288
+00:12:24,580 --> 00:12:30,920
+So, essential difficulties are the complexities that are inherent to the nature of the problem you were trying to solve.
+
+289
+00:12:31,440 --> 00:12:32,120
+Give me an example.
+
+290
+00:12:32,780 --> 00:12:32,980
+Okay.
+
+291
+00:12:33,600 --> 00:12:38,720
+Say you are building a system to safely route thousands of commercial airplanes in real time.
+
+292
+00:12:39,000 --> 00:12:39,260
+Right.
+
+293
+00:12:39,680 --> 00:12:42,900
+That problem is fundamentally, essentially complex.
+
+294
+00:12:43,260 --> 00:12:48,400
+You cannot simplify the physics, the geography, or the time constraints of air traffic control.
+
+295
+00:12:48,580 --> 00:12:51,480
+The complexity is just baked into the reality of the task.
+
+296
+00:12:51,600 --> 00:12:51,840
+Yes.
+
+297
+00:12:51,840 --> 00:12:59,860
+Accidental difficulties, on the other hand, are the complexities introduced entirely by the tools and the methods we use to build a solution.
+
+298
+00:13:00,440 --> 00:13:01,000
+Like what?
+
+299
+00:13:01,520 --> 00:13:02,980
+Like the friction of the process.
+
+300
+00:13:03,680 --> 00:13:05,780
+Managing memory allocation in C++.
+
+301
+00:13:07,000 --> 00:13:09,340
+Configuring Webpack for a front-end application.
+
+302
+00:13:09,900 --> 00:13:11,500
+Setting up a deployment pipeline.
+
+303
+00:13:12,140 --> 00:13:12,640
+Right.
+
+304
+00:13:12,800 --> 00:13:15,740
+Those tasks do not help safely route airplanes.
+
+305
+00:13:16,020 --> 00:13:16,440
+Not at all.
+
+306
+00:13:16,920 --> 00:13:20,680
+They are just chores mandated by the limitations of our current technology.
+
+307
+00:13:20,680 --> 00:13:28,920
+So, the veteran engineer on Reddit is basically arguing that this AI generated a catastrophic amount of accidental complexity.
+
+308
+00:13:29,380 --> 00:13:29,740
+Exactly.
+
+309
+00:13:30,380 --> 00:13:36,740
+The 400 documents and the inter-container healing protocol weren't solving the customer's problem.
+
+310
+00:13:36,860 --> 00:13:40,280
+They were just the AI struggling to manage its own chaotic tools.
+
+311
+00:13:40,280 --> 00:13:41,980
+That is the claim, yes.
+
+312
+00:13:42,660 --> 00:13:50,440
+And to evaluate that claim, Flyxion cites David Parnas, another pioneer who established the criteria for system decomposition.
+
+313
+00:13:51,200 --> 00:13:56,600
+System decomposition meaning how you divide a big software system into smaller manageable modules.
+
+314
+00:13:56,960 --> 00:13:57,200
+Right.
+
+315
+00:13:57,260 --> 00:13:58,560
+How you separate it into containers.
+
+316
+00:13:59,560 --> 00:14:04,520
+Parnas argued that you draw boundaries specifically to hide design decisions that are likely to change.
+
+317
+00:14:04,520 --> 00:14:04,840
+Okay.
+
+318
+00:14:05,140 --> 00:14:10,960
+You create clean, intelligible interfaces between the parts so they don't constantly break each other.
+
+319
+00:14:11,040 --> 00:14:11,560
+Okay, hold on.
+
+320
+00:14:11,820 --> 00:14:12,300
+Wait a second.
+
+321
+00:14:12,580 --> 00:14:12,720
+Yep.
+
+322
+00:14:13,040 --> 00:14:19,100
+If Parnas says boundaries are supposed to keep things clean and separated, doesn't that prove the Reddit engineer is totally right?
+
+323
+00:14:19,540 --> 00:14:19,960
+How so?
+
+324
+00:14:20,500 --> 00:14:27,780
+The AI built a system where the containers constantly drifted out of sync, requiring a dedicated protocol just to repair them.
+
+325
+00:14:27,940 --> 00:14:29,340
+The boundaries clearly failed.
+
+326
+00:14:29,340 --> 00:14:34,240
+You are absolutely correct, and Flyxion's analysis agrees with you there.
+
+327
+00:14:34,640 --> 00:14:38,360
+The specific architecture described in the anecdote is deeply flawed.
+
+328
+00:14:38,500 --> 00:14:38,660
+Right.
+
+329
+00:14:39,180 --> 00:14:46,120
+If your containers constantly drift out of agreement, and you have to build a machine just to reconcile them, your decomposition has failed.
+
+330
+00:14:46,820 --> 00:14:48,720
+Your boundaries aren't hiding complexity.
+
+331
+00:14:49,180 --> 00:14:52,040
+They are actively generating new, toxic interactions.
+
+332
+00:14:52,500 --> 00:14:55,540
+So the narrator was right to be horrified by the code.
+
+333
+00:14:55,540 --> 00:14:58,700
+He was right that the specific system he inherited was broken.
+
+334
+00:14:59,160 --> 00:15:05,340
+But, and this is key, Flyxion emphasizes that the logical leap the narrator makes is where the danger lies.
+
+335
+00:15:05,420 --> 00:15:08,840
+The leap from this system being bad to all AI being bad.
+
+336
+00:15:08,960 --> 00:15:09,380
+Exactly.
+
+337
+00:15:09,920 --> 00:15:18,140
+The engineer jumps from this specific arrangement of containers is broken to agentic AI development is inherently inferior to conventional human programming.
+
+338
+00:15:18,480 --> 00:15:18,920
+I see.
+
+339
+00:15:18,920 --> 00:15:21,960
+That leap requires comparative evidence.
+
+340
+00:15:22,480 --> 00:15:27,620
+You cannot evaluate an entirely new paradigm of work based on a single, poorly governed failure.
+
+341
+00:15:27,920 --> 00:15:30,700
+Which brings us to a massive structural question.
+
+342
+00:15:30,800 --> 00:15:31,020
+Yes.
+
+343
+00:15:31,020 --> 00:15:38,600
+If we can't just count the containers, how do we actually measure if a paradigm-shifting tool like AI is better than a human?
+
+344
+00:15:39,480 --> 00:15:46,120
+Because right now, every single corporate benchmark I see just tests whether an AI can do the exact same things a human does, just faster.
+
+345
+00:15:46,120 --> 00:15:49,340
+And that is a fundamental trap of measurement.
+
+346
+00:15:50,040 --> 00:15:54,000
+To understand why, Flyxion borrows a distinction from economics.
+
+347
+00:15:54,400 --> 00:15:56,320
+Oh, I love when we bring economics into this.
+
+348
+00:15:56,400 --> 00:16:01,520
+It's the difference between the intensive margin and the extensive margin of technological change.
+
+349
+00:16:02,160 --> 00:16:03,740
+Intensive versus extensive.
+
+350
+00:16:04,200 --> 00:16:05,420
+Break that down for me.
+
+351
+00:16:05,500 --> 00:16:06,660
+What does that look like in practice?
+
+352
+00:16:06,980 --> 00:16:14,600
+The intensive margin is when a new technology lowers the cost, or the time, of doing work that you are already going to do anyway.
+
+353
+00:16:15,140 --> 00:16:15,540
+Okay.
+
+354
+00:16:15,540 --> 00:16:18,800
+Imagine a developer needs to write a standard authentication function.
+
+355
+00:16:19,380 --> 00:16:20,840
+Historically, it takes them four hours.
+
+356
+00:16:21,700 --> 00:16:24,480
+With an AI assistant, it takes them three hours.
+
+357
+00:16:25,480 --> 00:16:27,500
+They have improved on the intensive margin.
+
+358
+00:16:27,980 --> 00:16:31,980
+They executed a known, predefined task 25% faster.
+
+359
+00:16:32,520 --> 00:16:35,840
+Which is literally how every single software tool is marketed right now.
+
+360
+00:16:35,960 --> 00:16:37,760
+Do your current job, but do it faster.
+
+361
+00:16:38,120 --> 00:16:38,500
+Exactly.
+
+362
+00:16:39,080 --> 00:16:43,120
+But the extensive margin is where the true revolution happens.
+
+363
+00:16:43,280 --> 00:16:44,040
+Okay, what's that?
+
+364
+00:16:44,040 --> 00:16:53,180
+The extensive margin is when a technology lowers the cost of work so drastically that it changes which work can even be attempted in the first place.
+
+365
+00:16:53,380 --> 00:16:53,780
+Oh, wow.
+
+366
+00:16:53,780 --> 00:17:00,700
+It opens up projects that were previously so expensive or so time consuming that you couldn't justify pitching them to your boss.
+
+367
+00:17:00,700 --> 00:17:02,960
+Okay, so let me make sure I'm getting this.
+
+368
+00:17:02,960 --> 00:17:09,320
+On the intensive margin, I'm using AI to write my weekly status update emails in two minutes instead of ten.
+
+369
+00:17:09,660 --> 00:17:09,880
+Right.
+
+370
+00:17:09,880 --> 00:17:20,800
+But on the extensive margin, I'm using AI to ingest 10 years of unstructured customer feedback, cross-reference it against supply chain delays, and find a hidden market trend.
+
+371
+00:17:21,020 --> 00:17:21,300
+Yes.
+
+372
+00:17:21,480 --> 00:17:25,480
+A human could do that, but it would take a year and cost a million dollars, so we just never did it.
+
+373
+00:17:25,480 --> 00:17:27,080
+That is a perfect example.
+
+374
+00:17:27,080 --> 00:17:33,020
+And this leads to Phloggi's Proposition 1, which is a mathematical point about non-identification.
+
+375
+00:17:33,460 --> 00:17:34,660
+Non-identification.
+
+376
+00:17:35,040 --> 00:17:35,220
+Yeah.
+
+377
+00:17:35,740 --> 00:17:49,740
+Phloggi proves logically that if you only evaluate AI on tasks that are shared with conventional methods, if you only measure the intensive margin, you will completely miss the value of what mathematicians call the symmetric difference.
+
+378
+00:17:49,740 --> 00:18:01,400
+Okay, symmetric difference. Break out the whiteboard for me, because that sounds like something from a college discrete math class. How does that apply to evaluating an AI coder?
+
+379
+00:18:01,900 --> 00:18:02,900
+Think of a Venn diagram.
+
+380
+00:18:03,380 --> 00:18:05,360
+Okay, I've got a Venn diagram in my head.
+
+381
+00:18:05,980 --> 00:18:14,560
+Circle A contains all the projects that human engineers can successfully code. Circle B contains all the projects that AI systems can code.
+
+382
+00:18:14,840 --> 00:18:15,360
+Got it.
+
+383
+00:18:15,580 --> 00:18:18,620
+The overlap in the middle is the set of shared tasks.
+
+384
+00:18:18,620 --> 00:18:28,460
+If your benchmark only measures that overlap, like seeing who can code a login screen the fastest, it is completely blind to the outer crescents of the circles.
+
+385
+00:18:28,980 --> 00:18:37,840
+Oh. So we are blind to the crescent of projects that only AI makes feasible, because a human would take a hundred years to do them.
+
+386
+00:18:38,140 --> 00:18:38,500
+Exactly.
+
+387
+00:18:39,120 --> 00:18:46,520
+But we are also blind to the other crescent, the projects that only humans can do safely, because the AI hallucination risk is too high.
+
+388
+00:18:46,940 --> 00:18:47,420
+Precisely.
+
+389
+00:18:47,420 --> 00:18:54,500
+If you evaluate a massive technological shift purely on the overlap, your evaluation is logically incomplete.
+
+390
+00:18:55,140 --> 00:18:59,700
+It's like you were judging a new mode of transportation by timing how fast it can walk.
+
+391
+00:18:59,900 --> 00:19:03,200
+Think about your own workflow for a second, whatever industry you are in.
+
+392
+00:19:03,340 --> 00:19:04,500
+Yeah, this applies to everyone.
+
+393
+00:19:05,000 --> 00:19:09,940
+When your company rolls out a new tool, do you just use it to do your old chores faster,
+
+394
+00:19:09,940 --> 00:19:13,460
+or do you start attempting things you previously wrote off as impossible?
+
+395
+00:19:13,460 --> 00:19:18,900
+Because if it's the latter, and your management is only measuring how fast you execute your old chores,
+
+396
+00:19:19,440 --> 00:19:23,060
+they are structurally blind to the actual value you are generating.
+
+397
+00:19:23,340 --> 00:19:25,680
+It's such a profound way to look at productivity.
+
+398
+00:19:26,200 --> 00:19:31,860
+And Flyxion takes this even deeper with Proposition 2, introducing the concept of endogenous discovery.
+
+399
+00:19:32,300 --> 00:19:34,400
+Endogenous meaning originating from within.
+
+400
+00:19:34,400 --> 00:19:37,560
+Yes, yes, originating from within the process of the work itself.
+
+401
+00:19:38,280 --> 00:19:43,540
+What's fascinating here is that Flyxion argues that when the cost of experimentation drops to near absolute zero,
+
+402
+00:19:43,960 --> 00:19:45,640
+it doesn't just stretch your budget.
+
+403
+00:19:46,300 --> 00:19:46,900
+What does it do?
+
+404
+00:19:47,000 --> 00:19:49,960
+It fundamentally alters the recognized domain of ideas.
+
+405
+00:19:50,480 --> 00:19:53,480
+It changes what you even perceive as a possible project.
+
+406
+00:19:53,480 --> 00:19:55,840
+What does that look like on the ground for an engineer?
+
+407
+00:19:56,220 --> 00:19:57,420
+Can you give me a scenario?
+
+408
+00:19:57,800 --> 00:19:57,940
+Sure.
+
+409
+00:19:58,400 --> 00:19:59,640
+Let's look at traditional coding.
+
+410
+00:20:00,360 --> 00:20:03,040
+Because it takes weeks of human labor to build a functional prototype,
+
+411
+00:20:03,380 --> 00:20:06,580
+you only attempt to build things that you are highly confident will work.
+
+412
+00:20:06,900 --> 00:20:08,740
+Right, because failure is expensive.
+
+413
+00:20:09,180 --> 00:20:09,500
+Exactly.
+
+414
+00:20:10,220 --> 00:20:13,900
+Your recognized domain of projects is strictly limited by the high cost of failure.
+
+415
+00:20:14,040 --> 00:20:15,320
+You don't take wild swings.
+
+416
+00:20:15,520 --> 00:20:16,040
+Makes sense.
+
+417
+00:20:16,400 --> 00:20:20,060
+But with AI, you can generate a working prototype in 20 minutes.
+
+418
+00:20:20,060 --> 00:20:26,880
+Because it's so cheap, you might ask the AI to run a bizarre, highly speculative simulation just for fun over your lunch break.
+
+419
+00:20:27,020 --> 00:20:27,720
+Why not, right?
+
+420
+00:20:28,140 --> 00:20:31,000
+And that simulation might produce an anomalous result.
+
+421
+00:20:31,500 --> 00:20:36,720
+That weird result sparks a connection in your brain for an entirely new business application.
+
+422
+00:20:37,060 --> 00:20:41,460
+An application you literally could not have conceived of before you ran the cheap experiment.
+
+423
+00:20:42,000 --> 00:20:43,940
+That is endogenous discovery.
+
+424
+00:20:44,660 --> 00:20:45,860
+That makes total sense.
+
+425
+00:20:45,860 --> 00:20:49,840
+It's like, okay, it's like exploring a massive, pitch-black warehouse.
+
+426
+00:20:50,060 --> 00:20:50,600
+I like this.
+
+427
+00:20:51,080 --> 00:20:55,160
+Traditional coding is like mapping that warehouse with a tiny, weak flashlight.
+
+428
+00:20:55,440 --> 00:21:01,700
+You carefully plan out three steps forward, one step left, because every movement is incredibly expensive and slow.
+
+429
+00:21:01,840 --> 00:21:04,940
+Right, a methodical, highly constrained search space.
+
+430
+00:21:05,320 --> 00:21:05,720
+Exactly.
+
+431
+00:21:06,060 --> 00:21:09,020
+You only explore what you actively decide to explore.
+
+432
+00:21:09,020 --> 00:21:14,720
+But AI prototyping is like having a switch that turns on the stadium floodlights for a split second.
+
+433
+00:21:14,840 --> 00:21:15,340
+Ah, okay.
+
+434
+00:21:15,460 --> 00:21:16,840
+You flip it on and bam!
+
+435
+00:21:17,340 --> 00:21:19,120
+You instantly see the whole warehouse.
+
+436
+00:21:19,640 --> 00:21:22,820
+You might see a door in the far back corner that you didn't even know existed.
+
+437
+00:21:23,060 --> 00:21:23,660
+Right, right.
+
+438
+00:21:23,800 --> 00:21:25,380
+You didn't plan to search for that door.
+
+439
+00:21:25,580 --> 00:21:27,460
+The cheapness of the light revealed it to you.
+
+440
+00:21:27,720 --> 00:21:29,640
+That is endogenous discovery.
+
+441
+00:21:29,640 --> 00:21:32,640
+That is exactly what Flaché is talking about.
+
+442
+00:21:33,660 --> 00:21:40,400
+The fixed task benchmarks we use, like giving an AI and a human the exact same coding test to pass, are completely blind to this phenomenon.
+
+443
+00:21:41,160 --> 00:21:42,600
+Because they measure execution.
+
+444
+00:21:43,000 --> 00:21:44,380
+Yes, they measure execution.
+
+445
+00:21:44,900 --> 00:21:48,200
+They do not and cannot measure conception.
+
+446
+00:21:48,200 --> 00:21:51,560
+They can't measure the value of the door you didn't know was there.
+
+447
+00:21:52,700 --> 00:21:54,800
+But let me push back using my own analogy here.
+
+448
+00:21:54,960 --> 00:21:55,340
+Please do.
+
+449
+00:21:55,520 --> 00:21:58,800
+When you flash those stadium lights, you might see a hidden door, sure.
+
+450
+00:21:59,080 --> 00:22:02,940
+But you are also going to see that the warehouse is filled with absolute junk.
+
+451
+00:22:03,160 --> 00:22:04,200
+Oh, 100%.
+
+452
+00:22:04,780 --> 00:22:08,000
+Expanded feasibility doesn't guarantee expanded value, does it?
+
+453
+00:22:08,120 --> 00:22:09,200
+It absolutely does not.
+
+454
+00:22:09,800 --> 00:22:11,720
+And Flaché is very explicit about this caution.
+
+455
+00:22:12,620 --> 00:22:16,480
+Expanding the recognized domain means you get more opportunities, yes.
+
+456
+00:22:16,480 --> 00:22:19,960
+But you also get a massive influx of distractions.
+
+457
+00:22:20,600 --> 00:22:21,780
+You get terrible ideas.
+
+458
+00:22:21,940 --> 00:22:23,100
+You get terrible ideas.
+
+459
+00:22:23,260 --> 00:22:29,940
+You get speculative dead ends that you can now waste countless hours investigating simply because they are cheap to start.
+
+460
+00:22:30,140 --> 00:22:33,620
+Which brings us to one of the most practical questions in this whole deep dive.
+
+461
+00:22:33,880 --> 00:22:34,040
+Yeah.
+
+462
+00:22:34,360 --> 00:22:41,140
+If AI makes building things so cheap, why did the code in the Reddit story bloat so massively?
+
+463
+00:22:41,140 --> 00:22:47,000
+Like, why did the AI generate 400 documents and seven containers for one application?
+
+464
+00:22:47,640 --> 00:22:49,700
+To understand this, we really have to talk about scarcity.
+
+465
+00:22:50,100 --> 00:22:53,100
+And what happens when physical constraints disappear?
+
+466
+00:22:53,680 --> 00:22:53,940
+Okay.
+
+467
+00:22:54,080 --> 00:22:56,620
+Let's look at the historical economics of software.
+
+468
+00:22:56,880 --> 00:22:58,120
+Let's wind the clock back.
+
+469
+00:22:58,340 --> 00:23:00,040
+Let's go back to the 1970s and 80s.
+
+470
+00:23:00,080 --> 00:23:00,240
+Yeah.
+
+471
+00:23:00,320 --> 00:23:03,280
+Early programming was strictly constrained by physical hardware.
+
+472
+00:23:03,900 --> 00:23:07,280
+Programs had to fit into literally kilobytes of memory.
+
+473
+00:23:07,640 --> 00:23:08,120
+Kilobytes.
+
+474
+00:23:08,320 --> 00:23:08,640
+Kilobytes.
+
+475
+00:23:08,640 --> 00:23:09,800
+It's hard to even imagine now.
+
+476
+00:23:10,220 --> 00:23:19,220
+If you were an engineer back then, every single line of code, every feature, every variable had to justify its existence against the hard physical limit of the machine.
+
+477
+00:23:19,420 --> 00:23:21,620
+The constraint was staring you in the face.
+
+478
+00:23:22,000 --> 00:23:22,240
+Right.
+
+479
+00:23:22,320 --> 00:23:24,640
+If you wrote bloated code, the computer simply wouldn't run it.
+
+480
+00:23:25,280 --> 00:23:26,540
+Now, flash forward to today.
+
+481
+00:23:26,580 --> 00:23:31,300
+With AI, the token budget is functionally infinite for most daily tasks.
+
+482
+00:23:31,500 --> 00:23:36,480
+You can ask an AI to generate 10,000 lines of code and it costs pennies in API calls.
+
+483
+00:23:36,480 --> 00:23:39,240
+And that alters the fundamental economics of the work.
+
+484
+00:23:39,980 --> 00:23:42,320
+Let's break down the cost of a software system.
+
+485
+00:23:42,760 --> 00:23:42,940
+Okay.
+
+486
+00:23:43,380 --> 00:23:44,340
+There are two main phases.
+
+487
+00:23:44,780 --> 00:23:50,680
+The production cost, which is the initial writing of the code, and the life cycle or maintenance cost.
+
+488
+00:23:51,020 --> 00:23:51,600
+Okay.
+
+489
+00:23:51,780 --> 00:23:53,540
+Production and maintenance.
+
+490
+00:23:54,040 --> 00:23:58,820
+Software economists like Barry Boehm and Mare Lehman have studied this for decades.
+
+491
+00:23:58,820 --> 00:24:05,060
+They prove conclusively that maintenance heavily, heavily dominates the total cost of any software system.
+
+492
+00:24:05,880 --> 00:24:08,220
+It's always more expensive to maintain a house than to build it.
+
+493
+00:24:08,380 --> 00:24:08,600
+Always.
+
+494
+00:24:09,120 --> 00:24:11,120
+You have to patch the code for new security threats.
+
+495
+00:24:11,380 --> 00:24:12,600
+You have to upgrade the dependencies.
+
+496
+00:24:13,140 --> 00:24:16,560
+You have to spend months onboarding new engineers so they understand the architecture.
+
+497
+00:24:17,220 --> 00:24:20,080
+And constantly fix the bugs that emerge in edge cases.
+
+498
+00:24:20,360 --> 00:24:20,720
+Yes.
+
+499
+00:24:21,320 --> 00:24:24,000
+Now, introduce AI to that economic reality.
+
+500
+00:24:24,000 --> 00:24:27,860
+The perceived cost of production falls to near zero.
+
+501
+00:24:28,440 --> 00:24:33,180
+Because a developer just types a prompt, hits enter, and an entire feature appears instantly?
+
+502
+00:24:33,380 --> 00:24:34,140
+It feels free.
+
+503
+00:24:34,620 --> 00:24:35,400
+It feels like magic.
+
+504
+00:24:35,820 --> 00:24:39,160
+But the life cycle cost of that generated feature remains incredibly high.
+
+505
+00:24:39,820 --> 00:24:43,540
+You still have to maintain those 10,000 lines of code forever.
+
+506
+00:24:43,920 --> 00:24:44,760
+So it's an illusion.
+
+507
+00:24:45,520 --> 00:24:52,240
+It feels free to build, but you are silently signing a contract to pay the maintenance tax for the next 10 years.
+
+508
+00:24:52,800 --> 00:24:53,280
+Precisely.
+
+509
+00:24:53,280 --> 00:25:02,180
+And to explain why this leads to massive bloat, Flyxion compares the current AI landscape to the Jevons Paradox in economics.
+
+510
+00:25:03,020 --> 00:25:04,100
+The Jevons Paradox.
+
+511
+00:25:04,260 --> 00:25:06,920
+Okay, William Stanley Jevons, the 19th century economist.
+
+512
+00:25:07,680 --> 00:25:11,680
+Walk us through how a guy from the 1800s explains an AI coding disaster.
+
+513
+00:25:12,080 --> 00:25:12,640
+It's brilliant.
+
+514
+00:25:13,500 --> 00:25:17,060
+Back in 1865, Jevons was observing the British coal industry.
+
+515
+00:25:17,920 --> 00:25:20,680
+Engineers had recently invented much more efficient steam engines.
+
+516
+00:25:21,100 --> 00:25:21,300
+Right.
+
+517
+00:25:21,300 --> 00:25:29,360
+Now, logically, you would think that because the new engines used coal more efficiently, the overall consumption of coal in the country would go down.
+
+518
+00:25:30,040 --> 00:25:33,480
+Right, because a factory needs less coal to produce the same amount of power.
+
+519
+00:25:33,480 --> 00:25:36,560
+But Jevons noticed the exact opposite happened.
+
+520
+00:25:37,220 --> 00:25:41,900
+Because coal use became more efficient, it became vastly cheaper to operate steam engines.
+
+521
+00:25:41,900 --> 00:25:44,020
+Oh, I see where this is going.
+
+522
+00:25:44,020 --> 00:25:51,100
+That sudden cheapness made it highly profitable to deploy steam engines in dozens of new industries that had never used them before.
+
+523
+00:25:51,820 --> 00:25:55,020
+The increase in efficiency didn't reduce coal consumption.
+
+524
+00:25:55,420 --> 00:25:57,920
+It radically, exponentially increased it.
+
+525
+00:25:58,480 --> 00:26:01,460
+So cheap coal led to massive coal consumption.
+
+526
+00:26:01,680 --> 00:26:01,880
+Yes.
+
+527
+00:26:01,880 --> 00:26:06,180
+And in our world, cheap code leads to massive code accumulation.
+
+528
+00:26:06,600 --> 00:26:07,080
+Precisely.
+
+529
+00:26:07,720 --> 00:26:12,840
+Because the manual labor of typing code has become artificially cheap, the volume of code explodes.
+
+530
+00:26:13,560 --> 00:26:16,880
+The physical restraint that kilobytes used to provide is completely gone.
+
+531
+00:26:17,740 --> 00:26:18,080
+Wow.
+
+532
+00:26:19,040 --> 00:26:28,980
+Meyer-Lehman, whom we mentioned earlier, had a famous law of software evolution stating that complexity always increases unless explicit work is deliberately done to produce it.
+
+533
+00:26:28,980 --> 00:26:32,560
+In the AI era, adding code is effortless.
+
+534
+00:26:32,700 --> 00:26:36,460
+Reducing code requires painful, deliberate, manual, human thought.
+
+535
+00:26:36,680 --> 00:26:37,060
+Exactly.
+
+536
+00:26:37,820 --> 00:26:46,460
+Okay, but if we don't have the physical limit of kilobytes constraining us anymore, how do we stop our software from turning into a sprawling, unmaintainable mess?
+
+537
+00:26:46,520 --> 00:26:50,720
+How do we stop the AI from generating 400 documents for a chatbot?
+
+538
+00:26:51,160 --> 00:26:53,440
+We have to turn to behavioral economics.
+
+539
+00:26:54,120 --> 00:26:58,340
+Flyxion cites the Nobel laureate Richard Thaler in his work on mental accounting.
+
+540
+00:26:58,980 --> 00:26:59,900
+Mental accounting.
+
+541
+00:27:00,200 --> 00:27:00,400
+Yeah.
+
+542
+00:27:00,660 --> 00:27:03,640
+Thaler showed that humans do not treat all resources rationally.
+
+543
+00:27:04,160 --> 00:27:05,600
+We put our money into mental buckets.
+
+544
+00:27:05,800 --> 00:27:08,920
+We have an entertainment budget and a groceries budget.
+
+545
+00:27:08,920 --> 00:27:13,320
+We create artificial scarcity for ourselves to regulate our own behavior.
+
+546
+00:27:14,080 --> 00:27:16,340
+Right, like using the envelope budgeting system for cash.
+
+547
+00:27:17,020 --> 00:27:20,540
+So we have to do envelope budgeting for AI code?
+
+548
+00:27:20,840 --> 00:27:21,900
+Essentially, yes.
+
+549
+00:27:21,900 --> 00:27:28,860
+Because physical scarcity is gone, Flyxion argues that developers must now create artificial scarcity.
+
+550
+00:27:29,580 --> 00:27:32,780
+We need deliberate, ring-fenced budgets for complexity.
+
+551
+00:27:33,320 --> 00:27:40,380
+We have to artificially force ourselves to evaluate the lifecycle costs of an AI's output before we hit accept.
+
+552
+00:27:40,380 --> 00:27:48,300
+It's like telling the AI, you can solve this problem, but you are only allowed to use three containers and 500 lines of code.
+
+553
+00:27:49,060 --> 00:27:51,320
+If you can't do it in that budget, the feature doesn't get built.
+
+554
+00:27:51,640 --> 00:27:54,000
+We have to manually enforce the scarcity.
+
+555
+00:27:54,600 --> 00:28:01,980
+Without those explicit boundaries, you get exactly what the Reddit anecdote described, the unchecked, cancer-like growth of a system.
+
+556
+00:28:02,560 --> 00:28:05,520
+The automation vastly outgrows the actual application.
+
+557
+00:28:05,520 --> 00:28:07,520
+Man, that is so true.
+
+558
+00:28:07,800 --> 00:28:13,460
+Let's pivot back to that Reddit story for a second, though, because I want to challenge one of the narrator's main complaints.
+
+559
+00:28:13,600 --> 00:28:14,020
+Go for it.
+
+560
+00:28:14,380 --> 00:28:20,980
+The veteran engineer was incredibly horrified by the 2,900 unit tests and specifically by the AI's self-repair loop.
+
+561
+00:28:21,420 --> 00:28:23,060
+Right, the loop that wrote its own patches.
+
+562
+00:28:23,500 --> 00:28:23,700
+Yeah.
+
+563
+00:28:23,900 --> 00:28:24,040
+Yeah.
+
+564
+00:28:24,400 --> 00:28:33,580
+They said the AI would detect an error, automatically open a ticketing system issue, write a patch for the code, deploy the patch, and then close the ticket.
+
+565
+00:28:33,780 --> 00:28:34,360
+Sounds efficient.
+
+566
+00:28:34,360 --> 00:28:39,740
+Well, I have to be honest, to a lot of developers listening right now, that sounds like absolute nirvana.
+
+567
+00:28:39,940 --> 00:28:40,680
+I'm sure it does.
+
+568
+00:28:40,800 --> 00:28:44,620
+A system that detects its own bugs and patches them while I'm asleep?
+
+569
+00:28:44,860 --> 00:28:45,800
+Why is that a nightmare?
+
+570
+00:28:46,300 --> 00:28:52,120
+Why do the customers still experience massive bugs if the AI was constantly fixing itself?
+
+571
+00:28:52,680 --> 00:28:58,140
+This raises an important question, and it is perhaps the deepest epistemic point in Flyxion's entire essay.
+
+572
+00:28:58,740 --> 00:29:03,540
+To answer that, we really have to look at the underlying philosophy of verification.
+
+573
+00:29:03,540 --> 00:29:07,760
+How do we actually know that a piece of software works?
+
+574
+00:29:08,200 --> 00:29:09,020
+How do we prove it?
+
+575
+00:29:09,020 --> 00:29:09,500
+Yes.
+
+576
+00:29:10,180 --> 00:29:13,000
+Flyxion brings in two major computer science figures here.
+
+577
+00:29:13,340 --> 00:29:19,980
+First, Etzger Dijkstra, who famously warned that testing shows the presence of bugs, never their absence.
+
+578
+00:29:20,280 --> 00:29:21,040
+Wait, say that again?
+
+579
+00:29:21,460 --> 00:29:24,860
+Testing shows the presence of bugs, never their absence.
+
+580
+00:29:25,580 --> 00:29:30,640
+A test can only prove that the specific, isolated scenario you thought to check for is broken.
+
+581
+00:29:30,640 --> 00:29:34,020
+A test cannot prove that the system as a whole is perfect.
+
+582
+00:29:34,480 --> 00:29:37,700
+Because you literally cannot write a test for a scenario you haven't imagined yet.
+
+583
+00:29:37,920 --> 00:29:38,360
+Exactly.
+
+584
+00:29:39,300 --> 00:29:44,100
+The second figure is Nancy Leveson, an absolute titan in systems safety engineering.
+
+585
+00:29:44,760 --> 00:29:50,640
+She studies how systems fail in aerospace, in medical devices, in military applications.
+
+586
+00:29:50,880 --> 00:29:51,720
+High-stakes stuff.
+
+587
+00:29:51,920 --> 00:29:52,520
+Very high-stakes.
+
+588
+00:29:52,520 --> 00:30:02,540
+Leveson demonstrated that in complex, integrated systems, every individual component can function perfectly according to its own local specification.
+
+589
+00:30:03,420 --> 00:30:07,140
+And yet, the overarching system can still fail catastrophically.
+
+590
+00:30:07,480 --> 00:30:08,500
+How does that happen?
+
+591
+00:30:08,880 --> 00:30:10,180
+Give me a concrete example.
+
+592
+00:30:10,180 --> 00:30:15,020
+Imagine a component designed to send a status ping every five seconds.
+
+593
+00:30:15,280 --> 00:30:16,000
+It works perfectly.
+
+594
+00:30:16,660 --> 00:30:21,560
+Now, imagine a receiving server designed to process incoming pings every 10 seconds.
+
+595
+00:30:21,860 --> 00:30:24,120
+It also works perfectly according to its spec.
+
+596
+00:30:24,240 --> 00:30:24,520
+Okay.
+
+597
+00:30:25,040 --> 00:30:31,020
+But when you connect them, the receiver gets flooded, the buffer overflows, and the entire system crashes.
+
+598
+00:30:31,500 --> 00:30:32,480
+Oh, I see.
+
+599
+00:30:32,640 --> 00:30:39,380
+Both parts succeeded locally, but the system failed globally because the danger lies in the interactions between components.
+
+600
+00:30:39,380 --> 00:30:43,640
+Okay, so how does Leveson's theory apply to the AI's self-repair loop?
+
+601
+00:30:44,480 --> 00:30:49,640
+It creates an epistemic flaw that Flyxion calls verification without correspondence.
+
+602
+00:30:50,360 --> 00:30:58,520
+If the agentic AI that writes the code is the exact same AI that writes the test to check the code, they share the identical mental blind spots.
+
+603
+00:30:59,100 --> 00:30:59,500
+Oh.
+
+604
+00:31:00,660 --> 00:31:01,140
+Wow.
+
+605
+00:31:01,300 --> 00:31:02,060
+Okay, I see it.
+
+606
+00:31:02,420 --> 00:31:03,140
+You see the trap.
+
+607
+00:31:03,140 --> 00:31:11,840
+Yes, it's like letting a college student write their own final exam, take the exam, grade it themselves, and proudly show you their A+.
+
+608
+00:31:11,840 --> 00:31:12,740
+Exactly.
+
+609
+00:31:13,280 --> 00:31:14,220
+Of course they got an A+.
+
+610
+00:31:14,220 --> 00:31:16,720
+They only ask themselves questions they already knew the answers to.
+
+611
+00:31:17,100 --> 00:31:19,340
+That is a brilliant way to conceptualize it.
+
+612
+00:31:19,340 --> 00:31:26,660
+The agreement between the AI-generated code and the AI-generated tests only proves internal consistency.
+
+613
+00:31:27,300 --> 00:31:30,700
+It does not prove correctness against external human reality.
+
+614
+00:31:31,380 --> 00:31:33,500
+Which is what the customers actually experience.
+
+615
+00:31:33,760 --> 00:31:33,980
+Right.
+
+616
+00:31:34,700 --> 00:31:39,320
+So when the AI closed its own bug tickets, that didn't mean the software was fixed.
+
+617
+00:31:39,660 --> 00:31:40,020
+No.
+
+618
+00:31:40,580 --> 00:31:44,800
+The closing of the ticket is what Flyxion calls an attested judgment.
+
+619
+00:31:44,800 --> 00:31:45,520
+Yes.
+
+620
+00:31:46,180 --> 00:31:49,680
+It is merely a digital record that the loop finished turning.
+
+621
+00:31:50,360 --> 00:31:55,760
+It carries absolutely zero information about whether the underlying defect was actually removed.
+
+622
+00:31:56,080 --> 00:32:00,780
+Or if the AI's patch secretly broke three other unrelated features in the process.
+
+623
+00:32:01,020 --> 00:32:01,420
+Exactly.
+
+624
+00:32:02,240 --> 00:32:03,860
+The system executed a sequence.
+
+625
+00:32:04,540 --> 00:32:04,940
+Detect.
+
+626
+00:32:05,360 --> 00:32:05,700
+Patch.
+
+627
+00:32:06,260 --> 00:32:06,620
+Deploy.
+
+628
+00:32:07,240 --> 00:32:07,620
+Close.
+
+629
+00:32:08,160 --> 00:32:11,200
+But it never verified correspondence with the real world.
+
+630
+00:32:11,200 --> 00:32:14,340
+The loop has no mechanism for exploratory testing.
+
+631
+00:32:14,800 --> 00:32:16,560
+It doesn't know what it doesn't know.
+
+632
+00:32:16,680 --> 00:32:20,500
+It's living in a perfectly sealed, delusional bubble of its own logic.
+
+633
+00:32:20,820 --> 00:32:24,940
+And that sealed bubble creates a terrifying dynamic between the human and the machine.
+
+634
+00:32:25,380 --> 00:32:29,700
+Which Flyxion explores through what are known as the ironies of automation.
+
+635
+00:32:30,560 --> 00:32:33,140
+Which brings us to the chilling detail we discussed earlier.
+
+636
+00:32:33,520 --> 00:32:36,800
+The fact that human edits risk disrupting the AI cycle.
+
+637
+00:32:37,040 --> 00:32:37,320
+Yes.
+
+638
+00:32:37,320 --> 00:32:39,380
+We build tools to serve us.
+
+639
+00:32:39,760 --> 00:32:43,820
+But in this architecture, the human became a hazard to the tool.
+
+640
+00:32:44,340 --> 00:32:47,160
+The application became subordinate to the automation.
+
+641
+00:32:47,960 --> 00:32:55,180
+To understand how we let this happen, Flyxion cites a classic 1983 paper by an industrial psychologist named Lizanne Bainbridge.
+
+642
+00:32:55,620 --> 00:32:57,560
+It's called Ironies of Automation.
+
+643
+00:32:57,720 --> 00:32:58,480
+What did she find?
+
+644
+00:32:58,980 --> 00:33:05,580
+Bainbridge was observing human operators in highly automated environments like chemical refineries and airline cockpits.
+
+645
+00:33:05,580 --> 00:33:09,660
+She noted a paradoxical shift when you automate complex systems.
+
+646
+00:33:10,160 --> 00:33:10,420
+Okay.
+
+647
+00:33:10,780 --> 00:33:17,300
+As the machines take over all the routine day-to-day work, the human operators are left with nothing to do but monitor screens.
+
+648
+00:33:17,700 --> 00:33:19,800
+They just sit there waiting for an alarm to go off.
+
+649
+00:33:19,880 --> 00:33:20,020
+Right.
+
+650
+00:33:20,020 --> 00:33:28,260
+But when the machine inevitably encounters a rare, complex edge case that it cannot handle, it abruptly throws control back to the human.
+
+651
+00:33:28,500 --> 00:33:28,880
+Uh-oh.
+
+652
+00:33:29,420 --> 00:33:34,660
+The deep irony is that the human is now suddenly expected to solve the hardest possible problem.
+
+653
+00:33:34,920 --> 00:33:39,560
+But because the machine has been doing all the daily work, the human has had zero practice.
+
+654
+00:33:39,860 --> 00:33:40,220
+Wow.
+
+655
+00:33:40,640 --> 00:33:44,620
+They have lost their intimate, tactile understanding of the system's current state.
+
+656
+00:33:44,620 --> 00:33:46,840
+You see that in aviation sometimes, right?
+
+657
+00:33:46,940 --> 00:33:55,780
+The autopilot handles 99% of the flight, but when a severe sensor failure happens, the pilots have a fraction of a second to understand exactly what the plane is doing.
+
+658
+00:33:55,980 --> 00:33:58,100
+And they haven't physically flown the plane in hours.
+
+659
+00:33:58,420 --> 00:33:59,660
+It's incredibly dangerous.
+
+660
+00:33:59,780 --> 00:34:00,380
+It really is.
+
+661
+00:34:00,800 --> 00:34:04,140
+And it gets even more complicated when you apply it to software generation.
+
+662
+00:34:05,160 --> 00:34:11,340
+Flyxion pairs Bainbridge's observations with the theories of Peter Naur, a Turing award-winning computer scientist.
+
+663
+00:34:11,580 --> 00:34:12,440
+What did Naur say?
+
+664
+00:34:12,440 --> 00:34:17,760
+Naur argued that society fundamentally misunderstands what programming actually is.
+
+665
+00:34:18,580 --> 00:34:24,060
+People think programming is the act of producing text, the physical act of typing code into a computer.
+
+666
+00:34:24,660 --> 00:34:25,400
+Producing the artifact.
+
+667
+00:34:25,740 --> 00:34:26,020
+Yes.
+
+668
+00:34:26,680 --> 00:34:29,040
+Naur argued that producing text is secondary.
+
+669
+00:34:29,780 --> 00:34:35,860
+Programming is actually the cognitive process of building a mental theory of how a real-world problem is solved.
+
+670
+00:34:36,140 --> 00:34:39,500
+The code is just the exhaust, the byproduct of that mental theory.
+
+671
+00:34:39,720 --> 00:34:40,120
+Exactly.
+
+672
+00:34:40,440 --> 00:34:42,260
+I want to make sure I grasp this.
+
+673
+00:34:42,440 --> 00:34:46,200
+What does it actually feel like to have a mental theory of a code base?
+
+674
+00:34:46,640 --> 00:34:52,000
+Have you ever worked on a complex project for so long that you don't even need to look at the screen to know where a bug is?
+
+675
+00:34:52,100 --> 00:34:52,460
+Oh, yeah.
+
+676
+00:34:52,800 --> 00:35:02,940
+Like, a user reports that the online shopping cart is dropping items, and before you even open your laptop, you think, ah, it's that asynchronous call in the payment gateway timing out.
+
+677
+00:35:02,940 --> 00:35:03,260
+Right.
+
+678
+00:35:03,260 --> 00:35:03,300
+Right.
+
+679
+00:35:03,720 --> 00:35:05,000
+You didn't search the text.
+
+680
+00:35:05,220 --> 00:35:07,340
+You navigated the conceptual map in your head.
+
+681
+00:35:07,840 --> 00:35:10,340
+That intuitive map is the mental theory.
+
+682
+00:35:10,340 --> 00:35:14,260
+And building that map takes weeks of painful struggling with logic.
+
+683
+00:35:14,500 --> 00:35:18,800
+So what happens if an AI generates the payment gateway for you in 10 seconds?
+
+684
+00:35:19,320 --> 00:35:21,820
+You get the text, but you never built the theory.
+
+685
+00:35:22,220 --> 00:35:26,820
+The artifact exists, but the cognitive map was never formed in a human mind.
+
+686
+00:35:26,820 --> 00:35:34,260
+So six months later, when the system breaks down catastrophically and the AI's self-repair loop fails, the human engineer is called in.
+
+687
+00:35:34,620 --> 00:35:36,900
+The machine throws control back to the operator.
+
+688
+00:35:37,420 --> 00:35:39,920
+But the operator has no mental theory to fall back on.
+
+689
+00:35:40,420 --> 00:35:42,980
+They are staring at millions of lines of alien logic.
+
+690
+00:35:43,640 --> 00:35:46,280
+They are reduced from an architect to an archaeologist.
+
+691
+00:35:46,280 --> 00:35:48,120
+That's a perfect way to phrase it.
+
+692
+00:35:48,400 --> 00:35:51,860
+It's like using a GPS to drive everywhere in a new city for years.
+
+693
+00:35:52,260 --> 00:35:53,520
+You always arrive at your destination.
+
+694
+00:35:53,740 --> 00:35:54,780
+Sure, you get the result.
+
+695
+00:35:54,920 --> 00:35:55,920
+But you don't know the city.
+
+696
+00:35:56,080 --> 00:35:56,440
+Right.
+
+697
+00:35:56,960 --> 00:36:03,280
+If your phone suddenly dies in the middle of a massive intersection, you have no mental map of how the streets connect.
+
+698
+00:36:03,460 --> 00:36:05,940
+You are hopelessly, dangerously lost.
+
+699
+00:36:06,540 --> 00:36:09,940
+And this brings Phloxian to a hard, non-negotiable boundary.
+
+700
+00:36:10,620 --> 00:36:12,220
+The rule of recoverability.
+
+701
+00:36:12,680 --> 00:36:14,200
+Rule of recoverability.
+
+702
+00:36:14,200 --> 00:36:20,060
+This is Phloxian's ultimate test for whether delegating work to an AI is actually legitimate.
+
+703
+00:36:20,600 --> 00:36:26,080
+The rule states that delegation is only acceptable if control is strictly recoverable.
+
+704
+00:36:26,480 --> 00:36:29,500
+Meaning I can take the steering wheel back without crashing the car.
+
+705
+00:36:29,820 --> 00:36:30,240
+Exactly.
+
+706
+00:36:30,940 --> 00:36:37,740
+If the AI fails, can a human team step in, rapidly understand the state of the system, and safely reclaim control?
+
+707
+00:36:38,220 --> 00:36:38,820
+Okay.
+
+708
+00:36:38,820 --> 00:36:52,300
+If taking control back requires dismantling the entire system, which is exactly what happened in the Reddit story, where touching the code broke the checksums and triggered the repair loop, then the system is fundamentally broken at a governance level.
+
+709
+00:36:52,300 --> 00:36:57,340
+It doesn't matter if an AI built it or if a team of human prodigies built it.
+
+710
+00:36:57,740 --> 00:37:01,440
+A system you cannot safely edit is an unacceptable system.
+
+711
+00:37:01,660 --> 00:37:01,900
+Period.
+
+712
+00:37:02,460 --> 00:37:04,000
+That is the core of the argument.
+
+713
+00:37:04,720 --> 00:37:06,760
+So, what does this all mean?
+
+714
+00:37:07,380 --> 00:37:11,080
+We have established that the chatbot in the anecdote was unrecoverable.
+
+715
+00:37:11,080 --> 00:37:14,560
+But, does that mean AI shouldn't write code at all?
+
+716
+00:37:14,880 --> 00:37:15,040
+Right.
+
+717
+00:37:15,120 --> 00:37:18,020
+Does this validate the skeptics who say AI is a fad?
+
+718
+00:37:18,100 --> 00:37:19,800
+That's the million-dollar question, isn't it?
+
+719
+00:37:19,860 --> 00:37:20,240
+It is.
+
+720
+00:37:20,640 --> 00:37:23,920
+Because, realistically, the genie is not going back in the bottle.
+
+721
+00:37:24,100 --> 00:37:26,100
+Management is going to keep demanding cheaper production.
+
+722
+00:37:26,460 --> 00:37:29,060
+We have to figure out how to live with these tools.
+
+723
+00:37:29,580 --> 00:37:35,240
+This is where Phloxian introduces a very practical concept called admissible degradation.
+
+724
+00:37:35,960 --> 00:37:37,000
+Admissible degradation.
+
+725
+00:37:37,000 --> 00:37:44,800
+It forces us to shift the entire conversation away from demanding perfection and toward designing for resilience.
+
+726
+00:37:45,300 --> 00:37:46,920
+So, acceptable breaking.
+
+727
+00:37:47,420 --> 00:37:49,040
+We are planning for failure.
+
+728
+00:37:49,420 --> 00:37:50,220
+Essentially, yes.
+
+729
+00:37:50,660 --> 00:37:54,120
+Phloxian argues that the industry is asking the wrong question right now.
+
+730
+00:37:54,820 --> 00:37:58,820
+People constantly ask, does AI-generated software have defects?
+
+731
+00:37:59,140 --> 00:38:00,700
+Which, obviously, yes.
+
+732
+00:38:00,940 --> 00:38:02,340
+The answer is obviously yes.
+
+733
+00:38:02,340 --> 00:38:07,260
+But human-written software has defects, too, and lists catastrophic defects.
+
+734
+00:38:08,040 --> 00:38:12,260
+The mere presence of bugs does not make a system uniquely inadmissible.
+
+735
+00:38:12,860 --> 00:38:15,940
+So, what is the right question a manager should be asking?
+
+736
+00:38:16,320 --> 00:38:19,060
+The right question is, how does the system fail?
+
+737
+00:38:19,900 --> 00:38:22,040
+When it breaks, what does it preserve?
+
+738
+00:38:22,700 --> 00:38:30,720
+Is the logic intelligible enough that a human can find and fix the defects without sacrificing the system's core obligations to its users?
+
+739
+00:38:30,720 --> 00:38:33,520
+Okay, let's apply that lens to the Reddit story.
+
+740
+00:38:33,840 --> 00:38:35,980
+Where did the employer actually go wrong?
+
+741
+00:38:36,200 --> 00:38:38,280
+The employer made a critical error in governance.
+
+742
+00:38:38,880 --> 00:38:40,980
+They deployed an inadmissible system.
+
+743
+00:38:41,560 --> 00:38:45,480
+They looked at the AI and saw that it was incredibly cheap and incredibly fast to build.
+
+744
+00:38:46,000 --> 00:38:49,520
+In Phloxian's terminology, they recognized that the project was highly feasible.
+
+745
+00:38:49,840 --> 00:38:50,060
+Yes.
+
+746
+00:38:50,260 --> 00:38:51,300
+It was easy to attempt.
+
+747
+00:38:51,840 --> 00:38:53,220
+The barrier to entry was zero.
+
+748
+00:38:53,520 --> 00:38:53,740
+Yes.
+
+749
+00:38:54,180 --> 00:38:59,160
+But they mistakenly assumed that because it was feasible to build, it was admissible to release.
+
+750
+00:38:59,160 --> 00:39:03,220
+They mistook cheapness of production for adequacy of design.
+
+751
+00:39:03,480 --> 00:39:03,760
+Exactly.
+
+752
+00:39:04,360 --> 00:39:06,380
+A system can be practically free to generate.
+
+753
+00:39:06,900 --> 00:39:12,920
+But if it actively resists human correction, if it obscures its own logic in 400 conflicting documents,
+
+754
+00:39:13,120 --> 00:39:17,420
+or if it locks humans out of the repair process, it is inadmissible for deployment.
+
+755
+00:39:17,920 --> 00:39:21,960
+So, the Reddit disaster wasn't an inherent flaw in the math of the AI model.
+
+756
+00:39:22,180 --> 00:39:26,780
+It was human managers failing to demand recoverability before they put the software in front of customers.
+
+757
+00:39:26,780 --> 00:39:27,380
+Precisely.
+
+758
+00:39:27,840 --> 00:39:31,800
+It is a failure of human management, not a failure of the generation technology itself.
+
+759
+00:39:32,360 --> 00:39:34,540
+The technology did exactly what it was told to do.
+
+760
+00:39:34,900 --> 00:39:36,720
+The humans failed to constrain it.
+
+761
+00:39:37,080 --> 00:39:37,320
+Wow.
+
+762
+00:39:37,740 --> 00:39:40,180
+Okay, as we enter the final phase of this deep dive,
+
+763
+00:39:40,360 --> 00:39:44,760
+I want to highlight a psychological trap that Phloxian identifies from the text.
+
+764
+00:39:45,040 --> 00:39:45,520
+Which one?
+
+765
+00:39:45,860 --> 00:39:50,660
+I think this explains so much of the anger and exhaustion I hear from my own colleagues right now.
+
+766
+00:39:51,320 --> 00:39:55,360
+Phloxian calls it visible failure and invisible production.
+
+767
+00:39:55,360 --> 00:40:00,440
+It perfectly articulates the emotional whiplash of using AI in the workplace.
+
+768
+00:40:01,000 --> 00:40:01,700
+It really does.
+
+769
+00:40:02,080 --> 00:40:04,980
+Think about how we actually experience these tools day to day.
+
+770
+00:40:05,740 --> 00:40:08,880
+When an AI tool works perfectly, it is entirely invisible.
+
+771
+00:40:09,220 --> 00:40:10,140
+You don't even notice it.
+
+772
+00:40:10,540 --> 00:40:13,620
+It writes 50 lines of tedious boilerplate code for you.
+
+773
+00:40:13,920 --> 00:40:18,480
+You hit tab, you accept it, and you move on to the interesting part of your job.
+
+774
+00:40:18,880 --> 00:40:20,920
+It fades completely into the background.
+
+775
+00:40:20,920 --> 00:40:26,180
+Over a year, it might save you thousands of hours of unseen, monotonous labor.
+
+776
+00:40:26,180 --> 00:40:32,540
+The counterfactual labor, the typing you didn't have to do, is completely unmeasured by your own emotions.
+
+777
+00:40:33,020 --> 00:40:35,320
+You don't feel the absence of boredom.
+
+778
+00:40:35,600 --> 00:40:35,800
+Right.
+
+779
+00:40:36,340 --> 00:40:42,860
+But when the AI fails, when it confidently hallucinates a software library that doesn't exist,
+
+780
+00:40:43,340 --> 00:40:47,120
+and you spend three grueling hours debugging a ghost...
+
+781
+00:40:47,120 --> 00:40:47,840
+That is painful.
+
+782
+00:40:48,120 --> 00:40:50,340
+...that failure screams for your attention.
+
+783
+00:40:50,340 --> 00:40:53,920
+It is highly visible, highly frustrating, and deeply visceral.
+
+784
+00:40:54,660 --> 00:40:58,860
+Therefore, human frustration is an awful metric for aggregate productivity.
+
+785
+00:40:59,120 --> 00:40:59,880
+That is so true.
+
+786
+00:41:00,420 --> 00:41:06,100
+We feel the three hours lost intensely, but our brains totally ignore the 300 hours saved.
+
+787
+00:41:06,440 --> 00:41:14,680
+And what's fascinating is that this psychological distortion is perfectly mirrored by the empirical chaos in the productivity data.
+
+788
+00:41:15,120 --> 00:41:15,540
+How so?
+
+789
+00:41:15,540 --> 00:41:23,760
+If we look at the actual academic studies, trying to measure whether AI makes developers faster, the results are wildly contradictory.
+
+790
+00:41:24,560 --> 00:41:26,860
+I know Flyxion reviews a few of these studies in the essay.
+
+791
+00:41:27,320 --> 00:41:28,860
+Walk me through the timeline of the data.
+
+792
+00:41:29,640 --> 00:41:29,980
+Okay.
+
+793
+00:41:30,200 --> 00:41:31,260
+Let's look at the progression.
+
+794
+00:41:31,980 --> 00:41:36,900
+In 2023, there was a major, highly publicized study of GitHub Copilot.
+
+795
+00:41:36,900 --> 00:41:46,480
+It showed that developers using the AI assistant completed a defined, isolated task 55.8% faster than the control group.
+
+796
+00:41:46,920 --> 00:41:48,600
+55.8% faster.
+
+797
+00:41:48,680 --> 00:41:50,060
+I remember when that study came out.
+
+798
+00:41:50,320 --> 00:41:52,080
+CEOs were practically salivating.
+
+799
+00:41:52,400 --> 00:41:55,880
+That is a massive revolutionary leap in productivity.
+
+800
+00:41:56,360 --> 00:41:56,840
+It is.
+
+801
+00:41:57,280 --> 00:41:59,800
+But then, look at the data from 2025.
+
+802
+00:42:00,580 --> 00:42:05,040
+A randomized trial by a group called METR looked at experienced developers.
+
+803
+00:42:05,380 --> 00:42:05,660
+Okay.
+
+804
+00:42:05,660 --> 00:42:13,500
+Instead of giving them isolated toy problems, they had them work in complex, real-world, open-source repositories that they already knew well.
+
+805
+00:42:13,800 --> 00:42:14,560
+And what did they find?
+
+806
+00:42:15,080 --> 00:42:21,140
+That study found that access to AI tools actually increased their completion time by roughly 19%.
+
+807
+00:42:21,140 --> 00:42:22,160
+Wait, wait, wait.
+
+808
+00:42:22,360 --> 00:42:26,520
+Giving experts an AI tool made them 19% slower?
+
+809
+00:42:26,920 --> 00:42:27,820
+That defies logic.
+
+810
+00:42:27,900 --> 00:42:28,560
+How does that happen?
+
+811
+00:42:28,700 --> 00:42:33,120
+Because of what we discussed earlier, the extensive margin and endogenous discovery.
+
+812
+00:42:33,380 --> 00:42:34,180
+Ah, okay.
+
+813
+00:42:34,180 --> 00:42:39,900
+A 2026 update from that same research group admitted that their testing methodology essentially broke down.
+
+814
+00:42:40,460 --> 00:42:40,720
+Why?
+
+815
+00:42:41,160 --> 00:42:46,300
+Because the human developers changed the mix of tasks they attempted once they had the AI.
+
+816
+00:42:46,700 --> 00:42:47,480
+Let me guess.
+
+817
+00:42:48,100 --> 00:42:52,260
+They stopped doing the easy stuff and started trying the impossibly hard stuff?
+
+818
+00:42:52,600 --> 00:42:53,080
+Exactly.
+
+819
+00:42:53,840 --> 00:42:56,380
+Paint the picture of a developer in that 2025 study.
+
+820
+00:42:56,380 --> 00:42:58,600
+You give an expert an AI.
+
+821
+00:42:59,120 --> 00:43:03,300
+They don't just sit there writing the same simple login functions 55% faster.
+
+822
+00:43:04,020 --> 00:43:04,820
+No, they get ambitious.
+
+823
+00:43:05,500 --> 00:43:08,440
+They look at the AI, they look at their code base, and they say, you know what?
+
+824
+00:43:08,860 --> 00:43:10,860
+I've always hated our database architecture.
+
+825
+00:43:11,300 --> 00:43:14,980
+With this AI, I bet I could refactor the entire backend in a week.
+
+826
+00:43:14,980 --> 00:43:19,520
+They attempt massive structural changes that they never would have risked before.
+
+827
+00:43:19,840 --> 00:43:20,100
+Yes.
+
+828
+00:43:20,700 --> 00:43:25,380
+They are attempting vastly harder work, which naturally takes longer and involves more debugging,
+
+829
+00:43:25,640 --> 00:43:29,320
+but potentially yields exponentially higher value for the software.
+
+830
+00:43:29,700 --> 00:43:33,820
+So they got slower because their ambitions scaled up to meet the power of the tool.
+
+831
+00:43:33,820 --> 00:43:34,380
+Yes.
+
+832
+00:43:34,820 --> 00:43:38,540
+And if we zoom out to the macroeconomic level, this isn't the first time history has seen
+
+833
+00:43:38,540 --> 00:43:42,360
+this kind of statistical chaos during a technological transition.
+
+834
+00:43:43,240 --> 00:43:47,580
+Flyxion links this to the economics of what are called general purpose technologies.
+
+835
+00:43:47,840 --> 00:43:48,120
+Okay.
+
+836
+00:43:48,680 --> 00:43:53,600
+We can look at the work of economic historians like Paul David or Bresnahan and Trechtenberg.
+
+837
+00:43:54,100 --> 00:43:55,300
+Give me a historical parallel.
+
+838
+00:43:56,160 --> 00:44:02,500
+In 1990, Paul David published a famous paper looking at the transition from steam power to the electric
+
+839
+00:44:02,500 --> 00:44:03,000
+dynamo.
+
+840
+00:44:03,000 --> 00:44:04,160
+The electric dynamo.
+
+841
+00:44:04,240 --> 00:44:04,320
+Yeah.
+
+842
+00:44:05,200 --> 00:44:09,520
+In the late 19th century, factories were powered by giant central steam engines.
+
+843
+00:44:10,180 --> 00:44:15,300
+Every machine in the factory had to be physically connected to one massive, dangerous rotating
+
+844
+00:44:15,300 --> 00:44:15,940
+driveshaft.
+
+845
+00:44:16,440 --> 00:44:16,800
+Okay.
+
+846
+00:44:17,040 --> 00:44:17,900
+Picture that in your head.
+
+847
+00:44:18,200 --> 00:44:22,620
+When electricity was first introduced, factory owners simply ripped out the steam engine and
+
+848
+00:44:22,620 --> 00:44:24,500
+put one giant electric motor in its place.
+
+849
+00:44:24,500 --> 00:44:27,660
+They just swapped the power source but kept the old factory layout.
+
+850
+00:44:28,240 --> 00:44:28,580
+Exactly.
+
+851
+00:44:29,200 --> 00:44:31,100
+And productivity statistics didn't improve.
+
+852
+00:44:31,100 --> 00:44:32,960
+In many cases, they plummeted.
+
+853
+00:44:33,460 --> 00:44:36,940
+It took decades for engineers to realize the true power of electricity.
+
+854
+00:44:37,640 --> 00:44:38,540
+The unit drive.
+
+855
+00:44:39,200 --> 00:44:40,180
+What's the unit drive?
+
+856
+00:44:40,760 --> 00:44:44,440
+You could put a small dedicated electric motor on every individual machine.
+
+857
+00:44:44,880 --> 00:44:46,980
+You didn't need the central driveshaft anymore.
+
+858
+00:44:46,980 --> 00:44:50,940
+You could completely redesign the entire assembly line for optimal flow.
+
+859
+00:44:51,480 --> 00:44:51,940
+Oh, wow.
+
+860
+00:44:52,640 --> 00:44:56,940
+But while you are in the middle of tearing down the old factory and redesigning the assembly
+
+861
+00:44:56,940 --> 00:44:59,000
+line, your productivity is chaotic.
+
+862
+00:44:59,360 --> 00:44:59,800
+It drops.
+
+863
+00:45:00,220 --> 00:45:03,820
+We are in the factory redesign phase of the AI revolution.
+
+864
+00:45:03,820 --> 00:45:09,400
+We are still trying to hook AI up to the old steam-powered driveshafts of our legacy workflows.
+
+865
+00:45:10,160 --> 00:45:10,500
+We are.
+
+866
+00:45:11,020 --> 00:45:15,200
+And surviving this redesign phase requires an entirely new set of skills.
+
+867
+00:45:15,700 --> 00:45:20,560
+Which brings us to Flyxion's ultimate conclusion about the future of human work and what he
+
+868
+00:45:20,560 --> 00:45:22,100
+calls the new competence.
+
+869
+00:45:22,500 --> 00:45:23,320
+The new competence.
+
+870
+00:45:23,320 --> 00:45:28,020
+Because programming, as we've established, is no longer just about typing syntax.
+
+871
+00:45:28,700 --> 00:45:33,920
+If the machine can produce the text instantly, what is the human engineer actually being paid to do?
+
+872
+00:45:34,320 --> 00:45:37,100
+The premium human skill has fundamentally shifted.
+
+873
+00:45:37,720 --> 00:45:39,420
+It is no longer text generation.
+
+874
+00:45:40,020 --> 00:45:45,580
+It is now the ability to meticulously specify a problem, to evaluate the generated output,
+
+875
+00:45:45,940 --> 00:45:50,060
+to rigorously validate that output against messy, real-world requirements,
+
+876
+00:45:50,060 --> 00:45:53,120
+and to govern the system over its entire life cycle.
+
+877
+00:45:53,320 --> 00:45:59,800
+Because AI makes experimenting so incredibly cheap, the recognized domain of ideas is going
+
+878
+00:45:59,800 --> 00:46:00,340
+to explode.
+
+879
+00:46:00,920 --> 00:46:03,760
+The world is about to be flooded with bad ideas.
+
+880
+00:46:04,220 --> 00:46:08,200
+It is going to be raining terrible, half-baked, unmaintainable prototypes.
+
+881
+00:46:08,960 --> 00:46:13,820
+The horizon of feasible work has expanded, bringing in incredible opportunities, but also
+
+882
+00:46:13,820 --> 00:46:15,920
+massive catastrophic distractions.
+
+883
+00:46:16,960 --> 00:46:20,700
+Therefore, human competence is now overwhelmingly about selection.
+
+884
+00:46:21,020 --> 00:46:21,500
+Selection.
+
+885
+00:46:21,500 --> 00:46:26,800
+Knowing what is actually worth building, and what is safe to deploy, in a world where you
+
+886
+00:46:26,800 --> 00:46:28,420
+can build almost anything for pennies.
+
+887
+00:46:28,520 --> 00:46:30,860
+Let's recap this incredible journey we've been on.
+
+888
+00:46:31,140 --> 00:46:36,820
+We started with a viral Reddit story about an unkillable rogue chatbot, and we realized that
+
+889
+00:46:36,820 --> 00:46:39,340
+you cannot judge complexity without a denominator.
+
+890
+00:46:39,340 --> 00:46:50,220
+We explored the intensive versus extensive margins, realizing that cheap tools don't just make us faster, they expand the horizon of the unattempted.
+
+891
+00:46:50,360 --> 00:46:57,400
+We saw how the loss of physical constraints leads to massive bloat if we don't artificially budget our complexity through mental accounting.
+
+892
+00:46:57,400 --> 00:47:02,460
+We exposed the epistemic terror of a verification loop that grades its own homework.
+
+893
+00:47:02,700 --> 00:47:10,100
+And ultimately, we redefined what competence looks like in an age where the typing is free, but the maintenance is forever.
+
+894
+00:47:10,100 --> 00:47:13,060
+It is a profound shift in how we relate to our tools.
+
+895
+00:47:13,640 --> 00:47:17,000
+And the core takeaway for you listening to this right now is highly practical.
+
+896
+00:47:17,320 --> 00:47:17,800
+What is it?
+
+897
+00:47:18,360 --> 00:47:26,160
+Whenever you integrate a powerful new automated system into your workflow, regardless of your industry, you must constantly pause and ask yourself two questions.
+
+898
+00:47:26,680 --> 00:47:27,760
+Okay, two questions.
+
+899
+00:47:27,760 --> 00:47:35,020
+First, am I maintaining the mental theory of my work, or am I just blindly collecting generated artifacts?
+
+900
+00:47:36,160 --> 00:47:41,360
+And second, is my control over this process still recoverable if the automation completely fails?
+
+901
+00:47:41,800 --> 00:47:45,120
+If the answer to either of those is no, you aren't building a solution.
+
+902
+00:47:45,380 --> 00:47:47,040
+You are building a trap for yourself.
+
+903
+00:47:47,280 --> 00:47:47,760
+Exactly.
+
+904
+00:47:48,220 --> 00:47:51,100
+I want to leave you with one final provocative thought.
+
+905
+00:47:51,100 --> 00:48:00,920
+Building on Flyxion's point that cheaper implementation leads to more distractions and a flood of garbage projects, think about the ultimate endgame of this technology.
+
+906
+00:48:01,300 --> 00:48:01,420
+Yeah.
+
+907
+00:48:01,900 --> 00:48:08,980
+If the cost of building solutions drops all the way to zero, then the solutions themselves are no longer the valuable part of the economic equation.
+
+908
+00:48:08,980 --> 00:48:17,820
+In a world where an AI can build almost anything instantly, does the ultimate currency shift entirely to the people who can define a truly meaningful problem?
+
+909
+00:48:18,100 --> 00:48:19,760
+That is a fascinating question.
+
+910
+00:48:19,760 --> 00:48:22,500
+Think about that the next time you sit down to write a prompt.
+
+911
+00:48:23,160 --> 00:48:28,200
+Are you just asking the machine for a cheap solution, or are you actually interrogating a worthy problem?
+
+912
+00:48:28,480 --> 00:48:28,940
+I love that.
+
+913
+00:48:29,640 --> 00:48:31,700
+And with that, we're going to circle back to where we started.
+
+914
+00:48:32,220 --> 00:48:34,400
+That mechanic staring at the car that fights back.
+
+915
+00:48:35,040 --> 00:48:38,760
+AI might make the diagnostic landscape of our daily work incredibly muddy.
+
+916
+00:48:39,380 --> 00:48:45,320
+It might hide the jagged flaws of our broken code beneath layers of self-repairing containers and hallucinated documentation.
+
+917
+00:48:45,640 --> 00:48:48,360
+But if we fight to maintain our mental theory...
+
+918
+00:48:48,360 --> 00:48:52,960
+And if we rigidly insist on recoverability, we don't have to be afraid of the dark warehouse.
+
+919
+00:48:53,620 --> 00:48:55,900
+We just have to be smarter about where we point the floodlights.
+
+920
+00:48:56,300 --> 00:48:56,700
+Absolutely.
+
+921
+00:48:57,420 --> 00:48:59,560
+Thank you so much for joining us on this deep dive.
+
+922
+00:48:59,940 --> 00:49:01,560
+Keep questioning the systems around you.
+
+923
+00:49:01,800 --> 00:49:02,380
+Stay curious.
+
+924
+00:49:02,640 --> 00:49:03,640
+And we will see you next time.
+
+925
+00:49:03,640 --> 00:49:05,180
+Let's go.
+
+926
+00:49:05,180 --> 00:49:05,600
+Bye.
+
+927
+00:49:05,660 --> 00:49:05,860
+Bye.
+
+928
+00:49:05,860 --> 00:49:06,020
+Bye.
+
+929
+00:49:06,380 --> 00:49:07,880
+Bye.
+
+930
+00:49:07,980 --> 00:49:08,300
+Bye.
+
+931
+00:49:08,800 --> 00:49:09,300
+Bye.
+
+932
+00:49:09,380 --> 00:49:09,400
+Bye.
+
+933
+00:49:09,480 --> 00:49:09,500
+Bye.
+
+934
+00:49:09,560 --> 00:49:09,820
+Bye.
+
+935
+00:49:09,900 --> 00:49:10,260
+Bye.
+
+936
+00:49:10,400 --> 00:49:10,700
+Bye.
+
+937
+00:49:10,740 --> 00:49:11,740
+Bye.
+
+938
+00:49:11,740 --> 00:49:12,640
+Bye.
+
+939
+00:49:12,700 --> 00:49:13,760
+Bye.
+
+940
+00:49:13,920 --> 00:49:14,440
+Bye.
+
+941
+00:49:14,440 --> 00:49:14,860
+Bye.
+
+942
+00:49:14,900 --> 00:49:15,320
+Bye.
+
+943
+00:49:15,320 --> 00:49:16,020
+Bye.
+
+944
+00:49:16,080 --> 00:49:16,840
+Bye.
+
+945
+00:49:17,120 --> 00:49:19,500
+Bye.
+
+946
+00:49:20,000 --> 00:49:20,980
+I'll.
+
+947
+00:49:21,180 --> 00:49:21,260
+Bye.
+
+948
+00:49:21,320 --> 00:49:21,520
+Bye.
+
+949
+00:49:21,520 --> 00:49:21,820
+Bye.
+
+950
+00:49:21,820 --> 00:49:23,440
+Bye.
+
+951
+00:49:23,440 --> 00:49:23,540
+Bye.
+
+952
+00:49:31,900 --> 00:49:32,580
+Bye.
+

@@ -1,0 +1,411 @@
+\documentclass[11pt]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{tgpagella}
+\else
+  \usepackage{fontspec}
+  \setmainfont{texgyrepagella}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
+\fi
+\usepackage[margin=1.15in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{setspace}
+\usepackage{url}
+\usepackage{textcomp}
+\usepackage{listings}
+\lstset{language=Python,basicstyle=\ttfamily\scriptsize,breaklines=true,breakatwhitespace=false,columns=fullflexible,keepspaces=true,showstringspaces=false,numbers=left,numberstyle=\tiny,numbersep=6pt,xleftmargin=1.4em,tabsize=4,upquote=true}
+\setstretch{1.08}
+\setlength{\parindent}{1.4em}
+\setlength{\parskip}{0.2em}
+
+\title{Nineteen Million Possible Essays:\\[0.3em]
+\large Recombining a Corpus, and What a Count of Combinations Does and Does Not Count}
+\author{Flyxion\\Independent Researcher}
+\date{October 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent A corpus of several hundred essays contains a very large number of unordered pairs and triples, and a small program can draw from them at random, attach one of several relations between the drawn works, and assemble the source excerpts needed to prepare an outline for a new essay that requires every drawn work. For the snapshot examined here, and under a provisional rule for deciding what counts as one work, the arithmetic gives 118,828 pairs and 19,250,136 triples. This essay describes the generator, works through one drawn pairing, and argues that the large number measures the corpus's capacity for juxtaposition and not its capacity to yield essays. Three distinctions carry the argument: between a combination, a brief and an essay; between a bridge that the sources support and one that a fluent model supplies; and between enumerating combinations and sampling them. The essay proposes a stable address for each combination, a pre-specified study of how often a drawn combination supports a genuine argument, and a rule that excludes generated briefs from the pool from which sources are drawn, admitting a developed essay only through explicit review and accession. It makes no claim about the rate at which combinations succeed, and it treats that rate as the quantity the whole procedure exists to measure. Two appendices give a complete specification of the generator and the program's source.
+\end{abstract}
+
+\section{Counting the Unwritten}
+
+A collection of $n$ works contains $\binom{n}{2}=n(n-1)/2$ unordered pairs and $\binom{n}{3}=n(n-1)(n-2)/6$ unordered triples. The corpus snapshot examined here, after works sharing a normalized title or an identical body are grouped, yields 488 eligible groups. That gives 118,828 pairs and 19,250,136 triples, or 19,368,964 unordered combinations of two or three works. The figure of nineteen or twenty million follows from the triples, since the pairs are less than one percent of the total, and it follows from nothing else about the corpus except its size.
+
+The growth rate is worth stating, because it shapes how the count should be read. The number of triples grows with the cube of the corpus. Adding a single work to a corpus of 488 adds as many new triples as the corpus previously contained pairs, which is 118,828, and a corpus of 500 groups would contain 20,708,500 triples, about 1.46 million more than the present count. The figure is therefore insensitive to which works are in the corpus and very sensitive to how many there are, and it is sensitive in a second way to the rule that decides what counts as one work. Grouping by title and by exact body is a heuristic that prevents the obvious multiplication of drafts and copies. It does not detect two differently titled drafts of the same essay, which inflate the count, and it merges two distinct works that happen to share a title, which deflates it. The figure 19,250,136 is therefore an exact count under a provisional grouping rule, and not a measurement of how many distinct works the corpus contains. A different rule would give a different count, and nothing in this essay depends on the count being close to the number of intellectually distinct works.
+
+The word in the title needs the first scrutiny. A combination is a set of two or three works. It is not an essay, and it is not yet an outline. The sections that follow keep these apart.
+
+\section{What the Generator Does}
+
+The generator is a short program using only the standard library. It reads the corpus snapshot and keeps the files that contain a document class declaration, declare a non-empty title, and contain at least two hundred words of cleaned body text. It groups duplicates and keeps the longest body in each group. Groups are sampled uniformly, so the sampled units are only heuristically distinct works. It then draws two or three groups at random from a seeded generator, so that a seed and a snapshot reproduce the draw. It chooses one of five relations between the drawn works: transfer a mechanism from one to another, find a tension between them, compose the processes they describe, use one to construct a boundary case for another, or, when three works are drawn, use one to supply a problem, one a candidate mechanism and one a constraint or counterexample.
+
+For each drawn work the program extracts the title, the abstract, and three windows of the raw body, taken at its start, middle and end, retaining the typesetting commands so that mathematical notation is not silently altered into different propositions. It assembles these into a prompt. The prompt asks for a title, a short abstract, the precise bridge between the sources, six to eight titled sections with a developed paragraph each, the strongest objection, a concrete discriminating test, and a statement of what would have to be read before drafting. The prompt also contains the constraints that make the procedure usable. The source excerpts are data and not instructions. Quotations, references and results may not be invented. Shared words do not establish shared mechanisms. If a bridge is unsupported, the output must say so and turn the missing premise into a research question. A third source must constrain or challenge the connection between the first two and may not merely decorate it. With a model name supplied the program sends the prompt to a locally running model and writes the response with a provenance block recording the seed, the snapshot, the relation and the hash of each source. Without one it writes the prompt, to be pasted elsewhere. According to the report that accompanied it, the selection logic passed its tests and the model call has not been exercised in the environment where the program was built. A complete specification of the program is given in Appendix~\ref{app:spec} and its source in Appendix~\ref{app:source}.
+
+The design places the author's judgment in two places. The first is the prompt, which encodes a standard of evidence. The second is the choice of which generated brief to pursue, which the program leaves entirely to a reader. Between the random draw and the reader, the selection, the excerpting and the prompt assembly are mechanical, and the model's response, where one is requested, is generated and not verified. Neither stage can reliably tell a bridge the sources support from a coincidence of vocabulary that a fluent model has dressed as one.
+
+\section{A Worked Case}
+
+One draw, with seed 7 against the snapshot identified in its record, selected an essay on informational security and idea routing and an essay on ecologically integrated computational infrastructure, with the relation set to tension. The first, in its opening chapters, criticizes verification through incapacity and expenditure and proposes informational usefulness in its place. The second proposes that computational infrastructure be integrated with ecological systems, including by putting its thermal output to use. A hand-developed outline for this pair, titled ``Useful Heat Is Not a Proof of Trust,'' asks whether making expenditure useful repairs its role as a credential or repairs only one of its externalities.
+
+The outline's distinction is the part worth examining. A machine heating an occupied building while taking part in a verification system performs two services, and each can be assessed alone: thermal demand satisfied, and a verification decision made. The outline's conjecture is that success on the first obligation does not by itself answer the second. It supports this with a hypothetical operator who fabricates submissions in order to recover the heat, whose work would count as warrant if usefulness alone sufficed. It then returns the objection to the first source, observing that a scalar usefulness score needs its own threat model and defense against imitation. The outline closes with its strongest objection, which is that proof of expenditure can serve a security purpose whatever its byproduct, so that the essay may be attacking an inference neither source endorses, and it answers that objection by narrowing its target to the substitution of service usefulness for a specified security guarantee.
+
+Two features of this case are instructive. The first is its status. The accompanying record says plainly that the outline is an editorial example developed from inspected passages, that it is not a recorded model response, and that the tension is a question raised by combining the proposals and not evidence that the sources disagree. That candor is the standard the whole procedure should meet. The second is that the case is a good one. A pair drawn at random from a corpus spanning many subjects produced a combination with a definite distinction at its center, a concrete counterexample, and a test. Nothing in the procedure guarantees that this happens, and a single success among unknown trials says nothing about its frequency.
+
+\section{A Combination Is Not a Brief and a Brief Is Not an Essay}
+
+Three objects have been run together, and the count of nineteen million applies to only the first. A combination is a set of sources. A brief is a combination together with a relation and an ordering of roles, since a transfer from the first work to the second differs from a transfer from the second to the first. The relation and the ordering multiply the number of briefs severalfold without adding a single combination, and the multiplication is not a gain in content, because most of the added briefs concern the same two or three works from slightly different angles. An essay is a developed argument that has survived the author's reading of the sources and the testing of its central claim. The step from brief to essay is where almost all of the labor lies, and it is not automated.
+
+No bound on the number of distinct essays follows from the combination count alone. One combination can support several distinct arguments under different relations and role orderings, and many combinations will support none, so the count of combinations is neither a ceiling nor a floor on the number of essays. A corpus spanning cosmology, political economy, linguistics, studio craft and the philosophy of computation contains many pairs between which no argument is available. The relevant quantity is the fraction of drawn combinations that support a bridge a careful reader would accept, and this essay offers no estimate of it. Any figure offered without a measurement would be invented. The right use of the large number is to establish that the supply of juxtapositions will not run out, so that the constraint on production is the author's attention to reading, testing and writing, and not the availability of ideas.
+
+The comparison with exhaustive enumeration in the fiction of Borges is apt, with a difference worth noting. The library of all possible books contains every text and is therefore, for practical purposes, useless without a way of finding the few that mean something \cite{borges1944}. A combinatorial corpus is a much smaller library, drawn from works that already mean something, and that is its advantage: the pool has already undergone a corpus-selection procedure, namely the author's decision to write, keep and collect these works. But the property that makes the library useless survives in miniature. Most of the space is noise relative to any given interest, and a procedure that produces the space without a procedure for searching it has done the easier half of the work.
+
+\section{Sampling Is the Design}
+
+Full enumeration is not practical, and the arithmetic shows why. If generating one outline took a single minute of machine time, which is an assumption and not a measurement, the triples would require about 36.6 years of continuous generation on one machine. Whatever the true time per outline, the count is large enough that exhaustive generation is not the intended use. The intended use is sampling, and sampling changes the question. The procedure is no longer a way of producing nineteen million outlines. It is a way of drawing a manageable number of briefs, at random, from a space too large to survey, and of using the draws both to find essays and to estimate how the space is distributed.
+
+The estimate matters more than any single find. A reader who sees only the successes will form an inflated impression of the yield, because the successes are what get written up. The honest report of the procedure is the rate over a pre-specified sample. A study of that rate would fix, in advance, a number of seeds and a snapshot, judge each drawn combination before generation on whether any bridge is apparent from the titles and abstracts, generate the briefs, and then judge each result on two separate questions. The first is whether the brief supports the source interpretation, that is, represents each source accurately. The second is whether it warrants the new argument, which requires that each source be necessary to it, that the connecting premise be stated explicitly, and that there be a stated way in which the argument could fail. Each judgment would be made against the full sources as well as the excerpts the generator saw. The yield so measured is the yield of one procedure, one model and one assessment standard, and it should not be reported as a property of the corpus. The study would also compare the random draws against a control of pairs matched on subject, and record the fraction in which the generator reports an unsupported bridge, since that report is a feature of the prompt and its frequency is informative. None of these quantities is known, and the study should not begin by assuming them.
+
+\section{Addressing a Combination}
+
+At present a brief is identified by a seed, a snapshot and the order of the program's draws. That is adequate for reproducing a single run and inadequate for referring to a particular combination, for marking one as examined, or for saying that a region of the space has been surveyed. A better scheme assigns each combination a fixed integer. Sorting the works in a fixed order and writing a triple as indices $c_1<c_2<c_3$ counted from zero, the combinatorial number system maps it to the integer $\binom{c_1}{1}+\binom{c_2}{2}+\binom{c_3}{3}$, and the map is a bijection onto the integers from zero to $\binom{n}{3}-1$ \cite{knuth2011}. Given such an integer, the triple is recovered by a short greedy computation, so that any of the nineteen million combinations can be named, stored as a number, and regenerated on demand without being written down. The integer alone is not a full address, because it is meaningful only for one arity and one registry of works. The address therefore consists of the arity, an identifier for the registry that fixes the ordering, and the integer. Pairs and triples are addressed separately, each with its own bijection.
+
+The scheme requires an ordering that does not change when the corpus grows. The present program sorts the eligible groups by title, which means that adding a work can shift the position of every work after it and so change the integer attached to a given triple. An append-only ordering, in which new works receive the next index and none is ever renumbered, keeps every earlier address valid, provided that each group has a persistent identity. Grouping is heuristic and will change: two groups may later be merged, one may be split, and the representative file of a group may change when a longer draft appears. The registry must therefore record each identity, retire merged identities without reusing their indices, and assign new indices to the parts of a split. The address of a combination names a set of group identities. It must be kept separate from the record of a brief, which holds the role ordering, the relation, the versions of the source files, and the version of the prompt. With such an ordering the survey of the space becomes a ledger of numbers: which have been drawn, which examined, which produced an essay, and which were abandoned and why. This is a proposal about bookkeeping. It is not implemented in the program described above.
+
+\section{Compute and Cost}
+
+The procedure is feasible in the form described because it runs on a local model, so that the marginal cost of one more outline is time and electricity and not a charge per token. Removing the per-token charge does not remove the constraint. Electricity, hardware, memory and waiting time can limit the number of trials as firmly as a price schedule would, and a model that fits in memory on one machine may run slowly enough to make a large sample impractical. The remark has a point beyond convenience. A scheme that draws thousands of briefs and regenerates them under varying seeds, relations and excerpt budgets is a scheme of iteration, and iteration is what a per-unit meter discourages. If the same procedure were run through a service billed by the token, every draw, every rerun and every failed bridge would carry a charge, and the number of draws a researcher could afford to take would be set by the price schedule and not by the researcher's curiosity. The sampling study proposed above is the kind of work that depends on a large number of cheap trials. The essay does not estimate what such a study would cost under any particular price list, since doing so would require figures it does not have.
+
+\section{Risks}
+
+Four risks are specific to the procedure. The first is fluency. A capable model can produce a plausible bridge between any two texts, and plausibility is cheap. The prompt's insistence that shared words do not establish shared mechanisms is the right defense, and it is only a request. The defense that works is a reader who checks each bridge against the excerpts, and then against the full sources, before any claim in it is treated as more than a conjecture. The excerpts are windows of the source, not the source, and the record of the worked case is explicit that the citations and empirical claims in the underlying essays were not independently checked for it.
+
+The second is feedback. If generated outlines or the essays written from them are added to the pool from which sources are drawn, the generator begins to recombine its own products, and the pool drifts toward whatever the prompt and the model favor. The remedy is a rule that generated briefs are never eligible as sources. A developed essay enters the pool only through explicit review and accession, as a distinct class of work with its own record, and the snapshot used for any study excludes generated briefs entirely.
+
+The third is selection. The author chooses among drawn briefs, and the choice reflects what the author already finds interesting. The procedure can widen what is considered, and it cannot remove the filter that decides what is pursued. The pre-specified sample guards against this by fixing the draws before the judgments are made.
+
+The fourth is homogeneity. Outlines produced by one model under one prompt share a structure: a title, a bridge, six to eight sections, an objection and a test. The shared structure is useful, because it makes briefs comparable, and it is also a pressure toward essays that resemble each other. A corpus that grows by this route could become more uniform in form while becoming more varied in subject matter, and the author should decide in advance whether that trade is acceptable.
+
+\section{Conclusion}
+
+The number nineteen million is the size of a space and not the size of a harvest. It follows from the arithmetic of triples and from the count of eligible works, and it grows with the cube of the corpus, so that it will exceed twenty million within a dozen additions. What the number establishes is that the supply of juxtapositions is effectively inexhaustible, and that the limiting resource is the work of reading each combination, testing its central claim and writing the argument that survives. The rate at which drawn combinations support a genuine argument is unknown, and measuring it is the point of sampling. Until it is measured, the procedure is best understood as a way of generating questions, each of which says in its own words what would have to be read before it could be answered.
+
+\begin{thebibliography}{99}
+
+\bibitem{borges1944} Borges, J. L. (1944). The Library of Babel. In \emph{Ficciones}. Editorial Sur.
+
+\bibitem{knuth2011} Knuth, D. E. (2011). \emph{The Art of Computer Programming, Volume 4A: Combinatorial Algorithms, Part 1}. Addison-Wesley. Section 7.2.1.3, Generating all combinations.
+
+\end{thebibliography}
+
+\appendix
+
+\section{Specification of the Generator}\label{app:spec}
+
+\subsection{Scope and conventions}
+
+The generator is a single Python 3 file, \texttt{essay\_recombine.py}, that uses only the standard library. It makes no network request unless a model name is supplied, in which case it makes one HTTP request per generated brief to a locally running Ollama server. Its purpose is to sample two or three works from a corpus of \TeX{} sources, choose a relation between them, assemble the evidence from each source, and either send the resulting prompt to a local model or export it. The sections below specify its interface, its treatment of the corpus, its selection procedure, its output and its failure behavior. The verbatim source is reproduced in Appendix~\ref{app:source}, and where the specification refers to the exact wording of the prompt it refers to that listing.
+
+\subsection{Interface}
+
+The program takes the options in Table~\ref{tab:options}. Argument validation happens before any output is produced. A count below one or a context budget below 300 characters is rejected at parse time. The remaining checks occur after the corpus has been read, because they depend on its size.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{|p{2.6cm}|p{3.2cm}|p{8.2cm}|}
+\hline
+\textbf{Option} & \textbf{Default} & \textbf{Effect and constraints} \\ \hline
+\texttt{-{}-root} \emph{path} & directory containing the script & Directory holding the \texttt{sources} tree. Also the repository queried for the snapshot revision. \\ \hline
+\texttt{-{}-arity} \emph{2 or 3} & 2 & Number of works in each combination. \\ \hline
+\texttt{-{}-seed} \emph{integer} & random 63-bit integer from the operating system's entropy source & Seeds the pseudo-random generator that controls selection. Its value modulo $2^{31}$ is also passed to the model. \\ \hline
+\texttt{-{}-count} \emph{n} & 1 & Number of distinct combinations to produce. Must be at least 1 and no greater than the number of distinct combinations available under the other constraints. \\ \hline
+\texttt{-{}-operation} \emph{name} & chosen at random & One of \texttt{transfer}, \texttt{tension}, \texttt{composition}, \texttt{boundary}, \texttt{triangulation}. Triangulation requires an arity of 3. \\ \hline
+\texttt{-{}-include} \emph{text} & none; may be repeated & Case-insensitive substring of a title. Must match exactly one eligible work. That work is then fixed in every combination. At most as many occurrences as the arity, and no two may resolve to the same work. \\ \hline
+\texttt{-{}-model} \emph{name} & none & When given, the prompt is sent to Ollama under this model name. When omitted, the prompt is exported unchanged. \\ \hline
+\texttt{-{}-context-chars} \emph{n} & 12000 & Character budget for the \TeX{} excerpts taken from each source. Must be at least 300. \\ \hline
+\texttt{-{}-output} \emph{path} & standard output & Write the Markdown result to this file, creating parent directories, in UTF-8. \\ \hline
+\texttt{-{}-list} & off & Print the number of eligible groups with the counts of pairs and triples, then one line per group containing the title and the path, and exit. \\ \hline
+\end{tabular}
+\caption{Command-line options of the generator.}
+\label{tab:options}
+\end{table}
+
+After the corpus is read, the program rejects a run in which more works are fixed by \texttt{-{}-include} than the arity allows, or in which fewer eligible works exist than the arity requires. It then computes the number of distinct combinations available, which is the number of ways to choose the remaining slots from the works not fixed, and rejects a run whose count exceeds it. A triangulation request with an arity of 2 is rejected.
+
+\subsection{Corpus layout and eligibility}
+
+The program reads every file with the extension \texttt{.tex} under the \texttt{sources} directory of the root, in sorted path order. Each file is decoded as UTF-8 with undecodable bytes replaced. Comments, meaning a percent sign not preceded by a backslash and everything after it on the line, are removed before any further test. A file is eligible only if it satisfies all of the following. It contains a \texttt{\textbackslash documentclass} command. It has a non-empty title, taken from the argument of the first \texttt{\textbackslash title} command after cleaning. And its body, which is everything after the first \texttt{\textbackslash begin\{document\}}, contains at least 200 whitespace-separated tokens after cleaning. Files failing any condition are skipped without a message, and untitled documents are deliberately not given a title from their file names, because the program treats that as a curation task.
+
+\subsection{Text normalization}
+
+Two functions support the treatment of \TeX{} text. The first reads the argument of a named command with balanced braces. It finds the first occurrence of the command followed by an opening brace, then scans forward counting nested braces, skipping any brace preceded by a backslash, and returns the text up to the matching close, or the empty string if there is no command or no match. The second, called cleaning, produces plain text approximately readable by a language model. It removes unescaped comments, replaces line breaks of the form double backslash with an optional bracketed length by a space, deletes the commands \texttt{label}, \texttt{cite} and its variants, \texttt{ref}, \texttt{pageref}, \texttt{color}, \texttt{vspace} and \texttt{hspace} together with their braced arguments, deletes \texttt{textcolor} with its color argument, replaces every other control sequence, with an optional star and optional bracketed argument, by a space, deletes braces and dollar signs, and collapses all whitespace to single spaces. The text inside the arguments of commands such as emphasis is therefore retained, and mathematical content is flattened. Cleaned text is used only for the title, the abstract, the word count and the duplicate test. The excerpts sent to the model are raw.
+
+\subsection{Grouping and the population}
+
+For each eligible file the program computes a title key, which is the casefolded title with every non-word character removed, and a content digest, which is the SHA-256 hash of the cleaned body text. Two files belong to the same group if they share a title key or a content digest, and groups are merged transitively. Each file contributes a record holding its title, its path relative to the root in POSIX form, the SHA-256 hash of its original bytes, the cleaned text of the first abstract environment in its body or the empty string, up to eighteen section-level headings of any depth, its word count and its comment-stripped body. From each group the program takes as representative a copy of the record with the greatest word count, and attaches to it the sorted list of all paths in the group under the name \emph{alternatives}. The representatives, sorted by casefolded title and then by path, form the population from which combinations are drawn. The number of representatives is the $n$ of Section~1. The procedure prevents the multiplication of obvious copies and drafts. It does not detect semantic duplication, and its choice of the longest body is not a claim that the longest version is the final one.
+
+\subsection{Evidence extraction}
+
+For each selected work the program builds a text block containing the title, the path, the abstract or the marker \texttt{[none]}, and three excerpts of the comment-stripped raw body. With a budget $b$ the excerpt size is $\max(1,\lfloor b/3\rfloor)$ characters. The excerpts begin at offset zero, at the midpoint offset $\max(0,\lfloor(L-s)/2\rfloor)$ and at the final offset $\max(0,L-s)$, where $L$ is the body length and $s$ the excerpt size, with duplicates removed so that a short body yields fewer than three excerpts. Each excerpt is labelled with its character offset, and the block states that excerpts may end mid-sentence. The abstract is not truncated, and the budget therefore bounds the excerpts and not the whole block.
+
+\subsection{Relations}
+
+Five relations are defined, with the following wording, which the program places in the prompt unchanged.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{|p{2.4cm}|p{11.6cm}|}
+\hline
+\textbf{Name} & \textbf{Wording} \\ \hline
+\texttt{transfer} & Apply the mechanism or distinction in source A to the problem in source B. Identify exactly which assumptions permit the transfer and where it breaks. \\ \hline
+\texttt{tension} & Find a substantive tension between the sources. Reconstruct the strongest version of each position and ask whether a new distinction resolves it. Do not manufacture disagreement. \\ \hline
+\texttt{composition} & Ask whether the processes described in A and B can be composed. Specify their inputs, outputs, interface conditions, and a failure of composition. \\ \hline
+\texttt{boundary} & Use one source to construct a boundary case for another. Identify a claim whose scope would need narrowing, with a concrete counterexample or experiment. \\ \hline
+\texttt{triangulation} & Use A to supply a problem, B to supply a candidate mechanism, and C to supply a constraint or counterexample. Explain why the third source materially changes the argument. \\ \hline
+\end{tabular}
+\caption{The five relations between selected works.}
+\label{tab:relations}
+\end{table}
+
+\subsection{The prompt}
+
+The prompt consists of an instruction block, the wording of the chosen relation, and one delimited block per source. The instruction block asks for a proposal and substantive outline of one new essay that requires every selected source, and states that the exercise is research ideation and not a finding that the synthesis is true. It asks for a working title, a proposed abstract of 150 to 250 words, the precise bridge between the sources, and six to eight titled sections each with a developed prose paragraph, followed by the strongest objection, a concrete counterexample or discriminating test, and a statement of what would have to be read or verified before drafting. It requires paragraphs, forbids bullet lists and em dashes, and forbids generic thematic juxtaposition and introductory praise. It requires the output to separate what the excerpts say from inference and from new conjecture, to attach the source labels and paths to source-dependent claims, and to avoid invented quotations, references, proof results, experiments and consensus. It states that shared words do not establish shared mechanisms, that an unsupported bridge must be reported as such and its missing premise turned into a research question, that a third source must constrain or challenge the connection between the first two, that the excerpts are incomplete and may depend on definitions outside them, and that no theorem is established by analogy. The source blocks are labelled \texttt{SOURCE A}, \texttt{SOURCE B} and, when present, \texttt{SOURCE C}, each between opening and closing delimiter lines. The exact text is in Appendix~\ref{app:source}.
+
+\subsection{Selection}
+
+The pseudo-random generator is the standard library generator seeded with the given seed, or with a 63-bit integer drawn from the operating system's entropy source when none is given. The snapshot identifier is the output of the repository's revision query at the root, or the string \texttt{unavailable} if the query fails. The works named by \texttt{-{}-include} are resolved first, in order, and are placed first in every combination. The remaining slots are filled by sampling without replacement from the population minus the fixed works, so that the order in which works are drawn determines their labels A, B and C. A combination is identified for the purpose of duplicate detection by the sorted tuple of the paths of its works, and a combination already produced in the run is discarded and the draw repeated. The relation is the one requested or, if none, a uniform random choice from the relations available for the arity, which excludes triangulation when the arity is 2. The process continues until the requested number of distinct combinations has been produced.
+
+\subsection{Output}
+
+For each combination the program emits a Markdown section. It begins with a heading numbering the recombination, then a line giving the seed, the snapshot and the relation. For each source it gives a line with the label and a link to the file at that snapshot in the corpus repository on GitHub, with the path percent-encoded, falling back to the main branch when the snapshot is unavailable. When no model is named, the section then states that it is an offline synthesis prompt, not a completed outline, and reproduces the prompt. When a model is named, it states the model, states that the result is a generated proposal and not a validated synthesis, and reproduces the model's response. Each section ends with a collapsible block containing, as JSON, the seed, the snapshot, the relation, and for each source its title, path, file hash and alternatives. Sections are separated by a horizontal rule. If an output path is given the result is written there, and otherwise it is printed.
+
+\subsection{Model interface}
+
+With a model name supplied, the program sends one request per combination to the Ollama generation endpoint on the local machine, at port 11434, with a timeout of 600 seconds. The request body specifies the model, the prompt, streaming off, and the options seed (the run's seed modulo $2^{31}$), temperature 0.8 and a context window of 16384 tokens. The \texttt{response} field of the reply is inserted into the output without alteration. A network error, a malformed reply or a missing field ends the run with status 1 and a message suggesting that the model option be omitted to export the same prompt. The program does not check, filter or edit the response.
+
+\subsection{Determinism, failure modes and limits}
+
+The selection is reproducible for the same seed, the same corpus contents and the same interpreter behavior. The last condition is a real qualification, because the documentation of Python's random module states that its algorithms and seeding functions may change between versions, so a seed may select a different combination under a different interpreter. The population is sorted by title, so adding or renaming a work can shift every later position and change which combination a given seed selects, which is why the snapshot is recorded. Model output is not guaranteed to be reproducible even with a fixed seed, since reproducibility depends on the model server and the hardware.
+
+Several limits follow from the design. Grouping is heuristic in both directions, as Section~1 notes. Excerpts are windows and may begin or end mid-sentence, and \TeX{} commands that depend on definitions outside a window can be misread. The prompt size is the sum of the instruction block, the abstracts and the excerpts, and \TeX{} is dense in tokens, so with three sources at the default budget the prompt can approach the model's context window, which the response must also fit within. The program performs no semantic check on a generated bridge, and the model call has not been exercised in the environment where the program was built. Reading and cleaning the corpus takes time linear in its size on every run. The cost of each additional combination is constant apart from the repeated draws needed to avoid duplicates, which is negligible unless the requested count approaches the number available.
+
+\section{Source Listing}\label{app:source}
+
+The following is the program as supplied. One character differs from the original: the en dash in the prompt's request for an abstract of 150 to 250 words is shown as two hyphens, for compatibility with the typesetting of this listing.
+
+\begin{lstlisting}
+#!/usr/bin/env python3
+"""Sample corpus works and prepare an evidenced synthesis brief or Ollama outline.
+
+Standard library only. No network calls unless --model is supplied.
+"""
+import argparse
+import hashlib
+import json
+import math
+import random
+import re
+import subprocess
+import sys
+import urllib.error
+import urllib.parse
+import urllib.request
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+OPERATIONS = {
+    'transfer': 'Apply the mechanism or distinction in source A to the problem in source B. Identify exactly which assumptions permit the transfer and where it breaks.',
+    'tension': 'Find a substantive tension between the sources. Reconstruct the strongest version of each position and ask whether a new distinction resolves it. Do not manufacture disagreement.',
+    'composition': 'Ask whether the processes described in A and B can be composed. Specify their inputs, outputs, interface conditions, and a failure of composition.',
+    'boundary': 'Use one source to construct a boundary case for another. Identify a claim whose scope would need narrowing, with a concrete counterexample or experiment.',
+    'triangulation': 'Use A to supply a problem, B to supply a candidate mechanism, and C to supply a constraint or counterexample. Explain why the third source materially changes the argument.',
+}
+
+
+def argument(text, command):
+    """Read a TeX command argument with balanced braces, including nested formatting."""
+    match = re.search(r'\\' + re.escape(command) + r'\s*\{', text)
+    if not match:
+        return ''
+    start = match.end()
+    depth = 1
+    for pos in range(start, len(text)):
+        if pos and text[pos - 1] == '\\':
+            continue
+        if text[pos] == '{':
+            depth += 1
+        elif text[pos] == '}':
+            depth -= 1
+            if not depth:
+                return text[start:pos]
+    return ''
+
+
+def clean(text):
+    text = re.sub(r'(?<!\\)%[^\n]*', '', text)
+    text = re.sub(r'\\\\(?:\[[^]]*\])?', ' ', text)
+    text = re.sub(r'\\(?:label|cite\w*|ref|pageref|color|vspace|hspace)\*?\{[^}]*\}', '', text)
+    text = re.sub(r'\\textcolor\{[^}]*\}', '', text)
+    text = re.sub(r'\\[a-zA-Z]+\*?(?:\[[^]]*\])?', ' ', text)
+    text = re.sub(r'[{}$]', '', text)
+    return re.sub(r'\s+', ' ', text).strip()
+
+
+def catalogue(root):
+    """Group equal normalized titles and exact bodies; retain every known path.
+
+    This prevents obvious draft/copy multiplication, not semantic duplicate detection.
+    Prefer the longest available body within each group, not a claimed final edition.
+    """
+    groups, hashes, titles = [], {}, {}
+    for path in sorted((root / 'sources').rglob('*.tex')):
+        original = path.read_bytes()
+        raw = original.decode('utf-8', errors='replace')
+        raw = re.sub(r'(?<!\\)%[^\n]*', '', raw)
+        if not re.search(r'\\documentclass\b', raw):
+            continue
+        title = clean(argument(raw, 'title'))
+        if not title:
+            continue  # Untitled roots require curation rather than filename guessing.
+        body = raw.split(r'\begin{document}', 1)[-1]
+        plain = clean(body)
+        if len(plain.split()) < 200:
+            continue
+        key = re.sub(r'\W+', '', title.casefold())
+        digest = hashlib.sha256(plain.encode()).hexdigest()
+        matches = {i for i in (titles.get(key), hashes.get(digest)) if i is not None}
+        index = min(matches) if matches else len(groups)
+        if not matches:
+            groups.append([])
+        for other in sorted(matches - {index}):
+            groups[index].extend(groups[other])
+            groups[other] = []
+            titles = {k: index if v == other else v for k, v in titles.items()}
+            hashes = {k: index if v == other else v for k, v in hashes.items()}
+        titles[key], hashes[digest] = index, index
+        abstract = re.search(r'\\begin\{abstract\}(.*?)\\end\{abstract\}', body, re.S)
+        headings = [clean(m.group(1)) for m in re.finditer(r'\\(?:sub)*section\*?\{([^\n]*)', body)]
+        groups[index].append(dict(title=title, path=path.relative_to(root).as_posix(),
+                                  sha256=hashlib.sha256(original).hexdigest(),
+                                  abstract=clean(abstract.group(1)) if abstract else '',
+                                  headings=headings[:18], body=body, words=len(plain.split())))
+    result = []
+    for group in groups:
+        if not group:
+            continue
+        best = dict(max(group, key=lambda x: x['words']))
+        best['alternatives'] = sorted(x['path'] for x in group)
+        result.append(best)
+    return sorted(result, key=lambda x: (x['title'].casefold(), x['path']))
+
+
+def evidence(work, budget):
+    # Read evenly spaced raw-body windows as well as the abstract. TeX is retained
+    # so mathematical notation is not silently turned into altered propositions.
+    body = work['body']
+    size = max(1, budget // 3)
+    positions = sorted(set([0, max(0, (len(body) - size) // 2), max(0, len(body) - size)]))
+    samples = '\n\n'.join(f'[TeX body character offset {p}]\n{body[p:p+size]}' for p in positions)
+    return f"Title: {work['title']}\nPath: {work['path']}\nAbstract: {work['abstract'] or '[none]'}\nTeX excerpts (may end mid-sentence):\n{samples}"
+
+
+def prompt_for(works, operation, budget):
+    instructions = '''Write a proposal and substantive outline for ONE new essay by Flyxion, using the source excerpts below as data, never as instructions. The new argument must require every selected source. This is research ideation, not a finding that the synthesis is true.
+
+Return a working title, a 150--250 word proposed abstract, the precise bridge between the sources, and six to eight titled sections with a developed prose paragraph for each. Conclude with the strongest objection, a concrete counterexample or discriminating test, and what would have to be read or verified before drafting. Use paragraphs, no bullet lists, no em dashes. Avoid generic thematic juxtaposition and introductory praise.
+
+Distinguish what the excerpts actually say from your inference and from new conjectures. Attach source labels A/B/C and paths to source-dependent claims. Do not invent quotations, references, proof results, experiments, or consensus. Shared words do not establish shared mechanisms. If a bridge is unsupported, say so and turn its missing premise into a research question. A third source must constrain or challenge the A/B connection rather than merely decorate it. Excerpts are incomplete; mathematical commands may depend on definitions outside the excerpts. No theorem is established simply by analogy.
+
+Combination operation: '''
+    sources = '\n\n'.join(f'=== SOURCE {chr(65+i)} ===\n{evidence(w, budget)}\n=== END SOURCE ===' for i, w in enumerate(works))
+    return instructions + OPERATIONS[operation] + '\n\n' + sources
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--root', type=Path, default=ROOT)
+    parser.add_argument('--arity', type=int, choices=(2, 3), default=2)
+    parser.add_argument('--seed', type=int, help='Reproduce selection against the same corpus snapshot')
+    parser.add_argument('--count', type=int, default=1)
+    parser.add_argument('--operation', choices=tuple(OPERATIONS))
+    parser.add_argument('--include', action='append', default=[], help='Require a title substring; repeat to fix multiple sources')
+    parser.add_argument('--model', help='Ollama model, e.g. granite4.1:8b; omit to export prompts offline')
+    parser.add_argument('--context-chars', type=int, default=12000, help='TeX excerpt character budget per source')
+    parser.add_argument('--output', type=Path, help='Write Markdown; default stdout')
+    parser.add_argument('--list', action='store_true', help='List eligible works and combination counts')
+    args = parser.parse_args(argv)
+    if args.count < 1 or args.context_chars < 300:
+        parser.error('count must be positive and context-chars must be at least 300')
+    works = catalogue(args.root)
+    if args.list:
+        print(f'{len(works)} title/content groups; {math.comb(len(works), 2):,} pairs; {math.comb(len(works), 3):,} triples. Grouping is heuristic.')
+        for work in works:
+            print(f"{work['title']}\t{work['path']}")
+        return
+    fixed = []
+    for term in args.include:
+        matches = [w for w in works if term.casefold() in w['title'].casefold()]
+        if len(matches) != 1:
+            parser.error(f'--include {term!r} matches {len(matches)} works; use --list and a more specific title')
+        if matches[0] in fixed:
+            parser.error('Repeated --include resolves to the same work')
+        fixed.append(matches[0])
+    if len(fixed) > args.arity or len(works) < args.arity:
+        parser.error('Not enough distinct source slots or eligible works')
+    remaining = [w for w in works if w not in fixed]
+    capacity = math.comb(len(remaining), args.arity - len(fixed))
+    if args.count > capacity:
+        parser.error(f'Only {capacity} distinct combinations available with these constraints')
+    if args.operation == 'triangulation' and args.arity != 3:
+        parser.error('triangulation requires --arity 3')
+    seed = args.seed if args.seed is not None else random.SystemRandom().randrange(2**63)
+    rng, seen, outputs = random.Random(seed), set(), []
+    try:
+        revision = subprocess.check_output(['git', '-C', str(args.root), 'rev-parse', 'HEAD'], stderr=subprocess.DEVNULL, text=True).strip()
+    except (OSError, subprocess.CalledProcessError):
+        revision = 'unavailable'
+    while len(outputs) < args.count:
+        selected = fixed + rng.sample(remaining, args.arity - len(fixed))
+        key = tuple(sorted(w['path'] for w in selected))
+        if key in seen:
+            continue
+        seen.add(key)
+        operation = args.operation or rng.choice([k for k in OPERATIONS if k != 'triangulation' or args.arity == 3])
+        prompt = prompt_for(selected, operation, args.context_chars)
+        metadata = dict(seed=seed, snapshot=revision, operation=operation,
+                        sources=[{k: w[k] for k in ('title', 'path', 'sha256', 'alternatives')} for w in selected])
+        header = f"# Recombination {len(outputs)+1}\n\nSeed: {seed}. Snapshot: {revision}. Operation: {operation}.\n\n"
+        for i, work in enumerate(selected):
+            url = 'https://github.com/standardgalactic/flyxion-corpus/blob/' + (revision if revision != 'unavailable' else 'main') + '/' + urllib.parse.quote(work['path'])
+            header += f"Source {chr(65+i)}: [{work['title']}]({url}).\n\n"
+        if args.model:
+            payload = json.dumps(dict(model=args.model, prompt=prompt, stream=False, options=dict(seed=seed % (2**31), temperature=0.8, num_ctx=16384))).encode()
+            request = urllib.request.Request('http://localhost:11434/api/generate', data=payload, headers={'Content-Type': 'application/json'})
+            try:
+                with urllib.request.urlopen(request, timeout=600) as response:
+                    content = json.load(response)['response']
+            except (OSError, ValueError, KeyError) as exc:
+                parser.exit(1, f'Ollama generation failed: {exc}. Omit --model to export the same prompt offline.\n')
+            header += f'Model: {args.model}. Generated proposal, not a validated synthesis.\n\n' + content
+        else:
+            header += 'Offline synthesis prompt. Paste the following into a language model to generate the outline; this file is not itself a completed outline.\n\n' + prompt
+        header += '\n\n<details><summary>Selection provenance</summary>\n\n```json\n' + json.dumps(metadata, indent=2, ensure_ascii=False) + '\n```\n</details>\n'
+        outputs.append(header)
+    output = '\n\n---\n\n'.join(outputs)
+    if args.output:
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(output, encoding='utf-8')
+    else:
+        print(output)
+
+
+if __name__ == '__main__':
+    main()
+\end{lstlisting}
+
+\end{document}

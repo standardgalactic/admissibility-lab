@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Memory Compression · The Cost of Future Admissibility</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#000603;color:#a6e9b7;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}body{min-height:100dvh;display:flex;flex-direction:column;align-items:center;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:10;background:repeating-linear-gradient(to bottom,transparent 0 4px,rgba(140,255,180,.022) 5px 6px)}header{text-align:center;padding:25px 12px 6px}h1{font-size:clamp(13px,2.5vw,19px);font-weight:500;letter-spacing:.17em;text-transform:uppercase;margin:0;color:#b7ffd0}header p{font-size:10px;letter-spacing:.15em;color:#579a73;text-transform:uppercase;margin:10px 0 0}.stage{position:relative;width:min(760px,96vw);flex:1;min-height:320px;display:flex;align-items:center;justify-content:center}canvas{width:100%;height:auto;aspect-ratio:760/480;display:block}.overlay{position:absolute;top:12px;left:18px;pointer-events:none;font-size:10px;letter-spacing:.1em;color:#5baf7b}.legend{display:flex;justify-content:space-between;width:min(720px,92vw);font-size:10px;color:#629f78;letter-spacing:.07em;margin:-5px 0 18px}.legend span:last-child{color:#d1b77b}.controls{display:flex;gap:12px;align-items:center;width:min(700px,90vw);margin:0 0 15px}button{border:1px solid #326e4b;background:#071b10;color:#c2f7d2;font:inherit;font-size:11px;letter-spacing:.1em;padding:11px 17px;cursor:pointer}button:hover,button:focus-visible{background:#103923;outline:1px solid #78c69b}input[type=range]{flex:1;accent-color:#7dcca0;min-width:0;cursor:pointer}#clock{min-width:92px;text-align:right;font-size:11px;color:#81b796}.subtitles{width:min(720px,92vw);min-height:78px;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px 18px;color:#c4f4d0;font-size:clamp(13px,2vw,16px);line-height:1.6;border:1px solid #214932;background:rgba(4,22,11,.8);margin-bottom:17px}.subtitles:empty:after{content:'Subtitles will appear during playback';color:#477d5d;font-size:12px;font-style:italic}footer{width:100%;text-align:center;padding:0 12px 23px;font-size:12px}footer a{color:#a9dcb8;text-underline-offset:4px}footer a:hover{color:white}.hint{font-size:10px;color:#50775b;margin:0 0 10px;text-align:center}#message{font-size:11px;color:#bca67b;min-height:16px;text-align:center;margin:0 12px 8px}@media(max-width:550px){header{padding-top:16px}.stage{min-height:260px}.legend{font-size:8px}.controls{gap:8px}button{padding:10px}#clock{min-width:78px;font-size:10px}.subtitles{min-height:95px}}
+</style>
+</head>
+<body>
+<header><h1>How Memory Compression Breaks AI Safety Rules</h1><p>The cost of future admissibility · audiovisual study</p></header>
+<div class="stage"><canvas id="field" width="760" height="480" aria-label="Animated histories converge into compressed states, while future policies reveal lost distinctions"></canvas><div class="overlay" id="phase">HISTORY / REPRESENTATION / REVISION</div></div>
+<div class="legend"><span>HISTORIES → COMPRESSED STATE</span><span>FUTURE POLICY ↗</span></div>
+<div class="controls"><button id="toggle" type="button" aria-label="Play audio">PLAY</button><input id="seek" type="range" min="0" max="1000" value="0" aria-label="Audio position"><span id="clock">0:00 / 0:00</span></div>
+<div class="subtitles" id="subtitles" aria-live="off"></div><div id="message" role="status"></div><p class="hint">SPACE: PLAY / PAUSE · DRAG TIMELINE TO SEEK</p>
+<footer><a href="https://standardgalactic.github.io/admissibility-lab/cost_of_future_admissibility.pdf" target="_blank" rel="noopener noreferrer">Read the original essay: The Cost of Future Admissibility ↗</a></footer>
+<audio id="audio" preload="metadata" src="How_Memory_Compression_Breaks_AI_Safety_Rules.mp3"></audio>
+<script>
+'use strict';
+const audio=document.getElementById('audio'),canvas=document.getElementById('field'),ctx=canvas.getContext('2d');
+const toggle=document.getElementById('toggle'),seek=document.getElementById('seek'),clock=document.getElementById('clock'),subs=document.getElementById('subtitles'),message=document.getElementById('message'),phase=document.getElementById('phase');
+let ac,analyser,source,freq,cues=[],dragging=false,elapsed=0,last=performance.now();
+const W=760,H=480,TAU=Math.PI*2;
+const histories=Array.from({length:32},(_,i)=>({i,group:i%5,seed:Math.sin(i*127.1)*1000,answer:(i%7===0||i%11===0)?0:1}));
+function setupAudio(){if(ac)return;const C=window.AudioContext||window.webkitAudioContext;if(!C)return;ac=new C();analyser=ac.createAnalyser();analyser.fftSize=1024;analyser.smoothingTimeConstant=.84;freq=new Uint8Array(analyser.frequencyBinCount);source=ac.createMediaElementSource(audio);source.connect(analyser);analyser.connect(ac.destination)}
+async function play(){try{setupAudio();if(ac?.state==='suspended')await ac.resume();await audio.play();message.textContent=''}catch(e){message.textContent='Unable to play audio. Check that the MP3 is beside this HTML file.'}}
+function sync(){toggle.textContent=audio.paused?'PLAY':'PAUSE';toggle.setAttribute('aria-label',audio.paused?'Play audio':'Pause audio')}
+toggle.addEventListener('click',()=>audio.paused?play():audio.pause());audio.addEventListener('play',sync);audio.addEventListener('pause',sync);audio.addEventListener('ended',sync);
+document.addEventListener('keydown',e=>{if(e.code==='Space'&&!['BUTTON','INPUT','TEXTAREA'].includes(document.activeElement?.tagName)){e.preventDefault();audio.paused?play():audio.pause()}});
+function fmt(s){if(!Number.isFinite(s))return '0:00';return Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0')}
+function updateTime(){const d=audio.duration||0;if(!dragging)seek.value=d?Math.round(audio.currentTime/d*1000):0;clock.textContent=fmt(audio.currentTime)+' / '+fmt(d);const t=audio.currentTime;const cue=cues.find(c=>t>=c.start&&t<c.end);subs.textContent=cue?cue.text:''}
+audio.addEventListener('timeupdate',updateTime);audio.addEventListener('loadedmetadata',updateTime);audio.addEventListener('error',()=>{message.textContent='Audio file not found or unsupported. Keep the MP3 beside this page.'});seek.addEventListener('pointerdown',()=>dragging=true);seek.addEventListener('pointerup',()=>dragging=false);seek.addEventListener('input',()=>{if(Number.isFinite(audio.duration)){audio.currentTime=Number(seek.value)/1000*audio.duration;updateTime()}});
+function parseTime(s){const p=s.trim().replace(',','.').split(':').map(Number);return p.reduce((v,n)=>v*60+n,0)}
+function parseVTT(text){const blocks=text.replace(/^\uFEFF/,'').replace(/\r/g,'').split(/\n\s*\n/);const out=[];for(const b of blocks){const lines=b.trim().split('\n');const idx=lines.findIndex(l=>l.includes('-->'));if(idx<0)continue;const pair=lines[idx].split('-->');const start=parseTime(pair[0]),end=parseTime(pair[1].trim().split(/\s+/)[0]);if(Number.isFinite(start)&&Number.isFinite(end))out.push({start,end,text:lines.slice(idx+1).join(' ').replace(/<[^>]*>/g,'').trim()})}return out.sort((a,b)=>a.start-b.start)}
+fetch('How_Memory_Compression_Breaks_AI_Safety_Rules.vtt').then(r=>{if(!r.ok)throw Error('Missing VTT');return r.text()}).then(t=>cues=parseVTT(t)).catch(()=>{message.textContent='Subtitle file not found. Expected How_Memory_Compression_Breaks_AI_Safety_Rules.vtt'});
+function line(points,color,width=1){ctx.beginPath();points.forEach(([x,y],i)=>i?ctx.lineTo(x,y):ctx.moveTo(x,y));ctx.strokeStyle=color;ctx.lineWidth=width;ctx.stroke()}
+function circle(x,y,r,color,glow=0){ctx.beginPath();ctx.arc(x,y,r,0,TAU);ctx.fillStyle=color;if(glow){ctx.shadowColor=color;ctx.shadowBlur=glow}ctx.fill();ctx.shadowBlur=0}
+function label(str,x,y,color='#548b68',size=10){ctx.fillStyle=color;ctx.font=size+'px monospace';ctx.fillText(str,x,y)}
+function ease(x){return x*x*(3-2*x)}
+function draw(now){const dt=Math.min(.05,(now-last)/1000);last=now;if(!audio.paused)elapsed+=dt;else elapsed+=dt*.13;const t=elapsed;
+ctx.fillStyle='rgba(0,6,3,.24)';ctx.fillRect(0,0,W,H);
+const levels=[0,0,0];if(analyser){analyser.getByteFrequencyData(freq);for(let k=0;k<3;k++){const a=k===0?0:k===1?15:90,b=k===0?15:k===1?90:300;let sum=0;for(let j=a;j<b;j++)sum+=freq[j];levels[k]=sum/((b-a)*255)}}const pulse=levels[0]*12;
+// Three successive conceptual regions, connected by a single continuous flow.
+ctx.strokeStyle='rgba(95,178,120,.12)';ctx.lineWidth=1;ctx.setLineDash([3,8]);for(const x of [250,500]){ctx.beginPath();ctx.moveTo(x,53);ctx.lineTo(x,424);ctx.stroke()}ctx.setLineDash([]);
+label('01 / EVENT HISTORIES',37,44);label('02 / RETAINED STATE',282,44);label('03 / REVISED POLICY',525,44);
+const x0=67,x1=325,x2=446,x3=671;
+// Incoming histories: many distinct paths, collapsed into five observable states.
+for(const h of histories){const y0=85+h.i*9.9;const gy=121+h.group*59;const offset=Math.sin(t*.5+h.seed)*2.5;const yy=y0+offset;const bend=.5+.5*Math.sin(t*.25+h.i*.2);const alpha=.14+.12*bend;ctx.beginPath();ctx.moveTo(x0,yy);ctx.bezierCurveTo(165,yy,218,gy,x1,gy);ctx.strokeStyle=`rgba(${h.answer?'103,216,151':'232,174,105'},${alpha})`;ctx.lineWidth=.8;ctx.stroke();const f=(t*.08+h.i*.071)%1;const bx=(1-f)**3*x0+3*(1-f)**2*f*165+3*(1-f)*f*f*218+f**3*x1;const by=(1-f)**3*yy+3*(1-f)**2*f*gy+3*(1-f)*f*f*gy+f**3*gy;circle(bx,by,1.3,h.answer?'rgba(121,255,164,.7)':'rgba(255,186,102,.8)')}
+// Retained representation: a few states standing in for many histories.
+for(let g=0;g<5;g++){const y=121+g*59;ctx.beginPath();ctx.roundRect(311,y-16,145,32,4);ctx.fillStyle='rgba(4,32,16,.86)';ctx.fill();ctx.strokeStyle='rgba(92,206,128,.6)';ctx.lineWidth=1;ctx.stroke();label('σ(H) = S'+g,329,y+4,'#b2f2c3',11);circle(312,y,2.5,'#9dffbc',8)}
+// A changing policy exposes the incompatible distinctions hidden in merged states.
+const revision=(Math.sin(t*.23)+1)/2;const reveal=ease(Math.max(0,(revision-.28)/.72));const conflictGroup=2;
+for(let g=0;g<5;g++){const y=121+g*59;const destY=110+g*60;ctx.beginPath();ctx.moveTo(x2,y);ctx.bezierCurveTo(515,y,560,destY,x3,destY);ctx.strokeStyle=`rgba(118,216,149,${.16+.16*levels[1]})`;ctx.lineWidth=1.3;ctx.stroke();circle(x3,destY,3,'#78cf9b',6)}
+// Divergent answers that were mapped to the same retained state.
+const cy=121+conflictGroup*59;ctx.beginPath();ctx.moveTo(455,cy);ctx.bezierCurveTo(515,cy,548,cy-47,616,cy-47);ctx.moveTo(455,cy);ctx.bezierCurveTo(515,cy,548,cy+47,616,cy+47);ctx.strokeStyle=`rgba(244,183,106,${.05+.88*reveal})`;ctx.lineWidth=2;ctx.stroke();if(reveal>.05){circle(620,cy-47,4,`rgba(255,198,113,${reveal})`,8);circle(620,cy+47,4,`rgba(255,198,113,${reveal})`,8);label('PERMIT',632,cy-43,`rgba(248,207,146,${reveal})`,10);label('REJECT',632,cy+51,`rgba(248,207,146,${reveal})`,10);label('INFORMATION LOST',514,405,`rgba(244,174,99,${reveal})`,11)}
+// The kernel criterion: distinguishability must survive compression.
+label('ker σ ⊆ ker P',280,450,'#82b993',12);label('REVISION / Q',544,450,reveal>.5?'#edb678':'#82b993',11);
+// Animated sweep makes the timeline legible without implying recovered information.
+const sweep=50+(t*31)%670;ctx.fillStyle='rgba(116,255,164,.025)';ctx.fillRect(sweep,60,2,355);
+phase.textContent=reveal>.5?'REVISION REQUIRES A LOST DISTINCTION':'CURRENT POLICY / COMPRESSED HISTORY';
+requestAnimationFrame(draw)}requestAnimationFrame(draw);
+</script></body></html>
+

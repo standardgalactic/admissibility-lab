@@ -10,6 +10,8 @@
 
 [The Cost of Future Admissibility](https://standardgalactic.github.io/admissibility-lab/cost_of_future_admissibility.pdf)
 
+* [How Memory Compression Breaks AI Safety Rules](https://standardgalactic.github.io/admissibility-lab/memory-compression-visualizer.html) — *Audio Overview*
+
 [Publishing an Untested Design](https://standardgalactic.github.io/admissibility-lab/Publishing_an_Untested_Design.pdf)
 
 [Publication Decision CoC](https://standardgalactic.github.io/admissibility-lab/Publication_Decision_CoC.pdf)
